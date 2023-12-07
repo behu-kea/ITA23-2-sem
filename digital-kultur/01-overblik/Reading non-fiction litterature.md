@@ -1,0 +1,11 @@
+- Reading non-fiction litterature
+- Writing non-fiction
+  - SRP
+  - Elements of a non-fiction article
+  - Thinking - before and while writing
+- Writing exercise: Synopsis
+- Subject Matter:
+  - Defining Digital Media
+  - Cultural Forms
+  - Immersive Experiences
+- Writing execise: What are video games? 

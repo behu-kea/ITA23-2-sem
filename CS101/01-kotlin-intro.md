@@ -133,15 +133,11 @@ Min integer: 5
 
 
 
-### Opgave 9 - level 3
+### Emoji Sequence Cryptographer - level 3
 
-### Emoji Sequence Decoder and encoder - Level 3
+**Objective**: Develop a Kotlin function to encode and decode messages using a complex emoji-based cipher.
 
-Emoji Sequence Decoder - Intermediate
-
-Objective: Develop a Kotlin function to decode a sequence of emojis into text using a specific mapping.
-
-Description: In this exercise, you will create a Kotlin function decodeEmojiSequence that takes a string of emojis and decodes it into a text message. The decoding process is based on a predefined mapping of emoji pairs to characters. Your task is to implement this function to accurately translate the emoji sequence into the corresponding text.
+**Description**: This exercise involves creating two Kotlin functions: `encodeMessage` and `decodeMessage`. Both functions will utilize a sophisticated mapping system involving emoji pairs and single emojis. The `encodeMessage` function will translate a text message into a string of emojis, while `decodeMessage` will do the reverse, using the same mapping.
 
 Mapping:
 
@@ -197,31 +193,55 @@ Mapping:
 
 ​    "😂😃" → `Z`
 
-Constraints:
-
-- The input string will only contain valid emojis from the defined mapping and will have an even length
-- The function should handle cases where invalid emoji pairs are present and return an appropriate error message or placeholder.
 
 
+**Mapping**:
 
-Usage:
+- Single letters (A-Z) are mapped to pairs of emojis.
+- Spaces and punctuation marks are mapped to single emojis.
+- Special combinations of emojis indicate capitalization or common words.
 
-```kotlin
-val sequence = "😀😁😃😄😀😂"
-println(decodeEmojiSequence(sequence))
-// Output: "ACB"
+**Example Mapping**:
+
+- Letters: Same as previously defined in the "Emoji Sequence Decoder" exercise.
+- Space: "🌟"
+- Period: "🔴"
+- Comma: "🔵"
+- Exclamation mark: "❗"
+- Question mark: "❓"
+- Capitalization Indicator: A pair of "👑" before a letter pair indicates that the letter is capitalized.
+- Common Words:
+  - "The": "🌍🌎"
+  - "And": "🌞🌜"
+
+
+
+**Constraints**:
+
+- The input text for encoding should be a standard string containing letters, spaces, and basic punctuation.
+- The decoding function should handle invalid or incomplete emoji sequences gracefully, returning an error message or placeholder.
+
+
+
+**Usage**:
+
+```
+kotlin
+val text = "Hello, World!"
+val encoded = encodeMessage(text)
+println(encoded)
+// Output: "👑😀😉🌍🌎🔵 👑😍😂🌍🌎🔴"
+
+val decoded = decodeMessage(encoded)
+println(decoded)
+// Output: "Hello, World!"
 ```
 
 
 
-#### Encode
-
-Now create a function that goes the other way. From string to encoded emoji string
 
 
 
-```kotlin
-println(encodeEmojiSequence("hello"))
-// Output: "😅😊😄😆😇😌😇😌😋😁"
-```
+
+
 

@@ -19,10 +19,12 @@
 
 
 
-### Studieordning
+### Learning goals
 
-- Java
-  - JVM
+- Kotlin
+  
+  
+  
   - Compile vs runtime
   - Syntax
 - Debugging
@@ -34,7 +36,6 @@
   - Map
 - For loop
 - Input
-  - Scanner
 
 
 
@@ -68,14 +69,14 @@ Write variables to represent a rectangle:
 - Height of 8.5
 - Width of 5.5
 
-Compute the area and the perimeter of the rectangle and print the results
+Create a function that computes the area and the perimeter of the rectangle and print the results
 
 
 
 ### Opgave 3 - Level 2
 
 - Convert a string to uppercase
-- Return the index of a character
+- Return the index of a character in a string
 - Concatenate two different string
 - Check these strings are equal to each other. Uppercases should be ignored!
   - `hello`, `ollhe` should print `false`
@@ -99,13 +100,21 @@ Create a `HashMap` that contains the numberplate of a car and that cars color
 
 ### Opgave 7 - level 2
 
-Write a program that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
+Create a function that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
 
 
 
-### Question 6.3 - level 2
+### Opgave 8 - level 2
 
-Write a Java program that accepts two integers from the user and then  prints the sum, the difference, the product, the average, the distance  (the difference between integer), the maximum (the larger of the two  integers), the minimum (smaller of the two integers)
+Write a Java program that accepts two integers from the user and then prints 
+
+- the sum
+- the difference
+- the product
+- the average
+- the distance  (the difference between integer)
+- the maximum (the larger of the two  integers)
+- the minimum (smaller of the two integers)
 
 Here is an example:
 
@@ -123,4 +132,96 @@ Min integer: 5
 ```
 
 
+
+### Opgave 9 - level 3
+
+### Emoji Sequence Decoder and encoder - Level 3
+
+Emoji Sequence Decoder - Intermediate
+
+Objective: Develop a Kotlin function to decode a sequence of emojis into text using a specific mapping.
+
+Description: In this exercise, you will create a Kotlin function decodeEmojiSequence that takes a string of emojis and decodes it into a text message. The decoding process is based on a predefined mapping of emoji pairs to characters. Your task is to implement this function to accurately translate the emoji sequence into the corresponding text.
+
+Mapping:
+
+​    "😀😁" → `A`
+
+​    "😀😂" → `B`
+
+​    "😃😄" → `C`
+
+​    "😃😅" → `D`
+
+​    "😄😆" → `E`
+
+​    "😄😇" → `F`
+
+​    "😅😂" → `G`
+
+​    "😅😊" → `H`
+
+​    "😆😁" → `I`
+
+​    "😆😋" → `J`
+
+​    "😇😉" → `K`
+
+​    "😇😌" → `L`
+
+​    "😊😂" → `M`
+
+​    "😊😎" → `N`
+
+​    "😋😁" → `O`
+
+​    "😋😌" → `P`
+
+​    "😉😀" → `Q`
+
+​    "😉😍" → `R`
+
+​    "😌😃" → `S`
+
+​    "😌😎" → `T`
+
+​    "😎😀" → `U`
+
+​    "😎😇" → `V`
+
+​    "😍😄" → `W`
+
+​    "😍😅" → `X`
+
+​    "😂😀" → `Y`
+
+​    "😂😃" → `Z`
+
+Constraints:
+
+- The input string will only contain valid emojis from the defined mapping and will have an even length
+- The function should handle cases where invalid emoji pairs are present and return an appropriate error message or placeholder.
+
+
+
+Usage:
+
+```kotlin
+val sequence = "😀😁😃😄😀😂"
+println(decodeEmojiSequence(sequence))
+// Output: "ACB"
+```
+
+
+
+#### Encode
+
+Now create a function that goes the other way. From string to encoded emoji string
+
+
+
+```kotlin
+println(encodeEmojiSequence("hello"))
+// Output: "😅😊😄😆😇😌😇😌😋😁"
+```
 

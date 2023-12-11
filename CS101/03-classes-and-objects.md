@@ -4,8 +4,6 @@
 
 ## Preparation
 
-
-
 - https://kotlinlang.org/docs/classes.html#class-members
 - https://kotlinlang.org/docs/properties.html
 - https://kotlinlang.org/docs/visibility-modifiers.html

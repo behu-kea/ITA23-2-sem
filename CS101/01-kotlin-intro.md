@@ -45,6 +45,7 @@
 - [Installer Android Studio](https://developer.android.com/studio)
 - [Kotlin in 100 Seconds](https://www.youtube.com/watch?v=xT8oP0wy-A0)
 - [Learn Kotlin in 12 Minutes](https://www.youtube.com/watch?v=iYrgWO2oibY)
+- Optional: [https://kotlinlang.org/docs/basic-syntax.html](https://kotlinlang.org/docs/basic-syntax.html)
 
 
 

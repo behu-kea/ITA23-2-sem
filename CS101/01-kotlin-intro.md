@@ -30,8 +30,10 @@
   - Strenge
   - Boolean
   - Integer, float, double
-  - Array
+  - Array fixed number of values
+    - Collection like mutableListOf can change
   - Map
+    - mapOf
 - For loop
 - Nullability
 - Input
@@ -103,6 +105,8 @@ Create a `Map` that contains the numberplate of a car and that cars color
 
 Create a function that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
 
+*Research how inputs work in Kotlin*
+
 
 
 ### Opgave 7.1 - level 2
@@ -132,8 +136,6 @@ println(findEmoji(text3)) // Output: "Input is null"
 ```
 
 This exercise provides an opportunity to practice handling nullability in Kotlin, which is a crucial aspect of the language's safety features.
-
-
 
 
 

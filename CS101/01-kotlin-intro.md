@@ -28,6 +28,7 @@
 - Debugging
 - Typer
   - Strenge
+    - String literal
   - Boolean
   - Integer, float, double
   - Array fixed number of values

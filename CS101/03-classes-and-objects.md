@@ -2,7 +2,36 @@
 
 
 
+## Learning goals
+
+- Classes
+  - Attributes
+  - Getter, setter
+  - Constructor
+  - Encapsulation
+- Objects
+
+
+
+## Overview
+
+- Model Smartphone
+  - Getter setter
+    - Var, val
+    - Constructor
+
+
+
 ## Preparation
+
+- [Kotlin Class and Object](https://www.youtube.com/watch?v=Sn-PL6fNIkk)
+- [Kotlin Getters and Setters](https://www.youtube.com/watch?v=rlJHzsgUwos)
+- [Kotlin Visibility Modifiers](https://www.youtube.com/watch?v=FvCeEQaGDsA)
+- [Kotlin Constructor - Primary, Secondary Constructor and Init Block](https://www.youtube.com/watch?v=d6Lu1Wzspao)
+
+
+
+Optional
 
 - https://kotlinlang.org/docs/classes.html#class-members
 - https://kotlinlang.org/docs/properties.html
@@ -16,16 +45,14 @@
 
 ### Question 1
 
-```java
+```kotlin
 class MyClass {
-    public int x = 5;
+    var x = 5
 }
 
-public class Main {
-    public static void main(String[] args) {
-        MyClass myObj = new MyClass();
-        System.out.println(myObj.x);
-    }
+fun main() {
+    val myObj = MyClass()
+    println(myObj.x)
 }
 ```
 
@@ -40,20 +67,16 @@ What is the output of the above code when executed?
 
 ### Question 2
 
-```java
-class MyClass {
-    public int x = 5;
-
-    public MyClass(int x) {
-        this.x = 7;
+```kotlin
+class MyClass(var x: Int = 5) {
+    init {
+        x = 7
     }
 }
 
-public class Main {
-    public static void main(String[] args) {
-        MyClass myObj = new MyClass(1);
-        System.out.println(myObj.x);
-    }
+fun main() {
+    val myObj = MyClass(1)
+    println(myObj.x)
 }
 ```
 

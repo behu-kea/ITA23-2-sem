@@ -3,6 +3,8 @@
 * [Front Page](README.md)
 * [CS101](cs101/README.md)
   * [Kotlin intro](CS101/01-kotlin-intro.md)
+  * [Classes and objects](CS101/03-classes-and-objects.md)
+  * [Interfaces & abstract](CS101/05-interfaces.md)
 * [Applikationsudvikling](applikationsudvikling/README.md)
   * 
 * [Brugerinddragelse](brugerinddragelse/README.md)

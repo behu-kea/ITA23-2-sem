@@ -20,6 +20,26 @@ for (i in 0..5) {
 
 
 
+## Collections
+
+Array is a part of collections. 
+
+```kotlin
+// static number of elements
+var names = ListOf("asd", "asd2");
+names.add("asdss"); // Error!
+
+// Now it can be changed
+var names2 = MutableListOf("asd", "asd2");
+names.add("asdss"); 
+```
+
+
+
+
+
+
+
 ## Classes
 
 `val` property is read only

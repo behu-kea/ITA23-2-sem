@@ -23,8 +23,6 @@
 
 - Kotlin
   
-  
-  
   - Compile vs runtime
   - Syntax
 - Debugging
@@ -32,9 +30,10 @@
   - Strenge
   - Boolean
   - Integer, float, double
-  - ArrayList
+  - Array
   - Map
 - For loop
+- Nullability
 - Input
 
 
@@ -42,6 +41,8 @@
 ## Preparation
 
 - [Installer Android Studio](https://developer.android.com/studio)
+- [Kotlin in 100 Seconds](https://www.youtube.com/watch?v=xT8oP0wy-A0)
+- [Learn Kotlin in 12 Minutes](https://www.youtube.com/watch?v=iYrgWO2oibY)
 
 
 
@@ -88,19 +89,51 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 ### Opgave 4 - level 1
 
-Create an `ArrayList`. Add some prices to the `ArrayList`. Now find the average price of the `ArrayList`
+Create an `Array`. Add some prices to the `Array`. Now find the average price of the `Array`
 
 
 
 ### Opgave 5 - level 1
 
-Create a `HashMap` that contains the numberplate of a car and that cars color
+Create a `Map` that contains the numberplate of a car and that cars color
 
 
 
 ### Opgave 7 - level 2
 
 Create a function that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
+
+
+
+### Opgave 7.1 - level 2
+
+**Objective**: Develop a Kotlin function to safely find emojis in a possibly null string, demonstrating handling of nullability in Kotlin.
+
+**Description**: In this exercise, you will create a Kotlin function `findEmoji` that takes a string, which may be null, as input and returns the first emoji found in the string. If the string is null, contains no emojis, or if any other issue is encountered, the function should handle it gracefully without throwing an exception.
+
+Your function should demonstrate the use of Kotlin's null-safety features, such as safe calls (`?.`), the Elvis operator (`?:`), and safe casting.
+
+**Constraints**:
+
+- The function should be able to handle null input strings.
+- Emojis are considered as characters that are outside the standard ASCII range.
+
+**Usage**:
+
+```
+kotlin
+val text1: String? = "Hello 😄 World!"
+val text2: String? = "Just text, no emojis"
+val text3: String? = null
+
+println(findEmoji(text1)) // Output: "😄"
+println(findEmoji(text2)) // Output: "No emoji found"
+println(findEmoji(text3)) // Output: "Input is null"
+```
+
+This exercise provides an opportunity to practice handling nullability in Kotlin, which is a crucial aspect of the language's safety features.
+
+
 
 
 
@@ -136,6 +169,8 @@ Min integer: 5
 ### Emoji Sequence Cryptographer - level 3
 
 **Objective**: Develop a Kotlin function to encode and decode messages using a complex emoji-based cipher.
+
+
 
 **Description**: This exercise involves creating two Kotlin functions: `encodeMessage` and `decodeMessage`. Both functions will utilize a sophisticated mapping system involving emoji pairs and single emojis. The `encodeMessage` function will translate a text message into a string of emojis, while `decodeMessage` will do the reverse, using the same mapping.
 
@@ -201,6 +236,8 @@ Mapping:
 - Spaces and punctuation marks are mapped to single emojis.
 - Special combinations of emojis indicate capitalization or common words.
 
+
+
 **Example Mapping**:
 
 - Letters: Same as previously defined in the "Emoji Sequence Decoder" exercise.
@@ -236,12 +273,3 @@ val decoded = decodeMessage(encoded)
 println(decoded)
 // Output: "Hello, World!"
 ```
-
-
-
-
-
-
-
-
-

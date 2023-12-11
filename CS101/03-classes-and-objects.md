@@ -1,4 +1,14 @@
-# Klasser og objekter
+# Classes and objects
+
+
+
+## Preparation
+
+
+
+- https://kotlinlang.org/docs/classes.html#class-members
+- https://kotlinlang.org/docs/properties.html
+- https://kotlinlang.org/docs/visibility-modifiers.html
 
 
 
@@ -59,8 +69,6 @@ What is the output of the above code when executed?
 
 
 
-
-
 ## Exercises
 
 
@@ -108,4 +116,3 @@ Create methods that can change the attributes. If a method attempts to raise an 
 Now create a class `DogFarm` that includes a method to generate `Dog` objects. 
 
 In the main method, create an instance of `DogFarm` and generate several `Dog` objects.
-

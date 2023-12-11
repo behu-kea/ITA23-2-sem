@@ -44,21 +44,83 @@
 
 
 
+## Opgaver
 
 
 
+### Opgave 1 - Level 1
 
-Feel free to use either the Think Java book, this gitbook: https://behu.gitbook.io/java-first-semester/ or any other online ressource you like
+Do these steps one step at a time! Think about what type of data should be stored in the different variables
 
-Work in pairs. Random pairs
+1. Create a variable called `age` (no assignment!)
+2. Create another variable called `height`
+3. Assign `age` to be your age
+4. Assign `height` to be your height in meter
+5. Create the variable `shoeSize` and assign it to be your shoesize
+6. Create a variable called `name` and assign this to your name
 
-1. https://behu.gitbook.io/java-first-semester/topics/basics/variables-operators-expressions#exercise-1
-2. https://behu.gitbook.io/java-first-semester/topics/basics/variables-operators-expressions#exercise-5
-3. https://behu.gitbook.io/java-first-semester/topics/basics/strings#execise-2
-4. Create an `ArrayList`. Add some prices to the `ArrayList`. Now find the average price of the `ArrayList`
-5. Create a `HashMap` that contains the numberplate of a car and that cars color
-6. https://behu.gitbook.io/java-first-semester/topics/basics/working-with-inputs#question-1-1
-7. https://behu.gitbook.io/java-first-semester/topics/basics/working-with-inputs#exercise-2
+
+
+### Opgave 2 - Level 1
+
+Write variables to represent a rectangle:
+
+- Height of 8.5
+- Width of 5.5
+
+Compute the area and the perimeter of the rectangle and print the results
+
+
+
+### Opgave 3 - Level 2
+
+- Convert a string to uppercase
+- Return the index of a character
+- Concatenate two different string
+- Check these strings are equal to each other. Uppercases should be ignored!
+  - `hello`, `ollhe` should print `false`
+  - `bike`, `banana` should print `false`
+  - `name`, `NaMe` should print `true`
+  - `yes`, `yes` should print `true`
+
+
+
+### Opgave 4 - level 1
+
+Create an `ArrayList`. Add some prices to the `ArrayList`. Now find the average price of the `ArrayList`
+
+
+
+### Opgave 5 - level 1
+
+Create a `HashMap` that contains the numberplate of a car and that cars color
+
+
+
+### Opgave 7 - level 2
+
+Write a program that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
+
+
+
+### Question 6.3 - level 2
+
+Write a Java program that accepts two integers from the user and then  prints the sum, the difference, the product, the average, the distance  (the difference between integer), the maximum (the larger of the two  integers), the minimum (smaller of the two integers)
+
+Here is an example:
+
+```
+Input 1st integer: 25
+Input 2nd integer: 5
+Expected Output:
+Sum of two integers: 30
+Difference of two integers: 20
+Product of two integers: 125
+Average of two integers: 15.00
+Distance of two integers: 20
+Max integer: 25
+Min integer: 5
+```
 
 
 

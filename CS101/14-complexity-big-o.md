@@ -206,8 +206,6 @@ public Integer factorialOf(Integer n) {
 
 
 
-
-
 ### Problem solving
 
 1. [https://edabit.com/challenge/3CaszbdZYGN4otQD8](https://edabit.com/challenge/3CaszbdZYGN4otQD8)

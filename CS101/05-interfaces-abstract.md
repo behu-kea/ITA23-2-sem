@@ -17,38 +17,33 @@
 What kind of error does the follwing code produce?
 
 ```java
-package interfaces;
+interface UserInterface {
+    var name: String
+    var email: String
 
-import java.util.ArrayList;
-
-public interface PersonInterface {
-    void sayHi();
-    void setName(String name);
-    int getAge();
+    fun displayUserInfo()
+    fun updateEmail(newEmail: String)
 }
 
-class Person implements PersonInterface {
-    String name;
-    int age;
 
-    public void sayHi() {
-        return "Hi!";
+class User(override var name: String, override var email: String) : UserInterface {
+    override fun displayUserInfo() {
+        println("User Name: $name")
+        println("User Email: $email")
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return this.age;
+    override fun updateEmail(newEmail: String) {
+        email = newEmail
+        println("Email updated to: $email")
+        return newEmail
     }
 }
-
 ```
 
-- `Person` does not properly implement the `PersonInterface`
-- One of the methods returns the wrong type
-- There is a syntax error
+1.  `updateEmail` incorrectly returns a value
+2. Wrong assignment in `updateEmail`
+3. displayUserInfo` prints incorrect information` 
+4. `User` does not override `displayUserInfo` properly
 
 
 
@@ -57,38 +52,31 @@ class Person implements PersonInterface {
 What happens when `camilla.getAge();` is called?
 
 ```java
-package interfaces;
+package interfaces
 
-import java.util.ArrayList;
-
-public interface PersonInterface {
-    void sayHi();
-    void setName(String name);
-    int getAge();
+interface PersonInterface {
+    fun sayHi()
+    fun setName(name: String)
+    fun getAge(): Int
 }
 
-class Person implements PersonInterface {
-    String name;
-    int age;
-
-    public void sayHi() {
-        System.out.println("Hi!");
+class Person(override var name: String, var age: Int) : PersonInterface {
+    override fun sayHi() {
+        println("Hi!")
     }
 
-    public void setName(String name) {
-        this.name = name;
+    override fun setName(name: String) {
+        this.name = name
     }
 
-    public int getAge() {
-        return this.age;
+    override fun getAge(): Int {
+        return this.age
     }
 }
 
-class Main2 {
-    public static void main(String[] args) {
-        Person camilla = new Person("Camilla", 6);
-        camilla.getAge();
-    }
+fun main() {
+    val camilla = Person("Camilla", 6)
+    camilla.getAge()
 }
 ```
 

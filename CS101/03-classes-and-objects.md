@@ -10,6 +10,7 @@
   - Constructor
   - Encapsulation
 - Objects
+- This
 
 
 
@@ -18,7 +19,9 @@
 - Model Smartphone
   - Getter setter
     - Var, val
-    - Constructor
+  - Constructor
+  - Visibility
+  - Data vs behaviour
 
 
 

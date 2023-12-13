@@ -4,7 +4,20 @@
 
 ## Preparation
 
+- [Learn Kotlin for Android: Abstract Classes & Functions (Lesson 19)](https://www.youtube.com/watch?v=_KoBfDb4Gtw)
+- [Learn Kotlin for Android: Interfaces (Lesson 20)](https://www.youtube.com/watch?v=RctW18zpgec)
+
+
+
+Optional
+
 - https://kotlinlang.org/docs/interfaces.html
+
+
+
+## Overview
+
+Abstract class needs to be called
 
 
 
@@ -55,29 +68,23 @@ What happens when `camilla.getAge();` is called?
 package interfaces
 
 interface PersonInterface {
-    fun sayHi()
-    fun setName(name: String)
-    fun getAge(): Int
+    fun sayHi();
+    val age: Int;
+    val name: String;
 }
 
-class Person(override var name: String, var age: Int) : PersonInterface {
+class Person(override var name: String, override val age: Int) : PersonInterface {
     override fun sayHi() {
-        println("Hi!")
-    }
-
-    override fun setName(name: String) {
-        this.name = name
-    }
-
-    override fun getAge(): Int {
-        return this.age
+        println("Hi, I'm $name!")
     }
 }
 
 fun main() {
     val camilla = Person("Camilla", 6)
-    camilla.getAge()
+    println("Age: ${camilla.age}")
+    camilla.sayHi()
 }
+
 ```
 
 - `null`
@@ -97,9 +104,10 @@ Create two java classes `Mobile` and `RaspberriPi` that implements this interfac
 
 ```java
 public interface Computer {
-    String getName();
-    double getPrice();
-    ArrayList<String> getFeatures();
+    val name: String;
+    val price: Int;
+  	val location: Map<String, Double>;
+  	fun printLocation();
 }
 ```
 
@@ -119,15 +127,9 @@ Brug den her prompt til at lave en interface opgave der er tailored til et emne 
 
 Act as an experienced lecturer with many years of experience in creating fun and easy to understand exercises for students
 
-Create a fun, easy to understand and interesting exercise for students. The exercise should learn the students how to use a java interface. The setting for the exercise should be the SKRIV_UNIVERS_HER
+Create a fun, easy to understand and interesting exercise for students. The exercise should learn the students how to use a kotlin interface. 
 
-
-
-**Prompt eksempel:**
-
-Act as an experienced lecturer with many years of experience in creating fun and easy to understand exercises for students
-
-Create a fun, easy to understand and interesting exercise for students. The exercise should learn the students how to use a java interface. The setting for the exercise should be the Simpsons universe
+The exercise should fit the students interests. Here are the student interests: COMMA_SEPERATED_INTERESTS
 
 
 
@@ -154,9 +156,9 @@ Here is the code for the "Employee" interface:
 
 ```java
 public interface Employee {
-  public String getName();
-  public String getJobTitle();
-  public int getSalary();
+  getName(): String;
+  getJobTitle(): String;
+  getSalary(): Int;
 }
 ```
 
@@ -164,7 +166,7 @@ Good luck, and let's hope the employees at the Springfield Nuclear Power Plant d
 
 
 
-### Streaming service
+### Streaming service - Level 3
 
 We need to create the functionality for a Music Library.
 
@@ -193,8 +195,4 @@ Search for some artists using title, artist and duration
 Get the most popular 5 songs in the music library
 
 
-
-### 4 pillars of OOP
-
-Take some code you have written before preferably with some classes and objects. Comment the code with the parts that are relevant to 4 pillars of OOP!
 

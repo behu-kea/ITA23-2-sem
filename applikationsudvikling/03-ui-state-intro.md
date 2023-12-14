@@ -4,6 +4,14 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 
 
+## Preparation
+
+- Gå igennem de her punkter i [den her guide](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-3)
+  - Understanding state in Compose - Video
+  - Intro to state in Compose - Codelab
+
+
+
 ## @Composable
 
 
@@ -59,3 +67,35 @@ State in an app is any value that can change over time.
 A *stateless* composable is a composable that doesn't have a  state, meaning it doesn't hold, define, or modify a new state. On the  other hand, a *stateful* composable is a composable that owns a piece of state that can change over time.
 
 State hoisting is a pattern of moving state to its caller to make a component stateless.
+
+
+
+## Exercises - Indkøbsseddel
+
+
+
+Den her opgave er en Rite-of-passage for udviklere. Lidt ligesom hello world. Alle skal have prøvet at lave deres egen indkøbsseddel eller notepad. Funktionaliteterne er de samme:
+
+I skal lave en indkøbsseddel app med disse features:
+
+- Man skal kunne oprette nye elementer til indkøbssedlen
+- Hvis der ikke er nogle elementer skal der stå "No elements, please create a new element"
+- Elementerne skal stå i en liste
+- Når man er færdig med et element skal man kunne strege den ud
+
+
+
+Nice to have
+
+- Man skal kunne flytte rundt på elementerne, så fx et element der er i bunden kan skubbes op i toppen
+- Man skal kunne søge i sine elementer
+- Man skal kunne sortere sine elementer på en måde (måske alfabetisk eller oprettelses tidspunkt)
+
+
+
+Prøv først at få jeres interface på plads. Sketch gerne først og så få det ned på papir. Processen er rigtig fint beskrevet [her](https://developer.android.com/codelabs/basic-android-kotlin-compose-art-space?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-art-space#1). Altså hvordan man kommer fra wireframe/prototype til compose elementer
+
+
+
+![AI generated Image for inspiration](https://files.oaiusercontent.com/file-vJ8HUzLOxmSC576yCumXodi0?se=2023-12-14T15%3A33%3A50Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dbc21233f-8c9b-409e-93ab-c7e94200663d.webp&sig=BgSHIH1g9HgtZ4h/7vNLu10bq2CLULXgrvEBH8XqkuM%3D)
+

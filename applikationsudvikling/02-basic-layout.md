@@ -8,7 +8,7 @@
   - `@Preview`
 - `Modifier`
 - `Column`
-- Multiple activities
+- `Button`
 
 
 
@@ -42,72 +42,7 @@
 
 
 
-
-
-## Multiple activities
-
-
-
-### 1. Create `SecondActivity` Kotlin File
-
-First, you need to create a new Kotlin file for your second activity:
-
-1. In Android Studio, right-click on the `app/src/main/java/your/package/name/` directory in the Project panel.
-2. Choose `New` > `Kotlin File/Class`.
-3. Name the new class, e.g., `SecondActivity`, and select `File` from the kind options.
-
-
-
-Inside the new SecondActivity write
-
-```
-package YOUR_PACKAGE_HERE
-
-import android.os.Bundle
-import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
-import androidx.compose.material3.Text
-
-class SecondActivity : ComponentActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContent {
-            Text(text = "lol")
-        }
-    }
-}
-```
-
-`YOUR_PACKAGE_HERE` could fx be `com.example.basiclayoutexercisesolutions`
-
-
-
-### 2. Add the activity to the `manifests/AndroidManifest.xml` file
-
-After the main activity add the following:
-
-```xml
-<activity android:name=".SecondActivity" />
-```
-
-
-
-### 3. Navigate to the activity
-
-In your `MainActivity.kt`
-
-Add the following code:
-
-```kotlin
-Button(onClick = {
-    val intent = Intent(this, SecondActivity::class.java);
-    startActivity(intent);
-}) {
-    Text(text = "navigate to other Activity")
-}
-```
-
-This code adds a button that when clicked navigates to the new activity
+## `Button`
 
 
 
@@ -137,7 +72,7 @@ Let's create an app that shows confetti when clicking on a button
 
 Read about the Konfetti library [here](https://github.com/DanielMartinus/Konfetti)
 
-In the `build.gradle` file, add `implementation 'nl.dionsegijn:konfetti-xml:2.0.2'` to the `dependencies {}` part
+In the `build.gradle.kts` file, add `implementation("nl.dionsegijn:konfetti-compose:2.0.4")` to the `dependencies {}` part
 
 Now press `Sync Now` in the top to download and install the library
 
@@ -145,46 +80,28 @@ Now press `Sync Now` in the top to download and install the library
 
 
 
-#### Add a confetti view to our `activity_main.xml`
+#### Add a confetti view to our your activity
 
-Add this code to the `activity_main.xml` view. This will add a `KonfettiView` where konfetti will be drawn
+```kotlin
+class Konfetti : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            val party = Party(
+                speed = 0f,
+                maxSpeed = 30f,
+                damping = 0.9f,
+                spread = 360,
+                colors = listOf(0xfce18a, 0xff726d, 0xf4306d, 0xb48def),
+                emitter = Emitter(duration = 100, TimeUnit.MILLISECONDS).max(100),
+                position = Position.Relative(0.5, 0.3)
+            )
 
-```xml
-<nl.dionsegijn.konfetti.xml.KonfettiView
-    android:id="@+id/konfettiView"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintLeft_toLeftOf="parent"
-    app:layout_constraintRight_toRightOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
-```
-
-
-
-#### Create the boilerplate code
-
-In the `MainActivity.java` add this code:
-
-```java
-public class MainActivity extends AppCompatActivity {
-    private KonfettiView konfettiView = null;
-    private Shape.DrawableShape drawableShape = null;
-    private Party party = null;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        konfettiView = findViewById(R.id.konfettiView);
-
-        EmitterConfig emitterConfig = new Emitter(200, TimeUnit.MILLISECONDS).perSecond(50);
-        party = new PartyFactory(emitterConfig)
-                .spread(360)
-                .colors(Arrays.asList(0xfce18a, 0xff726d, 0xf4306d, 0xb48def))
-                .setSpeedBetween(0f, 30f)
-                .position(new Position.Relative(0.5, 0.3))
-                .build();
+            KonfettiView(
+                modifier = Modifier.fillMaxSize(),
+                parties = listOf(party)
+            )
+        }
     }
 }
 ```

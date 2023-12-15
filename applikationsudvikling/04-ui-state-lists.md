@@ -72,7 +72,7 @@ Add the following code:
 
 ```kotlin
 Button(onClick = {
-    val intent = Intent(this, SecondActivity::class.java);
+    val intent = Intent(this@MainActivity, SecondActivity::class.java);
     startActivity(intent);
 }) {
     Text(text = "navigate to other Activity")
@@ -83,11 +83,15 @@ This code adds a button that when clicked navigates to the new activity
 
 
 
-## Exerise
+## Case - Youtube Viewer clone
 
 You can continue last times case with the timer or create a new app: Youtube viewer clone
 
+
+
 ![Youtube screenshot](assets/CleanShot-2023-12-15-at-07.44.59.png)
+
+
 
 ![Screenshot of Youtube comments](assets/CleanShot-2023-12-15-at-07.47.25.png)
 
@@ -104,6 +108,4 @@ There are lots of features that could be created here:
 
 
 There are **tons** of things to work on but remember to focus! Create the bare minimum layout first and then start working on state
-
-
 

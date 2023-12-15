@@ -102,7 +102,5 @@ Nice to have
 
 Prøv først at få jeres interface på plads. Sketch gerne først og så få det ned på papir. Processen er rigtig fint beskrevet [her](https://developer.android.com/codelabs/basic-android-kotlin-compose-art-space?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-2-pathway-3%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-art-space#1). Altså hvordan man kommer fra wireframe/prototype til compose elementer
 
-
-
 ![AI generated Image for inspiration](https://files.oaiusercontent.com/file-vJ8HUzLOxmSC576yCumXodi0?se=2023-12-14T15%3A33%3A50Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dbc21233f-8c9b-409e-93ab-c7e94200663d.webp&sig=BgSHIH1g9HgtZ4h/7vNLu10bq2CLULXgrvEBH8XqkuM%3D)
 

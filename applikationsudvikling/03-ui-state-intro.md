@@ -4,6 +4,13 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 
 
+## Overview
+
+- Peer instruction
+- Me coding a small app
+
+
+
 ## Preparation
 
 - Gå igennem de her punkter i [den her guide](https://developer.android.com/courses/pathways/android-basics-compose-unit-2-pathway-3)

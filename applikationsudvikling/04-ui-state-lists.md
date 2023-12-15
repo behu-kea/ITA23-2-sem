@@ -6,12 +6,13 @@ This is a bit too overkill i think: [Add a scrollable list](https://developer.an
 
 ## Learning goals
 
+- Recap of state
 - Lists `LazyColumn` vs `Column`
 - Multiple activities
 
 
 
-## Data classes
+
 
 
 
@@ -79,4 +80,30 @@ Button(onClick = {
 ```
 
 This code adds a button that when clicked navigates to the new activity
+
+
+
+## Exerise
+
+You can continue last times case with the timer or create a new app: Youtube viewer clone
+
+![Youtube screenshot](assets/CleanShot-2023-12-15-at-07.44.59.png)
+
+![Screenshot of Youtube comments](assets/CleanShot-2023-12-15-at-07.47.25.png)
+
+
+
+There are lots of features that could be created here:
+
+- The like or dislike button
+- You can expand the description
+- You can subscribe to a Youtuber
+- There is a comment section where users can add comments and sort them
+- Each comment can be liked
+
+
+
+There are **tons** of things to work on but remember to focus! Create the bare minimum layout first and then start working on state
+
+
 

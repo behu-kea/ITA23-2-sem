@@ -4,7 +4,7 @@
 
 ## Learning goals
 
-- Personas
+- Personas https://medium.com/design-bridges/personas-e60c1c06ead1
 - Indentifying key insights
 - User stories
 - User journey mapping

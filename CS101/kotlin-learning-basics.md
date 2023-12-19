@@ -125,6 +125,13 @@ println(boxedB == anotherBoxedB) // Prints 'true'
  MutableList<Person> = mutableListOf()
 ```
 
+```kotlin
+val test = mutableMapOf<String, Int>();
+test.put("price1", 10);
+```
+
+
+
 
 
 ### Class constructors fully

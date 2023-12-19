@@ -69,6 +69,30 @@ State in an app is any value that can change over time.
 
 
 
+### `remember`
+
+`remember` keeps a value (any value) consistent across recompositions.
+
+
+
+If the data is primitive (`Int`, `Double`, `Boolean`) the use `mutableStateOf` like this:
+
+```kotlin
+var information2 by remember {
+   mutableStateOf(2)
+}
+```
+
+If it is complex (`List`, `Map`, `String`) then use the relevant `mutable` function. Fx if a `Map` use `mutableMapOf`. When the function is called it returns an instance of that type
+
+```kotlin
+var information by remember {
+    mutableStateOf( mutableMapOf<String, Int>("price1" to 6));
+}
+```
+
+
+
 ## State hoisting
 
 A *stateless* composable is a composable that doesn't have a  state, meaning it doesn't hold, define, or modify a new state. On the  other hand, a *stateful* composable is a composable that owns a piece of state that can change over time.

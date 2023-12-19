@@ -12,10 +12,6 @@ This is a bit too overkill i think: [Add a scrollable list](https://developer.an
 
 
 
-
-
-
-
 ## Multiple activities
 
 

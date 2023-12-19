@@ -2,6 +2,13 @@
 
 
 
+## Overview
+
+- Peer instruction
+- Component based UI
+
+
+
 ## Learning goals
 
 - `@Composable`

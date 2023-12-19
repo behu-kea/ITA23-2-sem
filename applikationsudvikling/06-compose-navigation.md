@@ -21,27 +21,74 @@ As you navigate between composables, the content of the `NavHost` is automatical
 
 
 ```kotlin
+class MainActivity : ComponentActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
 
-var information by remember {
-    mutableStateOf( mutableMapOf<String, Int>("price1" to 6));
+        setContent {
+            //val information: MutableMap<String, Int> = mutableMapOf("price1" to 4);
+
+            var information by remember {
+                mutableStateOf( mutableMapOf<String, Int>("price1" to 6));
+            }
+
+            information.put("price1", 10);
+
+            val test = mutableMapOf<String, Int>();
+            test.put("price1", 10);
+
+            val navController = rememberNavController()
+            Column {
+                Text(text = "asd")
+                NavHost(navController = navController, startDestination = "profile") {
+                    composable("profile") {
+                        Greeting("benjamin", onNavigate = {
+                            information["price2"] = 2;
+                            navController.navigate("friendslist")
+                        })
+                    }
+                    composable("friendslist") {
+                        Greeting2(id = 2, onNavigate = {
+                            information["price3"] = 5;
+                            navController.navigate("status")
+                        })
+                    }
+                    composable("status") {
+                        Status(information)
+
+                    }
+                }
+            }
+
+        }
+    }
 }
 
-val navController = rememberNavController()
+@Composable
+fun Greeting(name: String, onNavigate: ()-> Unit) {
+    Text(
+        text = "Hello $name!"
+    )
+    Button(onClick = onNavigate) {
+        Text("Go to Friends List")
+    }
+}
 
-NavHost(navController = navController, startDestination = "profile") {
-    composable("profile") {
-        Greeting("benjamin", onNavigate = {
-            information["price2"] = 2;
-            navController.navigate("friendslist")
-        })
+@Composable
+fun Greeting2( id: Int, onNavigate: () -> Unit) {
+    Text(
+        text = "We are at $id!!!"
+    )
+    Button(onClick = onNavigate) {
+        Text(text = "Send to status")
     }
-    composable("friendslist") {
-        Greeting2(id = 2, onNavigate = {
-            information["price3"] = 5;
-            navController.navigate("status")
-        })
-    }
-    composable("status") { Status(information) }
+}
+
+@Composable
+fun Status(status: MutableMap<String, Int>) {
+    Text(
+        text = "We are at ${status["price1"]}, ${status["price2"]}, , ${status["price3"]}!!!"
+    )
 }
 ```
 

@@ -33,6 +33,17 @@
 
 
 
+Here is fx a Composable that shows a Textfield
+
+```kotlin
+@Composable
+fun SimpleComposable() {
+    Text(text = "Simple Composable")
+}
+```
+
+
+
 ### `@Preview`
 
 
@@ -46,6 +57,8 @@
 
 
 ## `Column`
+
+
 
 
 

@@ -93,6 +93,12 @@ var information by remember {
 
 
 
+### Field value update
+
+Update the text inside the field using a lambda
+
+
+
 ## State hoisting
 
 A *stateless* composable is a composable that doesn't have a  state, meaning it doesn't hold, define, or modify a new state. On the  other hand, a *stateful* composable is a composable that owns a piece of state that can change over time.

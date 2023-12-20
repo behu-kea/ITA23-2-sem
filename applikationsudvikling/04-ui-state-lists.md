@@ -12,6 +12,44 @@ This is a bit too overkill i think: [Add a scrollable list](https://developer.an
 
 
 
+## `LazyColumn`
+
+We can just use a column, but no recycler behavior (only rendering items on screen)
+
+
+
+```kotlin
+LazyColumn (
+    modifier = Modifier
+        .height(height = 70.dp)
+){
+    items(10) { i ->
+        androidx.compose.material3.Icon(
+            imageVector = Icons.Default.Settings,
+            contentDescription = null
+        )
+    }
+}
+```
+
+
+
+Iterate a list
+
+```kotlin
+@Composable
+fun SendArgumentsHere(name: String, users: List<String>) {
+    Text(text = name)
+    LazyColumn() {
+        items(users) { name ->
+            Text(text = name)
+        }
+    }
+}
+```
+
+
+
 ## Multiple activities
 
 

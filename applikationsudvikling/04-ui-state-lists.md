@@ -117,6 +117,12 @@ This code adds a button that when clicked navigates to the new activity
 
 
 
+## Exercise
+
+Jeg skal lave en nemmere opgave her først
+
+
+
 ## Case - Youtube Viewer clone
 
 You can continue last times case with the timer or create a new app: Youtube viewer clone

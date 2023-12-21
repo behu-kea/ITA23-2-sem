@@ -109,6 +109,8 @@ State hoisting is a pattern of moving state to its caller to make a component st
 
 ## Exercises - Indkøbsseddel
 
+Måske overvej lidt mere stilladsering her
+
 
 
 Den her opgave er en Rite-of-passage for udviklere. Lidt ligesom hello world. Alle skal have prøvet at lave deres egen indkøbsseddel eller notepad. Funktionaliteterne er de samme:

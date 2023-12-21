@@ -125,6 +125,8 @@ Row {
 
 En komponent der laver en knap. En `Button` Composable skal kaldes med et `onClick` argument som tager en lambda funktion der bliver kaldt når knappen bliver klikket på. Fuldstændig ligesom Javascript faktisk!
 
+Læg mærke til hvordan trailing lambdas bliver brugt her!
+
 ```kotlin
 Button(onClick = {
 		println("Button clicked!")

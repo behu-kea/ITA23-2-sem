@@ -269,11 +269,7 @@ setContent {
 
 
 
-
-
 ## Activities & intents
-
-
 
 
 

@@ -52,17 +52,86 @@ fun SimpleComposable() {
 
 ## `modifier`
 
+Modify and change appearance of the composable
 
 
 
+```kotlin
+Text(
+    text = "Hello $name!",
+    color = Color.Blue,
+    fontSize = 30.sp,
+    modifier = Modifier
+        .background(
+            color = Color.Red,
+        )
+        .padding(16.dp)
+        .border(
+            width = 2.dp,
+            color = Color.Red,
+            shape = RoundedCornerShape(30.dp)
+        ),
 
-## `Column`
+)
+```
 
 
+
+### `dp` vs `sp`
+
+**DP (Density-Independent Pixels)**: Is a virtual pixel based on the pixel density of the screen. 
+
+**SP (Scale-Independent Pixels)**: The same as above but takes the users chosen text size into account
+
+In summary, use DP for all layout sizing, and use SP for text sizes. 
+
+
+
+## `Column` & `Row`
+
+
+
+`Column` er et layout hvor elementer bliver vist under hinanden. Ligesom Flexbox
+
+```kotlin
+Column {
+    Text(
+        text = "Hello $name!",
+    )
+    Text(
+        text = "Benjamin",
+    )
+}
+```
+
+
+
+`Row` bliver elementerne vist ved siden af hinanden
+
+```kotlin
+Row {
+    Text(
+        text = "Hello $name!",
+    )
+    Text(
+        text = "Benjamin",
+    )
+}
+```
 
 
 
 ## `Button`
+
+En komponent der laver en knap. En `Button` Composable skal kaldes med et `onClick` argument som tager en lambda funktion der bliver kaldt når knappen bliver klikket på. Fuldstændig ligesom Javascript faktisk!
+
+```kotlin
+Button(onClick = {
+		println("Button clicked!")
+}) {
+    Text(text = "Click this button")
+}
+```
 
 
 

@@ -32,12 +32,12 @@
   - Boolean
   - Integer, float, double
   - Array fixed number of values
-    - Collection like mutableListOf can change
+  - List
   - Map
     - mapOf
-- For loop
 - Nullability
 - Input
+- Functions
 
 
 
@@ -46,7 +46,7 @@
 - [Installer Android Studio](https://developer.android.com/studio)
 - [Kotlin in 100 Seconds](https://www.youtube.com/watch?v=xT8oP0wy-A0)
 - [Learn Kotlin in 12 Minutes](https://www.youtube.com/watch?v=iYrgWO2oibY)
-- Optional: [https://kotlinlang.org/docs/basic-syntax.html](https://kotlinlang.org/docs/basic-syntax.html)
+- [https://kotlinlang.org/docs/basic-syntax.html](https://kotlinlang.org/docs/basic-syntax.html) Optional
 
 
 
@@ -78,7 +78,7 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 
 
-### Opgave 3 - Level 2
+### Opgave 3 - Level 1
 
 - Convert a string to uppercase
 - Return the index of a character in a string
@@ -91,15 +91,23 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 
 
-### Opgave 4 - level 1
-
-Create an `Array`. Add some prices to the `Array`. Now find the average price of the `Array`
-
-
-
 ### Opgave 5 - level 1
 
 Create a `Map` that contains the numberplate of a car and that cars color
+
+
+
+### Opgave 4 - level 2
+
+Create a `List`. Add some prices to the `List`
+
+
+
+Now create a function that takes a `List` of integers and returns the second largest integer in that array
+
+
+
+Use the function to find the second largest integer of the `List` created above
 
 
 
@@ -111,39 +119,9 @@ Create a function that prompts the user to provide a number, computes the half o
 
 
 
-### Opgave 7.1 - level 2
-
-**Objective**: Develop a Kotlin function to safely find emojis in a possibly null string, demonstrating handling of nullability in Kotlin.
-
-**Description**: In this exercise, you will create a Kotlin function `findEmoji` that takes a string, which may be null, as input and returns the first emoji found in the string. If the string is null, contains no emojis, or if any other issue is encountered, the function should handle it gracefully without throwing an exception.
-
-Your function should demonstrate the use of Kotlin's null-safety features, such as safe calls (`?.`), the Elvis operator (`?:`), and safe casting.
-
-**Constraints**:
-
-- The function should be able to handle null input strings.
-- Emojis are considered as characters that are outside the standard ASCII range.
-
-**Usage**:
-
-```
-kotlin
-val text1: String? = "Hello 😄 World!"
-val text2: String? = "Just text, no emojis"
-val text3: String? = null
-
-println(findEmoji(text1)) // Output: "😄"
-println(findEmoji(text2)) // Output: "No emoji found"
-println(findEmoji(text3)) // Output: "Input is null"
-```
-
-This exercise provides an opportunity to practice handling nullability in Kotlin, which is a crucial aspect of the language's safety features.
-
-
-
 ### Opgave 8 - level 2
 
-Write a Java program that accepts two integers from the user and then prints 
+Write a Kotlin function that accepts two integers from the user and then prints 
 
 - the sum
 - the difference

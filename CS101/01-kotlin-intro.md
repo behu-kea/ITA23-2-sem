@@ -41,6 +41,10 @@
 
 
 
+## Måske noget peer instruction?
+
+
+
 ## Preparation
 
 - [Installer Android Studio](https://developer.android.com/studio)

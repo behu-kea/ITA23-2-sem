@@ -100,7 +100,7 @@ fun main() {
 
 ### Computer
 
-Create two java classes `Mobile` and `RaspberriPi` that implements this interface:
+Create two classes `Mobile` and `RaspberriPi` that implements this interface:
 
 ```java
 public interface Computer {

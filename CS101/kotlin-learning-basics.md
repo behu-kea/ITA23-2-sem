@@ -36,10 +36,6 @@ names.add("asdss");
 
 
 
-
-
-
-
 ## Classes
 
 `val` property is read only
@@ -268,7 +264,6 @@ fun main() {
     println(rectangle.test);
     rectangle.test = 10;
     println(rectangle.test)
-
 
 }
 

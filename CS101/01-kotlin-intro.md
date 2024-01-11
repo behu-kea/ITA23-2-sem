@@ -54,6 +54,32 @@
 
 
 
+## Topics
+
+
+
+### List
+
+To create a list, remember to think about if it should be mutable or non mutable (can be changed or cant be changed)
+
+```kotlin
+val prices: MutableList<Int> = mutableListOf(2,3,4,5);
+```
+
+The list works a lot like in js
+
+```kotlin
+val prices: MutableList<Int> = mutableListOf(2,3,4,5);
+println(prices[1])
+
+prices.add(67);
+println(prices)
+```
+
+
+
+
+
 ## Opgaver
 
 
@@ -62,7 +88,7 @@
 
 Do these steps one step at a time! Think about what type of data should be stored in the different variables
 
-1. Create a variable called `age` (no assignment!)
+1. Create a variable called `age` (no reassignment!)
 2. Create another variable called `height`
 3. Assign `age` to be your age
 4. Assign `height` to be your height in meter
@@ -82,10 +108,11 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 
 
-### Opgave 3 - Level 1
+### Opgave 3 - Level 1 - Lidt stenet opgave
 
 - Convert a string to uppercase
-- Return the index of a character in a string
+- Get the character on index 3
+- Print the index of a character in the string
 - Concatenate two different string
 - Check these strings are equal to each other. Uppercases should be ignored!
   - `hello`, `ollhe` should print `false`
@@ -125,13 +152,13 @@ Create a function that prompts the user to provide a number, computes the half o
 
 ### Opgave 8 - level 2
 
-Write a Kotlin function that accepts two integers from the user and then prints 
+Write a Kotlin function (and a lambda version) that accepts two integers from the user and then prints 
 
 - the sum
 - the difference
 - the product
 - the average
-- the distance  (the difference between integer)
+- the distance  (the difference between integer, can only be positive)
 - the maximum (the larger of the two  integers)
 - the minimum (smaller of the two integers)
 
@@ -152,110 +179,6 @@ Min integer: 5
 
 
 
-### Emoji Sequence Cryptographer - level 3
+## 🔐 The code breaker - Level 3
 
-**Objective**: Develop a Kotlin function to encode and decode messages using a complex emoji-based cipher.
-
-
-
-**Description**: This exercise involves creating two Kotlin functions: `encodeMessage` and `decodeMessage`. Both functions will utilize a sophisticated mapping system involving emoji pairs and single emojis. The `encodeMessage` function will translate a text message into a string of emojis, while `decodeMessage` will do the reverse, using the same mapping.
-
-Mapping:
-
-​    "😀😁" → `A`
-
-​    "😀😂" → `B`
-
-​    "😃😄" → `C`
-
-​    "😃😅" → `D`
-
-​    "😄😆" → `E`
-
-​    "😄😇" → `F`
-
-​    "😅😂" → `G`
-
-​    "😅😊" → `H`
-
-​    "😆😁" → `I`
-
-​    "😆😋" → `J`
-
-​    "😇😉" → `K`
-
-​    "😇😌" → `L`
-
-​    "😊😂" → `M`
-
-​    "😊😎" → `N`
-
-​    "😋😁" → `O`
-
-​    "😋😌" → `P`
-
-​    "😉😀" → `Q`
-
-​    "😉😍" → `R`
-
-​    "😌😃" → `S`
-
-​    "😌😎" → `T`
-
-​    "😎😀" → `U`
-
-​    "😎😇" → `V`
-
-​    "😍😄" → `W`
-
-​    "😍😅" → `X`
-
-​    "😂😀" → `Y`
-
-​    "😂😃" → `Z`
-
-
-
-**Mapping**:
-
-- Single letters (A-Z) are mapped to pairs of emojis.
-- Spaces and punctuation marks are mapped to single emojis.
-- Special combinations of emojis indicate capitalization or common words.
-
-
-
-**Example Mapping**:
-
-- Letters: Same as previously defined in the "Emoji Sequence Decoder" exercise.
-- Space: "🌟"
-- Period: "🔴"
-- Comma: "🔵"
-- Exclamation mark: "❗"
-- Question mark: "❓"
-- Capitalization Indicator: A pair of "👑" before a letter pair indicates that the letter is capitalized.
-- Common Words:
-  - "The": "🌍🌎"
-  - "And": "🌞🌜"
-
-
-
-**Constraints**:
-
-- The input text for encoding should be a standard string containing letters, spaces, and basic punctuation.
-- The decoding function should handle invalid or incomplete emoji sequences gracefully, returning an error message or placeholder.
-
-
-
-**Usage**:
-
-```
-kotlin
-val text = "Hello, World!"
-val encoded = encodeMessage(text)
-println(encoded)
-// Output: "👑😀😉🌍🌎🔵 👑😍😂🌍🌎🔴"
-
-val decoded = decodeMessage(encoded)
-println(decoded)
-// Output: "Hello, World!"
-```
+[https://behu.gitbook.io/java-first-semester/projects/the-code-breaker#the-code-breaker](https://behu.gitbook.io/java-first-semester/projects/the-code-breaker#the-code-breaker)

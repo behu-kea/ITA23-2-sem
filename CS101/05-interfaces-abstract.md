@@ -17,7 +17,8 @@ Optional
 
 ## Overview
 
-Abstract class needs to be called
+- Go through some examples and discuss if we should use inheritance, abstract, contract, just classes
+  - Gå igennem den her [https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf](https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf)
 
 
 
@@ -94,7 +95,125 @@ fun main() {
 
 
 
+## Topics
+
+
+
+### Interface
+
+An interface works a lot like a contract or a set of rules. In an interface we define attributes and functions a class should have to implement that specific interface. 
+
+Lets get concrete:
+
+This Interface defines what it is like to be a `Product`. That means that classes implementing this interface **has to have** 
+
+- An attribute called `name` which is a `String`
+- An attribute called `price` which is an `Int`
+- An attribute called `name` which is an `Int`
+- An function called `printProductDetails` 
+
+```kotlin
+interface Product {
+    val name: String;
+    val price: Int;
+  	val id: Int;
+    fun printProductDetails();
+}
+```
+
+Here is how an `interface` gets implemented by a class
+
+```kotlin
+class Television: Product {
+		override val name: String,
+    override val price: Int,
+    override val id: Int
+) : Product {
+    override fun printProductDetails() {
+				println("${this.name} is an amazing television");
+    }
+}
+```
+
+Let's initialise a television
+
+```kotlin
+val samsungTelevision: Television = Television("Samsung TV", 8000, 123456789);
+```
+
+We use the `override` keyword because we are overwriting a property from the interface we are implementing
+
+We can even add functionality inside of the interface:
+
+```kotlin
+interface Computer{
+    val name: String;
+    val price: Int;
+    val location: Map<String, Double>;
+
+    fun printLocation() {
+        println("${this.name} is an amazing television");
+    };
+}
+```
+
+Now we dont need to override the `printLocation` method because it has been defined
+
+A class can inherit from only one class but can implement mutiple interfaces
+
+
+
+### Abstract
+
+An abstract class is a class that cannot be instantiated. The classic example of an abstract class is an animal. An `Animal` is an abstract concept (it is not a elephant or mouse or dog which are specific animals) therefore it does not make sense to instantiate an `Animal`
+
+```kotlin
+abstract class Animal {
+    abstract val name: String;
+    abstract val size: Double;
+    abstract fun makeSound();
+}
+
+class Elephant(
+    override val name: String,
+    override val size: Double
+) : Animal() {
+    override fun makeSound() {
+        println("asd");
+    }
+}
+
+fun main() {
+  // This will not work!!! We cannot instantiate or create an object of a Abstract class!
+  val Dog: Animal = Animal("Perter the elephant", 1000.0); // Error
+  // But we can do this:
+  val Elephant: Elephant = Elephant("Perter the elephant", 1000.0);
+}
+```
+
+
+
 ## Exercises
+
+
+
+### Car and driver
+
+There is a car, which has attributes *model* and *price*, and the car has functionalities *start*, *stop* and *move*. Also, there is a driver, having attributes *name* and *age*, and the behaviour *drive*.
+
+Create the classes *Car* and *Driver*. The functionality of the methods does not matter. Just print something to the console
+
+
+
+### Employee
+
+Create a class called Employee that includes three pieces of information as instance variables
+
+- A first name
+- A last name
+- A monthly salary (double)
+
+Your class should have a constructor that initializes the three instance variables. If the monthly salary is not positive, set it to 0.0. Create two Employee objects and display each object’s yearly salary. Then give each Employee a 10% raise and display each Employee’s yearly salary again.
 
 
 
@@ -112,6 +231,14 @@ public interface Computer {
 ```
 
 Create two `Mobile` and two `RaspberriPi` objects
+
+
+
+### FastFood
+
+Create an interface called FastFood (with appropriate methods) and create a `Sandwich` class, a `Pizza` class and a class you decide that implements the FastFood interface.
+
+Add some different `Fastfood` objects to an array. Now iterate through that array and use some of the methods you have created above.
 
 
 

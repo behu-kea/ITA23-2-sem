@@ -58,7 +58,72 @@
 
 
 
-### List
+### Main function
+
+A kotlin file needs a main function
+
+```kotlin
+fun main() {
+		println("Hello World");
+}
+```
+
+
+
+### Variables
+
+`var` is a variable that can be changed (mutable)
+
+`val` is a variable that cannot be changed (nonmutable)
+
+
+
+```kotlin
+var price = 43;
+price = 33;
+
+val age = 36;
+age = 55; // Error here!
+```
+
+
+
+### Types
+
+For CS101 please declare your types for all variables and functions. If you do not declare your type the type will be interpreted (guessed) by the interpreter
+
+
+
+```kotlin
+var price: Int = 43;
+price = 33;
+
+val height: Double = 1.78;
+
+val isExpensive: Boolean = true;
+```
+
+
+
+For some type we can just write the value directly. Like fx a string `val name: String = "Benjamin"`. For other more complex types we need to call a function to get the type we need. 
+
+
+
+WRITE MORE HERE!!!
+
+
+
+### `List`
+
+A `List` is like an array in javascript. 
+
+An array in Kotlin cannot be changed! Therefore usually we use `List` in Kotlin. Only if we have a usecase where a list should not be changed should we use an array
+
+```kotlin
+val array: Array<String> = arrayOf("asd", "hej");
+```
+
+
 
 To create a list, remember to think about if it should be mutable or non mutable (can be changed or cant be changed)
 
@@ -77,6 +142,50 @@ println(prices)
 ```
 
 
+
+### `Map`
+
+
+
+```kotlin
+val cars:MutableMap<String, String> = mutableMapOf("asd" to "23");
+cars["hej"] = "asd";
+cars.get("hej")
+```
+
+
+
+### Function
+
+Remember the return types!
+
+```kotlin
+fun secondLargest(list: MutableList<Int>): Int {
+    list.sort();
+
+    return list.get(list.size - 2);
+}
+
+println(secondLargest(prices))
+```
+
+
+
+#### Lambda function
+
+```kotlin
+val max2 = {a:Int, b:Int ->
+     if(a > b) {
+         a // This is implicitly returned
+     } else {
+         b // This is implicitly returned
+     }
+}
+println(max2(33,4)) // 33
+
+val hundredLarger = {a:Int -> a + 100 }
+println(hundredLarger(10)) // 110
+```
 
 
 

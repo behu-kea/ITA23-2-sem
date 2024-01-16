@@ -4,6 +4,13 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 
 
+## Læringsmål
+
+- State
+- Handle input in textField
+
+
+
 ## Overview
 
 - Peer instruction
@@ -105,11 +112,21 @@ A *stateless* composable is a composable that doesn't have a  state, meaning it 
 
 State hoisting is a pattern of moving state to its caller to make a component stateless.
 
+how to write a type for a lambda function
+
+```
+onItemChecked:(Boolean) -> Unit
+```
+
 
 
 ## Exercises - Indkøbsseddel
 
 Måske overvej lidt mere stilladsering her
+
+
+
+Den her er for svær umiddelbart
 
 
 

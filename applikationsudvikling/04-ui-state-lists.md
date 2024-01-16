@@ -50,6 +50,12 @@ fun SendArgumentsHere(name: String, users: List<String>) {
 
 
 
+### MutableStateListOf
+
+
+
+
+
 ## Multiple activities
 
 

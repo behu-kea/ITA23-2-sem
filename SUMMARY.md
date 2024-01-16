@@ -2,9 +2,9 @@
 
 * [Front Page](README.md)
 * [CS101](cs101/README.md)
-  * [Kotlin intro](CS101/01-kotlin-intro.md)
-  * [Classes and objects](CS101/03-classes-and-objects.md)
-  * [Interfaces & abstract](CS101/05-interfaces-abstract.md)
+  * [01 - Kotlin intro](CS101/01-kotlin-intro.md)
+  * [03 - Classes and objects](CS101/03-classes-and-objects.md)
+  * [04 - Interfaces & abstract](CS101/05-interfaces-abstract.md)
 * [Applikationsudvikling](applikationsudvikling/README.md)
   * [02 - Basic layout](applikationsudvikling/02-basic-layout.md)
   * [03 - UI state 1](applikationsudvikling/03-ui-state-intro.md)

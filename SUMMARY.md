@@ -6,7 +6,10 @@
   * [Classes and objects](CS101/03-classes-and-objects.md)
   * [Interfaces & abstract](CS101/05-interfaces-abstract.md)
 * [Applikationsudvikling](applikationsudvikling/README.md)
-  * 
+  * [Basic layout](applikationsudvikling/02-basic-layout.md)
+  * [UI state 1](applikationsudvikling/03-ui-state-intro.md)
+  * [UI state 2](applikationsudvikling/04-ui-state-lists.md)
+  * [Compose navigation](applikationsudvikling/06-compose-navigation.md)
 * [Brugerinddragelse](brugerinddragelse/README.md)
 
   * [Project 1](brugerinddragelse/project-1.md)

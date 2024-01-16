@@ -19,6 +19,7 @@
 
 ## Overview
 
+- Peer instruction
 - Model Smartphone
   - Getter setter
     - Var, val
@@ -353,10 +354,28 @@ Instantiate at least one object per class
 
 ### 📝 Exercise 4 - level 3
 
-Create a class `Dog` that has the attributes mood, energy, and hunger, with a range of values between 10 (maximum) and 0 (minimum)
+Create a class `Pokemon` that has the attributes mood, energy, and hunger, with a range of values between 10 (maximum) and 0 (minimum)
 
-Create methods that can change the attributes. If a method attempts to raise an attribute above 10 or lower it below 0, the attribute should remain unchanged, and a message should be printed indicating that the dog is at maximum/minimum [mood/energy/hunger].
+Create methods that can change the attributes. If a method attempts to raise an attribute above 10 or lower it below 0, the attribute should remain unchanged, and a message should be printed indicating that the pokemon is at maximum/minimum [mood/energy/hunger].
 
-Now create a class `DogFarm` that includes a method to generate `Dog` objects. 
+Now create a class `Pokeball` that includes a method to catch `pokemon` objects
 
-In the main method, create an instance of `DogFarm` and generate several `Dog` objects.
+In the main method, create an instance of `Pokeball` and generate several `Pokemon` objects.
+
+
+
+### 📝 Exercise 4 - level 3
+
+Create classes for a todolist app. 
+
+- `Todoitem`
+  - Has a name, can be checked out, and can be favorited
+- `Todolist` is a list that holds `Todoitems`
+  - `Todoitems` can be removed and added from the list
+  - The `Todolist` should also be able to display the `Todoitems`
+
+Create a menu where a user can
+
+- Create a `Todoitem`
+- Check out a `Todoitem`
+- Remove a `Todoitem`

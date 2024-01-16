@@ -35,13 +35,25 @@
   - List
   - Map
     - mapOf
-- Nullability
 - Input
 - Functions
 
 
 
-## Måske noget peer instruction?
+## Benjamin koder
+
+Create a function named `transformArray` that takes an array of integers as input. The function should iterate through the array and apply the following transformations:
+
+- If an element is even, divide it by 2.
+- If an element is odd, multiply it by 3 and add 1.
+
+```kotlin
+original_array = [1, 2, 3, 4, 5]
+transformed_array = transformArray(original_array)
+print(transformed_array) // [4, 1, 10, 2, 16]
+```
+
+
 
 
 
@@ -145,8 +157,6 @@ println(prices)
 
 ### `Map`
 
-
-
 ```kotlin
 val cars:MutableMap<String, String> = mutableMapOf("asd" to "23");
 cars["hej"] = "asd";
@@ -217,7 +227,7 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 
 
-### Opgave 3 - Level 1 - Lidt stenet opgave
+### Opgave 3 - Level 1
 
 - Convert a string to uppercase
 - Get the character on index 3
@@ -231,13 +241,13 @@ Create a function that computes the area and the perimeter of the rectangle and 
 
 
 
-### Opgave 5 - level 1
+### Opgave 4 - level 1
 
 Create a `Map` that contains the numberplate of a car and that cars color
 
 
 
-### Opgave 4 - level 2
+### Opgave 5 - level 2
 
 Create a `List`. Add some prices to the `List`
 
@@ -251,7 +261,7 @@ Use the function to find the second largest integer of the `List` created above
 
 
 
-### Opgave 7 - level 2
+### Opgave 6 - level 2
 
 Create a function that prompts the user to provide a number, computes the half of the number and prints the result with a friendly message
 
@@ -259,7 +269,7 @@ Create a function that prompts the user to provide a number, computes the half o
 
 
 
-### Opgave 8 - level 2
+### Opgave 7 - level 2
 
 Write a Kotlin function (and a lambda version) that accepts two integers from the user and then prints 
 

@@ -54,7 +54,20 @@ fun SendArgumentsHere(name: String, users: List<String>) {
 
 
 
+### Using the key in the list
 
+
+
+/**
+             * Use key param to define unique keys representing the items in a mutable list,
+                          * instead of using the default key (list position). This prevents unnecessary
+                          * recompositions.
+                                       */
+                        ​            key = { task -> task.id }
+
+
+
+<!--
 
 ## Multiple activities
 
@@ -120,6 +133,8 @@ Button(onClick = {
 ```
 
 This code adds a button that when clicked navigates to the new activity
+
+-->
 
 
 

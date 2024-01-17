@@ -13,10 +13,9 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 ## Overview
 
-- Peer instruction
-- Me coding a small app
+- Me coding a Currency converter
 
-
+![Currency converter](assets/shapes at 24-01-17 12.20.37.png)
 
 ## Preparation
 
@@ -252,6 +251,12 @@ Implementer `AC` først. De andre knapper må i gerne prøve, men det kan være 
 ### 6 - Indtast af telefonnummer
 
 Hvordan får brugeren indtastet telefonnummeret? Igen brainstorm og vælg den nemmeste ide. 
+
+
+
+### 7 - Færdiggør app
+
+Kan du få lommeregneren til at ligne en rigtig lommeregner?
 
 
 

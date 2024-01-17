@@ -197,18 +197,6 @@ fun main() {
 
 
 
-### Internet profile - Level 1
-
-https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
-
-
-
-## Inheritance
-
-https://www.learncs.online/practice/kotlin/simple-person-inheritance/challen@illinois.edu
-
-
-
 ### Computer
 
 Create two classes `Mobile` and `RaspberriPi` that implements this interface:
@@ -223,6 +211,25 @@ public interface Computer {
 ```
 
 Create two `Mobile` and two `RaspberriPi` objects
+
+
+
+### 📝 Exercise 5 - teachers and students
+
+Duration: 20 min
+
+In the following exercise one group will randomly be selected to be teachers and the other group will be students
+
+In groups of two people prepare a small 5 minute lecture. The lecture should explain the topic of difference between abstract and interface any way you like. That might be with a small slideshow or it might be with code, thats up to you. 
+
+- As teachers present the 5 minute lecture
+- As students ask good interesting questions
+
+
+
+### Internet profile - Level 1
+
+https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
 
 
 
@@ -287,12 +294,6 @@ This exercise will help students understand the concept of interfaces in Kotlin 
 
 
 
-## Last 8 - Level 2
-
-https://www.learncs.online/practice/kotlin/last-8/challen@illinois.edu?returnTo=encapsulation
-
-
-
 ### Streaming service - Level 3
 
 We need to create the functionality for a Music Library.
@@ -323,3 +324,12 @@ Get the most popular 5 songs in the music library
 
 
 
+### Last 8 - Level 2
+
+https://www.learncs.online/practice/kotlin/last-8/challen@illinois.edu?returnTo=encapsulation
+
+
+
+### Inheritance
+
+https://www.learncs.online/practice/kotlin/simple-person-inheritance/challen@illinois.edu

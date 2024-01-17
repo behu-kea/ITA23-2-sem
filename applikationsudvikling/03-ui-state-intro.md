@@ -26,12 +26,6 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 
 
-## @Composable
-
-
-
-
-
 ## Composition
 
 The *Composition* is a description of the UI built by Compose when it executes composables. Compose apps call composable functions to transform data into UI.
@@ -124,9 +118,144 @@ onItemChecked:(Boolean) -> Unit
 
 Vi skal lave en magisk lommeregner der kan hjælpe med et trylle trick der virkelig kan imponere
 
+![Mobile calculator](assets/CleanShot-2024-01-17-at-11.09.41.png)
 
 
 
+Lommeregneren skal virke som en normal lommeregner, MEN hvis den er i secret mode skal den give et resultat i bestemmer når man trykker på `=`. Tænk over hvordan man kan aktivere secret mode i en lommeregner. Hvad skal brugeren gøre?
+
+Tænk også over hvordan brugeren får indtastet telefonnummer der skal stå i secret mode. Måske på opstart, måske en hemmelig menu der bliver aktiveret. Det er op til jer
+
+I må meget gerne selv hoppe ud i at løse opgaven. 
+
+For dem af jer der er lidt i tvivl om hvor i skal starte har jeg stilladseret opgaven lidt
+
+
+
+### 1 - UI
+
+Først få lavet UI'en til din app. Ikke tænk i funktionalitet endnu!
+
+Brug et `Textfield` i toppen til at vise det man taster
+
+Brug `Button` til alle de andre knapper
+
+
+
+### 2 - Oprettelse af state variabler
+
+Vi skal til at tænke over hvilket state vi har i appen. Som jeg ser det er der minimum to state variabler
+
+- Teksten med det som skal vises i toppen af lommeregneren
+- Om appen er i secret mode eller ikke. Sæt den til default at være `false`
+
+Lav state variabler med de rigtige typer der kan tracke ændringer i state
+
+
+
+### 3 - Ændring af state
+
+Nu skal vi til at ændre state. Når man trykker på en af knapperne som tallene og plus, minus, gange og divider, skal teksten opdateres så den passer med de knapper brugeren har tastet.
+
+Hvis fx brugeren trykker på `234`, `+` og `32`, skal der i textfeltet stå `234+32`
+
+Lad os vente med `AC`, `+/-`, `%` og `.`
+
+
+
+### 4 - Vis resultat
+
+Når man klikker på `=` skal enten resultatet vises (hvis secret mode er `false`) ellers skal det tal brugeren har tastet ind vises (hvis secret mode er `true`)
+
+Jeg ahr fået ChatGPT til at at lave en funktion der tager en streng af operationer og udfører operationerne. Den hedder `getResult`
+
+```kotlin
+getResult("2+34-10"); // 26
+```
+
+
+
+```kotlin
+
+fun getResult(expression: String): Int {
+    val tokens = tokenizeExpression(expression)
+    return evaluateTokens(tokens)
+}
+
+fun tokenizeExpression(expression: String): List<String> {
+    val regex = Regex("([*+/-])|([0-9]+)")
+    return regex.findAll(expression).map { it.value }.toList()
+}
+
+fun evaluateTokens(tokens: List<String>): Int {
+    val numberStack = Stack<Int>()
+    val operatorStack = Stack<Char>()
+
+    for (token in tokens) {
+        when {
+            token.isNumber() -> numberStack.push(token.toInt())
+            token.isOperator() -> {
+                while (!operatorStack.isEmpty() && hasHigherPrecedence(operatorStack.peek(), token[0])) {
+                    val result = applyOperation(numberStack.pop(), numberStack.pop(), operatorStack.pop())
+                    numberStack.push(result)
+                }
+                operatorStack.push(token[0])
+            }
+        }
+    }
+
+    while (!operatorStack.isEmpty()) {
+        val result = applyOperation(numberStack.pop(), numberStack.pop(), operatorStack.pop())
+        numberStack.push(result)
+    }
+
+    return numberStack.pop()
+}
+
+fun String.isNumber() = this.matches(Regex("\\d+"))
+fun String.isOperator() = this.matches(Regex("[*+/-]"))
+fun hasHigherPrecedence(op1: Char, op2: Char): Boolean {
+    if (op1 == '*' || op1 == '/') return true
+    if (op2 == '+' || op2 == '-') return true
+    return false
+}
+
+fun applyOperation(a: Int, b: Int, op: Char): Int {
+    return when (op) {
+        '+' -> a + b
+        '-' -> b - a
+        '*' -> a * b
+        '/' -> b / a
+        else -> throw IllegalArgumentException("Unknown operator: $op")
+    }
+}
+```
+
+
+
+### 5 - Secret mode
+
+Tillykke du har nu lavet en kommeregner app 🎉
+
+Tænk over hvordan en bruger skal kunne aktivere secret mode. Prøv at brainstorme et par ideer
+
+Prøv at implementere den ide der virker nemmest. Tjek om secret mode kan aktiveres og deaktiveres og at det virker. Det telefonnummer der skal vises kan i bare hardcode på det her trin
+
+
+
+### 5 - Resten af knapperne
+
+Implementer `AC` først. De andre knapper må i gerne prøve, men det kan være de giver nogle flere udfordringer, det er op til jer
+
+
+
+### 6 - Indtast af telefonnummer
+
+Hvordan får brugeren indtastet telefonnummeret? Igen brainstorm og vælg den nemmeste ide. 
+
+
+
+<!--
 
 ## Exercises - Indkøbsseddel
 
@@ -161,3 +290,4 @@ Prøv først at få jeres interface på plads. Sketch gerne først og så få de
 
 ![AI generated Image for inspiration](https://files.oaiusercontent.com/file-vJ8HUzLOxmSC576yCumXodi0?se=2023-12-14T15%3A33%3A50Z&sp=r&sv=2021-08-06&sr=b&rscc=max-age%3D31536000%2C%20immutable&rscd=attachment%3B%20filename%3Dbc21233f-8c9b-409e-93ab-c7e94200663d.webp&sig=BgSHIH1g9HgtZ4h/7vNLu10bq2CLULXgrvEBH8XqkuM%3D)
 
+-->

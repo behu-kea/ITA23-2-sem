@@ -26,6 +26,8 @@
   - Compile vs runtime
   - Syntax
 - Debugging
+  - Log.d()
+
 - Typer
   - Strenge
     - String literal
@@ -37,6 +39,7 @@
     - mapOf
 - Input
 - Functions
+- Nullability
 
 
 
@@ -53,7 +56,7 @@ transformed_array = transformArray(original_array)
 print(transformed_array) // [4, 1, 10, 2, 16]
 ```
 
-
+Cover nullability og debugging log.d
 
 
 

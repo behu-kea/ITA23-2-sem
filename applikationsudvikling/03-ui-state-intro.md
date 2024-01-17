@@ -120,6 +120,14 @@ onItemChecked:(Boolean) -> Unit
 
 
 
+## Magisk lommeregner
+
+Vi skal lave en magisk lommeregner der kan hjælpe med et trylle trick der virkelig kan imponere
+
+
+
+
+
 ## Exercises - Indkøbsseddel
 
 Måske overvej lidt mere stilladsering her

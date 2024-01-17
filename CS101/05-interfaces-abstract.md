@@ -197,23 +197,15 @@ fun main() {
 
 
 
-### Car and driver
+### Internet profile - Level 1
 
-There is a car, which has attributes *model* and *price*, and the car has functionalities *start*, *stop* and *move*. Also, there is a driver, having attributes *name* and *age*, and the behaviour *drive*.
-
-Create the classes *Car* and *Driver*. The functionality of the methods does not matter. Just print something to the console
+https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
 
 
 
-### Employee
+## Inheritance
 
-Create a class called Employee that includes three pieces of information as instance variables
-
-- A first name
-- A last name
-- A monthly salary (double)
-
-Your class should have a constructor that initializes the three instance variables. If the monthly salary is not positive, set it to 0.0. Create two Employee objects and display each object’s yearly salary. Then give each Employee a 10% raise and display each Employee’s yearly salary again.
+https://www.learncs.online/practice/kotlin/simple-person-inheritance/challen@illinois.edu
 
 
 
@@ -234,14 +226,6 @@ Create two `Mobile` and two `RaspberriPi` objects
 
 
 
-### FastFood
-
-Create an interface called FastFood (with appropriate methods) and create a `Sandwich` class, a `Pizza` class and a class you decide that implements the FastFood interface.
-
-Add some different `Fastfood` objects to an array. Now iterate through that array and use some of the methods you have created above.
-
-
-
 ### Chat-GPT opgave
 
 Hop ind på [https://chat.openai.com/chat](https://chat.openai.com/chat) og lav en konto. Det er ikke obligatorisk! Hvis i ikke vil kan i bare bruge opgaven der er lidt længere nede
@@ -252,44 +236,60 @@ Brug den her prompt til at lave en interface opgave der er tailored til et emne 
 
 #### Prompt
 
+```
 Act as an experienced lecturer with many years of experience in creating fun and easy to understand exercises for students
 
-Create a fun, easy to understand and interesting exercise for students. The exercise should learn the students how to use a kotlin interface. 
+Create a fun, easy to understand, short and interesting exercise for students. The exercise should learn the students how to use a kotlin interface. 
 
 The exercise should fit the students interests. Here are the student interests: COMMA_SEPERATED_INTERESTS
-
-
-
-#### Opgave eksempel
-
-Problem Statement: You are a software engineer for the Springfield Nuclear Power Plant, and you have been tasked with creating a system to keep track of the employees at the plant. The plant's manager has already created a Java interface called "Employee" which represents an employee at the plant.
-
-Your task is to implement the "Employee" interface and create classes for each type of employee at the plant. The manager wants the following information to be stored for each employee:
-
-- Name of the employee
-- Job title of the employee
-- Salary of the employee (in dollars)
-
-Use the "Employee" interface to create classes for the following employees:
-
-1. Homer Simpson (Safety Inspector)
-2. Waylon Smithers (Executive Assistant)
-3. Carl Carlson (Nuclear Technician)
-4. Lenny Leonard (Nuclear Technician)
-
-Then, write a program that creates an array of "Employee" objects, one for each of the employees listed above. The program should then print out the name, job title, and salary of each employee in the array.
-
-Here is the code for the "Employee" interface:
-
-```java
-public interface Employee {
-  getName(): String;
-  getJobTitle(): String;
-  getSalary(): Int;
-}
 ```
 
-Good luck, and let's hope the employees at the Springfield Nuclear Power Plant don't cause any meltdowns!
+
+
+### Eksempel på opgave om Hip-hop: Hip-Hop Playlist Interface in Kotlin
+
+#### Objective:
+
+Implement a Kotlin interface to manage a hip-hop music playlist.
+
+#### Background:
+
+Interfaces in Kotlin are used to define a contract that a class needs to conform to, without providing the actual implementation of the methods. It's a way to achieve abstraction and is essential in designing robust and scalable software systems.
+
+#### Task:
+
+Create a Kotlin interface named `HipHopPlaylist` that includes the following methods:
+
+1. `addSong(songName: String, artist: String)`: Adds a new song to the playlist.
+2. `removeSong(songName: String)`: Removes a song from the playlist.
+3. `getCurrentSongs()`: Returns a list of current songs in the playlist.
+
+#### Implementation:
+
+1. Define the `HipHopPlaylist` interface with the methods mentioned above.
+2. Create a class `MyPlaylist` that implements `HipHopPlaylist`. Use a mutable list to store the songs.
+3. Each song can be a Pair of `songName` and `artist`.
+4. Implement all the methods in `MyPlaylist` class.
+5. In the main function, create an instance of `MyPlaylist` and demonstrate adding, removing, and listing songs.
+
+#### Sample Output:
+
+- Adding songs like "Lose Yourself" by Eminem, "Juicy" by Notorious B.I.G.
+- Display the current playlist.
+- Remove a song and show the updated playlist.
+
+#### Challenge:
+
+- Enhance the `HipHopPlaylist` interface with a method `findSong(artist: String)` to find all songs by a specific artist.
+- Implement this method in the `MyPlaylist` class.
+
+This exercise will help students understand the concept of interfaces in Kotlin and how they can be used to design a system, while also engaging their interest in hip-hop music.
+
+
+
+## Last 8 - Level 2
+
+https://www.learncs.online/practice/kotlin/last-8/challen@illinois.edu?returnTo=encapsulation
 
 
 

@@ -69,39 +69,87 @@ State in an app is any value that can change over time.
 
 
 
-### `remember` and `mutableStateOf`
+### `remember`
 
 `remember` keeps a value (any value) consistent across recompositions.
 
 
 
-If the data is primitive (`Int`, `Double`, `Boolean`) the use `mutableStateOf` like this:
+If the data is primitive (`Int`, `Double`, `Boolean`) then use `mutableStateOf` like this:
 
 ```kotlin
-var information2 by remember {
+var price by remember {
    mutableStateOf(2)
 }
 ```
 
-If it is complex (`List`, `Map`, `String`) then use the relevant `mutable` function. Fx if a `Map` use `mutableMapOf`. When the function is called it returns an instance of that type
+
+
+If the data type is complex (`List`, `Map`, `String`) then use the relevant `mutableState` function. Fx if a `Map` use `mutableStateMapOf`. When the function is called it returns an instance of that type
 
 ```kotlin
 var information by remember {
-    mutableStateOf( mutableMapOf<String, Int>("price1" to 6));
+    mutableStateOf( mutableStateMapOf<String, Int>("price1" to 6));
 }
 ```
 
 
 
-### Field value update
+### `mutableStateOf`
 
-Update the text inside the field using a lambda
+Calling `mutableStateOf` returns an observable that the Compose UI framework can keep track of. 
+
+An observable is a pattern where changes to an object's property are observed and can trigger certain actions. In the case of Compose UI, it observes some change and then recomposes those relevant composable functions (thereby rendering the change)
+
+That means that without the `mutableStateOf` when the `price` would be updated, nothing in the UI would happen because Compose can not track the changes
+
+```kotlin
+var price by remember {
+   mutableStateOf(2)
+}
+```
+
+In Jetpack Compose, `mutableStateOf` is designed to trigger recompositions when the state object itself changes (i.e., when a new  object is assigned to it). However, mutating the contents of an object  (like adding an item to a `MutableList`) does not count as a state change in this context.
+
+When we change a list, fx by adding an element to it, the object is not reassigned, which means that no action will be triggered. Therefore we use the `mutableStateListOf`
+
+So this would not trigger recomposition on `todoList`
+
+```kotlin
+var todoList: MutableList<Item> by remember {
+    mutableStateOf(mutableListOf())
+}
+```
+
+But this would
+
+```kotlin
+var todoList: MutableList<Item> by remember {
+    mutableStateOf(mutableStateListOf())
+}
+```
+
+
+
+### `Textfield` update value
+
+When we have a `Textfield` we need to keep track of the text ourselves:
+
+```kotlin
+var textFieldText by remember {
+    mutableStateOf("")
+}
+
+TextField(value = textFieldText, onValueChange = { textValue ->
+    textFieldText = textValue;
+})
+```
 
 
 
 ## State hoisting
 
-A *stateless* composable is a composable that doesn't have a  state, meaning it doesn't hold, define, or modify a new state. On the  other hand, a *stateful* composable is a composable that owns a piece of state that can change over time.
+A *stateless* composable is a composable that doesn't have a state, meaning it doesn't hold, define, or modify a new state. On the other hand, a *stateful* composable is a composable that owns a piece of state that can change over time.
 
 State hoisting is a pattern of moving state to its caller to make a component stateless.
 
@@ -110,6 +158,12 @@ how to write a type for a lambda function
 ```
 onItemChecked:(Boolean) -> Unit
 ```
+
+
+
+### Stateful versus stateless
+
+A composable that uses `remember` to store an object creates internal state, making the composable *stateful*. 
 
 
 

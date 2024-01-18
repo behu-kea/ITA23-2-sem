@@ -52,7 +52,9 @@ fun SendArgumentsHere(name: String, users: List<String>) {
 
 ### MutableStateListOf
 
+In Jetpack Compose, `mutableStateOf` is designed to trigger  recompositions when the state object itself changes (i.e., when a new object is assigned to it). However, mutating the contents of an object  (like adding an item to a `MutableList`) does not count as a state change in this context.
 
+To make a list that works with Compose's reactive system, use `mutableStateListOf` instead. This function is observable and will trigger recompositions when items are added, removed, or updated
 
 
 
@@ -144,6 +146,10 @@ This code adds a button that when clicked navigates to the new activity
 
 I skal lave en indkøbsseddel app hvor man kan skrive ind hvad man skal handle
 
+Det her er bare et eksempel. Lav gerne appen som i selv vil. Lavet via Dalle 3
+
+![Indkøbsseddel app mockup](assets/27.png)
+
 
 
 Ligesom sidste uge, kan i enten kaste jer ud i det eller bruge den stilladserede guide. Her er kravene til opgaven
@@ -212,38 +218,4 @@ Nu er du så langt at du kan prøve at kaste dig ud i de resterende features ude
 
 
 
-## Exercise
 
-Jeg skal lave en nemmere opgave her først
-
-
-
-<!--
-
-## Case - Youtube Viewer clone
-
-You can continue last times case with the timer or create a new app: Youtube viewer clone
-
-
-
-![Youtube screenshot](assets/CleanShot-2023-12-15-at-07.44.59.png)
-
-
-
-![Screenshot of Youtube comments](assets/CleanShot-2023-12-15-at-07.47.25.png)
-
-
-
-There are lots of features that could be created here:
-
-- The like or dislike button
-- You can expand the description
-- You can subscribe to a Youtuber
-- There is a comment section where users can add comments and sort them
-- Each comment can be liked
-
-
-
-There are **tons** of things to work on but remember to focus! Create the bare minimum layout first and then start working on state
-
--->

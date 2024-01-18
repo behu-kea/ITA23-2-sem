@@ -1,6 +1,10 @@
-# Lists & Multiple activities
+# UI - Lists
 
-This is a bit too overkill i think: [Add a scrollable list](https://developer.android.com/codelabs/basic-android-kotlin-compose-training-add-scrollable-list?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-training-add-scrollable-list#1)
+
+
+## Preparation
+
+- [Add a scrollable list](https://developer.android.com/codelabs/basic-android-kotlin-compose-training-add-scrollable-list?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-training-add-scrollable-list#1)
 
 
 
@@ -8,7 +12,7 @@ This is a bit too overkill i think: [Add a scrollable list](https://developer.an
 
 - Recap of state
 - Lists `LazyColumn` vs `Column`
-- Multiple activities
+- `MutableStateListOf`
 
 
 
@@ -38,8 +42,7 @@ Iterate a list
 
 ```kotlin
 @Composable
-fun SendArgumentsHere(name: String, users: List<String>) {
-    Text(text = name)
+fun renderUsers(users: List<String>) {
     LazyColumn() {
         items(users) { name ->
             Text(text = name)
@@ -215,7 +218,6 @@ Det skal nu være muligt for en bruger at indtaste antal på en vare. Hvis du in
 ### 8 - Resten af features
 
 Nu er du så langt at du kan prøve at kaste dig ud i de resterende features uden hjælp herfra
-
 
 
 

@@ -54,6 +54,8 @@ fun SendArgumentsHere(name: String, users: List<String>) {
 
 
 
+
+
 ### Using the key in the list
 
 
@@ -138,11 +140,85 @@ This code adds a button that when clicked navigates to the new activity
 
 
 
+## Indkøbsseddel
+
+I skal lave en indkøbsseddel app hvor man kan skrive ind hvad man skal handle
+
+
+
+Ligesom sidste uge, kan i enten kaste jer ud i det eller bruge den stilladserede guide. Her er kravene til opgaven
+
+- Man skal kunne tilføje varer til sin indkøbsseddel
+- Kan skal kunne slette dem igen
+- Der skal være noget tekst der viser hvor mange elementer man har i indkøbsseddlen
+- Man skal kunne tilføje antal for en vare (fx 5 mælk) - level 2
+- Man skal kunne strege en vare ud (ikke slette den) - level 3
+- Man skal kunne rykke rundt på sin liste - level 3
+- Når en vare er krydset ud skal den ryge ned i bunden af listen - level 3
+
+
+
+### 1 - UI
+
+Først lave en sketch til jeres UI. Bagefter implementer UI'et i appen
+
+
+
+### 2 - State
+
+Til at begynde med har vi kun en form for state vi holder øje med nemlig listen af varer. Derfor lav en liste der indeholder varer som Compose UI kan lytte på ændringer på
+
+Tilføj et par varer til listen
+
+
+
+### 3 - Rendering af varerne
+
+Gør sådan at du kan se listen du lavede ovenover bliver renderet, så varerne kan ses på UI'et. Tænk her i `LazyColumn`. 
+
+Du burde nu kunne se de varer du tilføjede i `2 - State` i UI'et
+
+
+
+### 4 - Status tekst
+
+Lav en status tekst oppe i toppen der viser hvor mange elementer der er i listen
+
+
+
+### 5 - Tilføjelse af nye varer
+
+Lav et element der kan tage imod bruger input og en knap. Når der bliver klikket på knappen skal det der står i input feltet tilføjes til listen du lavede i `2 - State`. 
+
+Du burde nu have en virkende indkøbsseddel app 🎉 Det kalder vi en MVP - Minimal Viable Product. Det mindte antal features vi kan lave for at appen stadig virker
+
+
+
+### 6 - Sletning af varer
+
+Gør sådan at for hver vare, renderer du også en slet knap. Når det blvier klikket på slet knappen skal den vare slettes fra listen
+
+
+
+### 7 - Vare antal
+
+Det skal nu være muligt for en bruger at indtaste antal på en vare. Hvis du indtil nu har gemt en vare som en streng, så det ved at være på tide at tænke i klasser i stedet for
+
+
+
+### 8 - Resten af features
+
+Nu er du så langt at du kan prøve at kaste dig ud i de resterende features uden hjælp herfra
+
+
+
 ## Exercise
 
 Jeg skal lave en nemmere opgave her først
 
 
+
+<!--
 
 ## Case - Youtube Viewer clone
 
@@ -170,3 +246,4 @@ There are lots of features that could be created here:
 
 There are **tons** of things to work on but remember to focus! Create the bare minimum layout first and then start working on state
 
+-->

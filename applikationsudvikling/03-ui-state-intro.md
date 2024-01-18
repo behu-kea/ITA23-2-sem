@@ -69,7 +69,7 @@ State in an app is any value that can change over time.
 
 
 
-### `remember`
+### `remember` and `mutableStateOf`
 
 `remember` keeps a value (any value) consistent across recompositions.
 
@@ -272,7 +272,7 @@ Den her er for svær umiddelbart
 
 
 
-Den her opgave er en Rite-of-passage for udviklere. Lidt ligesom hello world. Alle skal have prøvet at lave deres egen indkøbsseddel eller notepad. Funktionaliteterne er de samme:
+Den her opgave er en Rite-of-passage for udviklere. Lidt ligesom hello world. Alle skal have prøvet at lave deres egen indkøbsseddel eller todo app. Funktionaliteterne er de samme:
 
 I skal lave en indkøbsseddel app med disse features:
 

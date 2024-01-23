@@ -209,6 +209,12 @@ Gør sådan at for hver vare, renderer du også en slet knap. Når det blvier kl
 
 
 
+### 7 - Conponentiser dit UI
+
+Lav componenter (`@Composable`) for hvert komponent i dit interface. Husk at vi gerne vil holde komponenter stateless. Skal skal gøre vis state hoisting!
+
+
+
 ### 7 - Vare antal
 
 Det skal nu være muligt for en bruger at indtaste antal på en vare. Hvis du indtil nu har gemt en vare som en streng, så det ved at være på tide at tænke i klasser i stedet for

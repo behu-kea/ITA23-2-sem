@@ -12,6 +12,8 @@ I skal arbejde i jeres studiegrupper.
 
 ## Afleveringer
 
+Der er 3 delafleveringer på det her semester
+
 
 
 

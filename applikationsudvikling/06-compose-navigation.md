@@ -282,10 +282,12 @@ Clicking on one of the Meditations from above will take you to one of these view
 
 ![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133122.png?alt=media&token=4d9093ab-026f-40f8-b739-63ca42215da6)
 
+### Finish the app navigation
 
-
-
+Clicking a meditation will take you to the meditation composable.
 
 ![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133128.png?alt=media&token=aec0a375-d35f-4bc9-98cd-5676fd8edca7)
+
+Clicking play will take you to the player
 
 ![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133137.png?alt=media&token=cf859280-2d13-4fe1-9881-df271772457a)

@@ -11,9 +11,8 @@
 - CS 101
   - Weekly handins
 - Android with Kotlin
-- 2 projects
-  1. UI/UX, some programming tasks
-  2. large 11 week project with 3 handins (iterations)
+- 1 project
+  1. large 11 week project with 2 handins (iterations) relevant for you
      - You have to find your own problem/project
 - Trivselssamtaler efter 5 uger
 

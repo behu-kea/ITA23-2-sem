@@ -14,7 +14,21 @@ I skal arbejde i jeres studiegrupper.
 
 Der er 3 delafleveringer på det her semester
 
+- 
 
+### Iteration 1 - User research
+
+
+
+
+
+### Iteration 2 - MVP
+
+
+
+
+
+### Iteration 3 - Final project
 
 
 

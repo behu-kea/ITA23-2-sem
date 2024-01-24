@@ -11,6 +11,15 @@
 
 
 
+## Learning goals
+
+- Compose navigation
+- `Navhost`
+- `NavController`
+- Backstack
+
+
+
 ## Preparation
 
 - [Navigation Basics in Jetpack Compose](https://youtu.be/glyqjzkc4fk?si=KSPDW3sO_3WTSY3D)

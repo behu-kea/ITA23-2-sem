@@ -273,7 +273,7 @@ Create a function that prompts the user to provide a number, computes the half o
 
 ### Opgave 7 - level 2
 
-Write a Kotlin function (and a lambda version) that accepts two integers from the user and then prints 
+Write a Kotlin function that accepts two integers from the user and then prints 
 
 - the sum
 - the difference

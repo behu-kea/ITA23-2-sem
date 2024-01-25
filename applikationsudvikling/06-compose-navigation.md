@@ -11,10 +11,27 @@
 
 
 
+## Learning goals
+
+- Compose navigation
+- `Navhost`
+- `NavController`
+- Backstack
+
+
+
 ## Preparation
 
-- https://developer.android.com/jetpack/compose/navigation
-- [Jetpack Compose Navigation: The Complete Beginner's Course](https://youtu.be/jt5sJEnDsSQ?si=HLF3qV0BaRB8MhuZ)
+- [Navigation Basics in Jetpack Compose](https://youtu.be/glyqjzkc4fk?si=KSPDW3sO_3WTSY3D)
+
+- [Send Arguments between Screens | Navigation in Jetpack Compose (the first 10 min are most important)](https://youtu.be/doGsRC2J1Fc?si=Ccq9Op22ElPBA9EZ)
+- [Nested Navigation | Jetpack Compose](https://youtu.be/2sKnGloDJf0?si=snKVgK22jYYLKVNg)
+
+
+
+- [https://developer.android.com/jetpack/compose/navigation](https://developer.android.com/jetpack/compose/navigation) - optional
+
+- [Jetpack Compose Navigation: The Complete Beginner's Course](https://youtu.be/jt5sJEnDsSQ?si=HLF3qV0BaRB8MhuZ) - optional
 
 
 
@@ -250,9 +267,9 @@ Medito Foundation is a nonprofit dedicated to improving mental wellbeing and hel
 
 First create a `Composable` that shows the dashboard. Dont focus on design, but more the content.
 
-![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133014.png?alt=media&token=ac43ae7f-e93e-46fe-8f9a-22522e5339c4)
 
 
+![Medito welcome screen](assets/Screenshot_20240122-133014.png)
 
 ### 2 - Downloads - Level 2
 
@@ -268,7 +285,7 @@ Make the back button work and make the items in the list clickable.
 
 You can simplify this by not using a `List` of meditations, but just have individual `Composable`'s on top of each other!
 
-![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133116.png?alt=media&token=fad51621-5b84-4a0f-a226-7e94c834b23e)
+![Explore screen](assets/Screenshot_20240122-133116.png)
 
 ### Meditation group - Level 2/Level 3
 
@@ -278,16 +295,18 @@ Clicking on one of the Meditations from above will take you to one of these view
 
 **Level 3** - Make a `Composable` that is more general that can receive the clicked item. Maybe you call it `MeditationOverview`. That composable needs a title, image, description and list of meditations. You need to figure out how to send these attributes to the Composable using navigation. 
 
+![Screenshot_20240122-133122](assets/Screenshot_20240122-133122.png)
 
 
-![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133122.png?alt=media&token=4d9093ab-026f-40f8-b739-63ca42215da6)
 
 ### Finish the app navigation
 
 Clicking a meditation will take you to the meditation composable.
 
-![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133128.png?alt=media&token=aec0a375-d35f-4bc9-98cd-5676fd8edca7)
+![Screenshot_20240122-133128](assets/Screenshot_20240122-133128.png)
+
+
 
 Clicking play will take you to the player
 
-![img](https://firebasestorage.googleapis.com/v0/b/cross-platform-sharing.appspot.com/o/user%2Fjcj7c7u98sRKt33tZCOh6kpL98x2%2FScreenshot_20240122-133137.png?alt=media&token=cf859280-2d13-4fe1-9881-df271772457a)
+![Screenshot_20240122-133137](assets/Screenshot_20240122-133137-6107403.png)

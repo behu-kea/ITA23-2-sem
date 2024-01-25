@@ -1,8 +1,37 @@
-# Nedarvning, abstract, override, interface, 4 pillars
+# Hand-in 2
+
+**Preface: **These exercises are solved easily by large language models such as ChatGPT. It is highly advised **against usage** of LLM's for the purpose of **generating code** to solve these exercises and would count as **fraud**. It would furthermore defeat the purpose as the following exercises are made to sharpen logical thinking & shape algorithmic understanding.
+
+- Classes & objects
+
+- Inheritance & Access modifiers
+
+
+**Hand in**
+
+https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=1227802
 
 
 
-### Inheritance 1
+### 1.
+
+Create a class called Employee that includes three pieces of information as instance variables
+
+- A first name
+- A last name
+- A monthly salary
+
+Your class should have a constructor that initializes the three instance variables. 
+
+If the monthly salary is not positive, set it to 0.0. 
+
+Create two Employee objects and display each object’s yearly salary. 
+
+Then give each Employee a 10% raise and display each Employee’s yearly salary again.
+
+
+
+### 2.
 
 Create a new class called `Computer`. Before you add any more code, know that you will need to add two additional classes: `Laptop` and `SmartPhone`
 
@@ -13,62 +42,31 @@ In the main method create a `Laptop` and a `SmartPhone`
 
 
 
-### Modelling
+### 3.
 
-We have to create the classes for a School. 
+Create a base class `Product` with attributes like `name`, `price`, and `quantity`. Subclass it to create specific product types like `Shoe`, `T-shirt`, and `Book`. Override the methods such that: 
 
-This school have different employees 👇
-
-- Teacher
-- Janitor
-- Headmaster
-- It admin
-
-There are also classes (as in a school class not a java class). A class can have a list of students and a name. 
-
-A school can have a list of classes and a list of employees.
-
-Try and think about the different classes you would need to solve this problem. First write the plan down. 
-
-When you have a plan start writing the actual classes to solve this problem. 
-
-The functionality insinde the methods is not important, but the classes and the class structure is!
-
-For the employees, make a parent class. Think about what sepcific attributes you would have for the different roles
+- The shoe outputs "I am a shoe"  .
+- The T-shirt outputs "I am a T-shirt"
+- The book outputs "I am a book"
 
 
 
-### Interface 1
+### 4.
 
-Create an interface called `FastFood` (with appropriate methods) and create a `Sandwich` class, a `Pizza` class and a class you decide that implements the `FastFood` interface.
+Create 3 classes Circle, Rectangle & Triangle with a parent class: Shape.
 
-Add some different `Fastfood` objects to an array. Now iterate through that array and use some of the methods you have created above. 
+- Every shape has two attributes
+  -  `color` 
+  - `isTransparent`
+- Furthermore every class has private attributes to calculate perimeter and area for each shape.
+- E.g. a Rectangle has the attributes: `height`, `width`, `color` & `isTransparent`
+  - The attributes are set in the constructor
+- The 3 classes all overrides the following abstract methods from their parent class:
+  - `calculatePermeter`
+  - `calculateArea`
 
-
-
-### Interface 2
-
-Create a class that implements the following interface. Now create two objects using the class created
-
-```java
-interface Vehicle {
-    void changeGear(int a);
-    void speedUp(int a);
-    void applyBrakes(int a);
-}
-```
-
-
-
-### Override
-
-Create a class called `RapSong` with a method called `play` that prints "Playing a rap song"
-
-Now create a class called `OldSchoolRap` that extends `RapSong` and overrides the `play` method to print "Playing old school rap"
-
-Define a class called `NewSchoolRap` that extends `RapSong` and overrides the `play` method to print "Playing new school rap"
-
-In the `Main` class, create an instance of each class and call the `play` method on each
+- The functions will return the permeter or area of the shape.
 
 
 
@@ -119,15 +117,3 @@ method.
   method in the constructor for initializing the fields of the super class. 
 - Create an instance of `Car` class and initialize all the fields with appropriate values. Display the sale prices of all instances.
 
-
-
-## Peer review
-
-I Fronter får i én person i skal reviewe. Lad være med at bruge for lang tid på review, max 20 min
-
-Kig efter de her ting i jeres review
-
-- Er den rigtige type brugt?
-- Er det nogle gode variabelnavne?
-- Er koden nem at læse og forstå?
-- Husk at skrive noget positivt om koden!

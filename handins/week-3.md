@@ -1,28 +1,17 @@
-# ADT's & Repetition
+# Hand-in 3
 
-**A)**
+**Preface: **These exercises are solved easily by large language models such as ChatGPT. It is highly advised **against usage** of LLM's for the purpose of **generating code** to solve these exercises and would count as **fraud**. It would furthermore defeat the purpose as the following exercises are made to sharpen logical thinking & shape algorithmic understanding.
 
-Write a method that returns a random number between 1-10.
+- Interfaces
+- Collections
 
-Call the method 10 times by using a loop
+**Hand in**
 
-
-
-**B)**
-
-Write a method that returns if a user has input a valid CPR number.
-
-A valid CPR number has:
-
-- 10 Digits.
-- The first 2 digits are not above 31.
-- The middle 2 digits are not above 12.
-
-The method returns true if the CPR number is valid, false if it is not.
+https://kea-fronter.itslearning.com/LearningToolElement/ViewLearningToolElement.aspx?LearningToolElementId=1227803
 
 
 
-**C)**
+### **1.**
 
 Write a class: *Article*
 
@@ -32,17 +21,29 @@ Create 5 articles, add them into an ArrayList and print them by overriding the *
 
 
 
-**D)**
+### 2.
 
-Write a class: *Square*
+Create an interface called `FastFood` (with appropriate methods) and create a `Sandwich` class, a `Pizza` class and a class you decide that implements the `FastFood` interface.
 
-- A square has a width and a height.
-- Implement the comparable interface such that two squares can be compared by their perimeter.
-- Sort a list of squares using collections.sort();
+Add some different `Fastfood` objects to an array. Now iterate through that array and use some of the methods you have created above. 
 
 
 
-**E)**
+### 3.
+
+Create a class that implements the following interface. Now create two objects using the class created
+
+```java
+interface Vehicle {
+    void changeGear(int a);
+    void speedUp(int a);
+    void applyBrakes(int a);
+}
+```
+
+
+
+### 4.
 
 Write a class: *RedditPost*
 
@@ -62,13 +63,35 @@ When a new instance of RedditPost is instantiated:
 
 Ensure all attributes are private, but accesible by getters & setters.
 
+Implement functionality such that redditposts can be sorted by upvotes/downvotes
 
 
-**F)**
+
+### **4.5**
 
 Write a class: *RedditFrontPage*
 
 The RedditFrontPage has:
 
-- An ArrayList of all RedditPosts
+- A List of all RedditPosts
 - A method in RedditFrontPage deletes a RedditPost from the list, by its index number
+
+
+
+### 5.
+
+Write a program that takes a list of words as input and prints the frequency of each word.
+
+- Hint: Use a MutableMap
+
+```kotlin
+val words = listOf("apple", "banana", "apple", "orange", "banana", "apple", "orange", "banana", "apple","banana", "apple", "orange", "banana","banana", "apple", "orange", "apple", "orange", "banana")
+```
+
+
+
+### Advanced (Optional)
+
+### 6.
+
+Create a product inventory system where each product has a name and a quantity. Implement functions to add products, remove products, and display the current inventory.

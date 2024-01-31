@@ -6,7 +6,6 @@
 
 - Peer instruction
 - Component based UI
-- Benjamin
 
 
 

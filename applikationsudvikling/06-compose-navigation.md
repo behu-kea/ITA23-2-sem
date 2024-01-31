@@ -1,4 +1,4 @@
-# Compose navigation
+# Navigation
 
 
 
@@ -287,7 +287,7 @@ You can simplify this by not using a `List` of meditations, but just have indivi
 
 ![Explore screen](assets/Screenshot_20240122-133116.png)
 
-### Meditation group - Level 2/Level 3
+### 4 - Meditation group - Level 2/Level 3
 
 Clicking on one of the Meditations from above will take you to one of these views. 
 
@@ -299,7 +299,7 @@ Clicking on one of the Meditations from above will take you to one of these view
 
 
 
-### Finish the app navigation
+### 5 - Finish the app navigation
 
 Clicking a meditation will take you to the meditation composable.
 

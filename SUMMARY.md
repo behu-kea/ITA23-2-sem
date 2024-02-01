@@ -3,11 +3,11 @@
 * [Front Page](README.md)
 
 * CS101
-  * [01 - Kotlin intro](CS101/01-kotlin-intro.md)
-  * [02 - control flow & lambda functions](CS101/02-control-flow-lambda.md) 
-  * [03 - Classes and objects](CS101/03-classes-and-objects.md)
-  * [05 - Interfaces & abstract](CS101/05-interfaces-abstract.md)
-  * [04 - Interfaces & abstract](CS101/05-interfaces-abstract.md)
+  * [01 - Kotlin intro](cs101/01-kotlin-intro.md)
+  * [02 - control flow & lambda functions](cs101/02-control-flow-lambda.md) 
+  * [03 - Classes and objects](cs101/03-classes-and-objects.md)
+  * [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
+  * [04 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
   
 * Applikationsudvikling
 

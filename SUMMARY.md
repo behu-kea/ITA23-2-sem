@@ -4,7 +4,7 @@
 
 * CS101
   * [01 - Kotlin intro](cs101/01-kotlin-intro.md)
-  * [02 - control flow & lambda functions](cs101/02-control-flow-lambda.md) 
+  * [02 - control flow & lambda functions](cs101/02-control-flow-lambda.md)
   * [03 - Classes and objects](cs101/03-classes-and-objects.md)
   * [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
   * [04 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
@@ -25,9 +25,9 @@
   * [Surveys and desk research and user journey mapping](brugerinddragelse/week-7.md)
   * [Personas, key recommendation](brugerinddragelse/week-8.md)
 * [Handins](handins/README.md)
-  * [1](handins/week-1.md) 
+  * [1](handins/week-1.md)
   * [2](handins/week-2.md)
-  * [3](handins/week-3.md) 
+  * [3](handins/week-3.md)
 * Tværfaglige projekter 
 
 

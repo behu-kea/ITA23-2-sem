@@ -6,9 +6,9 @@
   * [01 - Kotlin intro](cs101/01-kotlin-intro.md)
   * [02 - control flow & lambda functions](cs101/02-control-flow-lambda.md)
   * [03 - Classes and objects](cs101/03-classes-and-objects.md)
-  * [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
-  * [04 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
-  
+  * [04 - Inheritance & access modification.md](cs101/04-inheritance-access-modification.md) 
+
+  - [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
 * Applikationsudvikling
 
   - [02 - Basic layout](applikationsudvikling/02-basic-layout.md)

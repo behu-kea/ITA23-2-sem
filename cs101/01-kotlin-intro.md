@@ -18,6 +18,17 @@
 
 
 
+<!--
+
+## After class considerations
+
+- Really nice class. 
+- Nummerplade opgaven var lidt stenet
+
+-->
+
+
+
 ### Learning goals
 
 - Kotlin

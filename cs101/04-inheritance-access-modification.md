@@ -16,6 +16,7 @@ imal.
 - Create 2 animal classes that extends the Animal class and overrides
   the method to produce their unique sound.
 - Create a list, add 5 animals to the list and print every animals sound.
+- Override the `toString` method such that if an animal object is printed, it will return a string in the following format: [name=`name`, nrOfLegs=`nrOfLegs`, isMammal=`isMammal`]
 
 
 

@@ -22,6 +22,8 @@
   - [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
   
   - [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
+  
+  - [15 - Working with sensors](applikationsudvikling/15-sensors.md)
 * Brugerinddragelse
   * [Project 1](brugerinddragelse/project-1.md)
   * [What is UI/UX](brugerinddragelse/week-5.md)

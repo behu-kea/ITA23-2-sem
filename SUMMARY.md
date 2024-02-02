@@ -6,7 +6,8 @@
   * [02 - control flow & lambda functions](CS101/02-control-flow-lambda.md) 
   * [03 - Classes and objects](CS101/03-classes-and-objects.md)
   * [04 - Inheritance & access modification.md](CS101/04-inheritance-access-modification.md) 
-  * [05 - Interfaces & abstract](CS101/05-interfaces-abstract.md)
+  * [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
+  
 * Applikationsudvikling
 
   - [02 - Basic layout](applikationsudvikling/02-basic-layout.md)

@@ -47,7 +47,7 @@
   - A function that returns a string containing `s` `n` amount of times: E.g hello, 3 -> hellohellohello
   - A function that returns a string with the first letter of `s` `n` amount of times: E.g hello, 3 -> hhh
 
-Exampel from class:
+Example from class:
 
 ```kotlin
 // Higher order function example: Calculator

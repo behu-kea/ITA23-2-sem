@@ -11,9 +11,8 @@
   - Encapsulation
 - Objects
 - This
-- Maybe behavior vs data
+- Behavior vs data
 - toString
-- Access modifiers
 
 
 
@@ -24,7 +23,6 @@
   - Getter setter
     - Var, val
   - Constructor
-  - Visibility
   - Data vs behaviour
 
 
@@ -33,7 +31,6 @@
 
 - [Kotlin Class and Object](https://www.youtube.com/watch?v=Sn-PL6fNIkk)
 - [Kotlin Getters and Setters](https://www.youtube.com/watch?v=rlJHzsgUwos)
-- [Kotlin Visibility Modifiers](https://www.youtube.com/watch?v=FvCeEQaGDsA)
 - [Kotlin Constructor - Primary, Secondary Constructor and Init Block](https://www.youtube.com/watch?v=d6Lu1Wzspao)
 
 

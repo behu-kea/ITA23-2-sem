@@ -14,7 +14,7 @@ I skal arbejde i jeres studiegrupper.
 
 Der er 3 delafleveringer på det her semester
 
-- 
+
 
 ### Iteration 1 - User research
 

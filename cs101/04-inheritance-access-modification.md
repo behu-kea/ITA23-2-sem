@@ -82,15 +82,10 @@ Print  the sale prices of all instances.
 
 **A)**
 
-- Create a class Product with a constructor
-- A product has an String: itemName,  Int: quantity and Int: price
-  - The name has a public getter & setter
-  - The quanty has a public getter but private setter
-  - The price has no getters or setters - it is private
-- To get a price from a product object a function called getPriceAsString should be called.
-  - The function returns a string containing the price in a format such as: `$100.00`
-  - eg. a price of 50 returns the string `"$50.00"`
-  - You will to [convert](https://kotlinandroid.org/kotlin/kotlin-convert-integer-to-string/#:~:text=To%20convert%20a%20given%20int,given%20integer%20value%2C%20say%20intValue%20.&text=The%20function%20returns%20a%20string,in%20the%20given%20integer%20value.) an integer to a String
+- Create a class named `Student` to represent student information. 
+- Include properties such as `name`, `birthdate`, and `grade`. 
+- Implement a custom setter for the `grade` property to ensure that the grade is within a valid range (e.g., 0 to 100).
+- Additionally, implement a custom getter for the `age` property to calculate the student's age based on their birthdate, which is passed as a parameter during object construction.
 
 
 
@@ -102,7 +97,3 @@ Print  the sale prices of all instances.
 - A person has a field: age.
   - The field is public and uses the private function to return a result.
   - The setter is private, as no one from outside should be able to use the function
-
-
-
-**B)**

@@ -59,6 +59,11 @@ To solve the following exercises you need to understand how to [read text files]
 
 **A)**
 
+- Write a basic dictionary using a HashMap.
+- The keys will represent words and the values will be descriptions of the words
+
+**B)**
+
 1. Create a HashMap named `spaceLog` to store entries in an astronaut's log. [The key will be the date of the entry](https://www.baeldung.com/kotlin/current-date-time), and the value will be a description of the events that occurred on that date (String).
 2. Implement the following functions for the space log:
    - `addLogEntry(date: LocalDate, entry: String)`: Adds a new entry to the log with the specified date and description.
@@ -71,7 +76,7 @@ To solve the following exercises you need to understand how to [read text files]
    - Remove one of the entries using the `removeLogEntry` function.
    - Display the remaining entries using the `viewLog` function.
 
-**B)**
+**C)**
 
 - We have users from 3 different platforms ([users-1, users-2, users-3](https://kea-fronter.itslearning.com/Resources?FolderID=1235819&PlayPlanDialogView=False&ReloadTree=False) 
 - We want to know:
@@ -86,5 +91,4 @@ We want to analyse [The republic by Plato.](https://kea-fronter.itslearning.com/
 
 - How many times does each word occur?
   - Plato, PlAtO and plato should all count as the same word
-
 - What are the top 10 words that are not in the top 10 of [conjuctions](https://www.grammar-monster.com/lists/list_of_conjunctions.htm)

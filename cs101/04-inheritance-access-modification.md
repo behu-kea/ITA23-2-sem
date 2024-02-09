@@ -4,7 +4,7 @@
 
 **A)**
 
-Write an abstract class called `Animal` An `animal` has 3 attributes:
+Write a class called `Animal` An `animal` has 3 properties:
 
 - name
 - nrOfLegs

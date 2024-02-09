@@ -82,6 +82,15 @@ Print  the sale prices of all instances.
 
 **A)**
 
+- Create a Kotlin class called `BankAccount` with the following properties:
+
+1. `accountNumber`: The account number of the bank account.
+2. `balance`: The current balance of the bank account.
+
+- Implement custom getter and setter methods for the `balance` property. The setter should ensure that the balance is always non-negative. If a negative value is attempted to be set, it should be adjusted to 0.
+
+**B)**
+
 - Create a class named `Student` to represent student information. 
 - Include properties such as `name`, `birthdate`, and `grade`. 
 - Implement a custom setter for the `grade` property to ensure that the grade is within a valid range (e.g., 0 to 100).
@@ -89,7 +98,7 @@ Print  the sale prices of all instances.
 
 
 
-**B)**
+**C)** **(Advanced Optional)**
 
 - Create a class Person
 - A person has a cpr number and name

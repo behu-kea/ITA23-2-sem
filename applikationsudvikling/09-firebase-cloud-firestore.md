@@ -16,7 +16,7 @@ Now create a Database in your Firestore. Go to your firebase project -> click Cl
 
 **🚨OBS!!!!!🚨**: The default security rules for test mode allow anyone with your database reference to view, edit and delete all data in your database for the  next 30 days **🚨OBS!!!!!🚨**
 
-Now in your `build.gradle.kts` add the following line
+Now in your `build.gradle.kts` (Module App) add the following line
 
 ```
 implementation("com.google.firebase:firebase-firestore")

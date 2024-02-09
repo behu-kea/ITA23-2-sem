@@ -20,61 +20,16 @@ imal.
 
 
 
-**B)** **Advanced (Optional)**
+**B)**
 
-#### `Car`
+Create a hierarchy of food items in a restaurant menu. Implement a base class called `FoodItem` with properties `name`, `description`, and `price`. 
 
-Create a super class called `Car`. The `Car` class has the following fields and methods.
+- Derive two classes `Dessert`, `Appetizer` and `MainCourse` from `FoodItem`. Implement the properties: 
+  - `servingSize` for `Appetizer` 
+  - `spicinessLevel` for `MainCourse`
+  - `isVegan` for `dessert`
 
-- `speed`
-- `regularPrice`
-- `color`
-- `getSalePrice()`
-
-#### `Truck`
-
-Create a sub class of `Car` class and name it as `Truck`. The `Truck` class has the following fields and methods.
-
-- `weight`
-
-- `getSalePrice()`
-
-If the weight of a `Truck` is more than 2000 kg then there is a discount of 10% otherwise 20%
-
-#### `Ford`
-
-Create a subclass of `Car` class and name it as `Ford`. The `Ford` class has the following fields and methods
-
-- `year`
-
-- `manufacturerDiscount`
-- `getSalePrice()`
-
-If a `manufacturerDiscount` is set then the salesPrice will be that much cheaper
-
-#### `Sedan`
-
-Create a subclass of `Car` class and name it as `Sedan`. The `Sedan` class has the following fields and methods.
-
-- `length`
-
-- `getSalePrice()`
-
-If the `length` is more than 20 meters then 5% discount otherwise 10% discount
-
-
-
-#### `AutoShop`
-
-Create an `AutoShopApp` script which contains the `main()` method. Perform the following within the `main()` method.
-
-Create an instance of `Sedan` class and initialize all the fields with appropriate values.
-
-Create two instances of the `Ford` class and initialize all the fields with appropriate values.
-
-Create a `Truck` instance
-
-Print  the sale prices of all instances.
+- Additionally, implement the method `cook()` for all classes, which print out a message indicating what kind of fooditem is currently being cooked.
 
 
 

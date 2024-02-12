@@ -18,7 +18,30 @@ Optional
 ## Overview
 
 - Go through some examples and discuss if we should use inheritance, abstract, contract, just classes
-  - Gå igennem den her [https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf](https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf)
+
+```
+Streamingtjeneste Systemkrav
+
+Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer. Systemet skal:
+
+    Indholdshåndtering
+        Administrer forskellige typer medieindhold såsom film, serier og dokumentarer. Overvej brug af abstrakte klasser eller interfaces til at definere fælles egenskaber og metoder for medieindhold.
+        Tillad, at medieindhold kan have flere sæsoner (for serier), hver med flere episoder. Brug nedarvning til at differentiere mellem forskellige typer af indhold.
+
+    Abonnementstyper
+        Håndter forskellige abonnementstyper (fx basis, standard, premium) med varierende adgangsniveauer og funktioner, såsom antal skærme, HD/UHD-adgang. Overvej at bruge interfaces eller abstrakte klasser til at definere fælles funktioner og lade nedarvede klasser specificere detaljerne.
+
+    Brugerprofiler
+        Tillad oprettelse af flere brugerprofiler under ét abonnement, hvor hver profil har egne anbefalinger og seerhistorik. Overvej brugen af en klasse til at håndtere profildetaljer og en anden til at administrere profilens interaktion med indhold.
+
+    Indholdsbibliotek
+        Skab et system, der effektivt kan søge og filtrere indhold baseret på genre, udgivelsesår, popularitet osv. Brug abstrakte klasser eller interfaces til at definere en standard for, hvordan indhold kan filtreres og præsenteres.
+
+    Licenshåndtering
+        Håndter licensaftaler for hvert stykke medieindhold, herunder varighed og geografiske begrænsninger. Dette kan implementeres gennem klasser, der repræsenterer licensaftaler, og som forbinder til medieindholdet.
+
+Systemet skal være fleksibelt for at tillade fremtidige udvidelser, såsom nye typer indhold eller abonnementstyper. Fokusér på at designe et robust system med klare relationer og ansvarsområder mellem klasser, og brug af nedarvning, interfaces, og abstrakte klasser til at fremme genanvendelse af kode og reducere kompleksitet.
+```
 
 
 
@@ -214,7 +237,37 @@ Create two `Mobile` and two `RaspberriPi` objects
 
 
 
-### 📝 Exercise 5 - teachers and students
+### Streaming service - Level 2
+
+We need to create the functionality for a Music Library.
+
+
+
+#### Song
+
+A song has to obey by the rules that they have to have methods for returning a title, artist and duration. it should also have a method for getting how many plays it has
+
+*Tip: think interfaces*
+
+
+
+#### Music Library
+
+A Music Library contains songs. With a Music library we should be able to add a song, we should be able to search for a song using either title, artist or with a specific minimum duration. It should also be able to get the most popular songs
+
+
+
+#### Main method
+
+Now create some songs and add them to the Music Library. 
+
+Search for some artists using title, artist and duration
+
+Get the most popular 5 songs in the music library
+
+
+
+### 📝 Exercise 5 - teachers and students - after the break at 10:15
 
 Duration: 20 min
 
@@ -227,9 +280,7 @@ In groups of two people prepare a small 5 minute lecture. The lecture should exp
 
 
 
-### Internet profile - Level 1
-
-https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
+### Arbejde på aflevering
 
 
 
@@ -294,33 +345,9 @@ This exercise will help students understand the concept of interfaces in Kotlin 
 
 
 
-### Streaming service - Level 3
+### Internet profile - Level 1
 
-We need to create the functionality for a Music Library.
-
-
-
-#### Song
-
-A song has to obey by the rules that they have to have methods for returning a title, artist and duration. it should also have a method for getting how many plays it has
-
-*Tip: think interfaces*
-
-
-
-#### Music Library
-
-A Music Library contains songs. With a Music library we should be able to add a song, we should be able to search for a song using either title, artist or with a specific minimum duration. It should also be able to get the most popular songs
-
-
-
-#### Main method
-
-Now create some songs and add them to the Music Library. 
-
-Search for some artists using title, artist and duration
-
-Get the most popular 5 songs in the music library
+https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
 
 
 

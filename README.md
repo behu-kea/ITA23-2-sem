@@ -2,7 +2,7 @@
 
 
 
-## Studie grupper
+## Studiegrupper
 
 
 

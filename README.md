@@ -26,7 +26,7 @@
 
 ### Gruppe 3
 
-- Viktor-Gabriel Nylon
+- Victor
 - Sofie Amalie Roer Thorlund
 - Natazja Rosenkjær Dahl
 - Birk Gade Engholm Lauritzen

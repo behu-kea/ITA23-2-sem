@@ -4,7 +4,7 @@
 
 **A)**
 
-Write an abstract class called `Animal` An `animal` has 3 attributes:
+Write a class called `Animal` An `animal` has 3 properties:
 
 - name
 - nrOfLegs
@@ -20,61 +20,16 @@ imal.
 
 
 
-**B)** **Advanced (Optional)**
+**B)**
 
-#### `Car`
+Create a hierarchy of food items in a restaurant menu. Implement a base class called `FoodItem` with properties `name`, `description`, and `price`. 
 
-Create a super class called `Car`. The `Car` class has the following fields and methods.
+- Derive two classes `Dessert`, `Appetizer` and `MainCourse` from `FoodItem`. Implement the properties: 
+  - `servingSize` for `Appetizer` 
+  - `spicinessLevel` for `MainCourse`
+  - `isVegan` for `dessert`
 
-- `speed`
-- `regularPrice`
-- `color`
-- `getSalePrice()`
-
-#### `Truck`
-
-Create a sub class of `Car` class and name it as `Truck`. The `Truck` class has the following fields and methods.
-
-- `weight`
-
-- `getSalePrice()`
-
-If the weight of a `Truck` is more than 2000 kg then there is a discount of 10% otherwise 20%
-
-#### `Ford`
-
-Create a subclass of `Car` class and name it as `Ford`. The `Ford` class has the following fields and methods
-
-- `year`
-
-- `manufacturerDiscount`
-- `getSalePrice()`
-
-If a `manufacturerDiscount` is set then the salesPrice will be that much cheaper
-
-#### `Sedan`
-
-Create a subclass of `Car` class and name it as `Sedan`. The `Sedan` class has the following fields and methods.
-
-- `length`
-
-- `getSalePrice()`
-
-If the `length` is more than 20 meters then 5% discount otherwise 10% discount
-
-
-
-#### `AutoShop`
-
-Create an `AutoShopApp` script which contains the `main()` method. Perform the following within the `main()` method.
-
-Create an instance of `Sedan` class and initialize all the fields with appropriate values.
-
-Create two instances of the `Ford` class and initialize all the fields with appropriate values.
-
-Create a `Truck` instance
-
-Print  the sale prices of all instances.
+- Additionally, implement the method `cook()` for all classes, which print out a message indicating what kind of fooditem is currently being cooked.
 
 
 
@@ -82,19 +37,23 @@ Print  the sale prices of all instances.
 
 **A)**
 
-- Create a class Product with a constructor
-- A product has an String: itemName,  Int: quantity and Int: price
-  - The name has a public getter & setter
-  - The quanty has a public getter but private setter
-  - The price has no getters or setters - it is private
-- To get a price from a product object a function called getPriceAsString should be called.
-  - The function returns a string containing the price in a format such as: `$100.00`
-  - eg. a price of 50 returns the string `"$50.00"`
-  - You will to [convert](https://kotlinandroid.org/kotlin/kotlin-convert-integer-to-string/#:~:text=To%20convert%20a%20given%20int,given%20integer%20value%2C%20say%20intValue%20.&text=The%20function%20returns%20a%20string,in%20the%20given%20integer%20value.) an integer to a String
+- Create a Kotlin class called `BankAccount` with the following properties:
 
+1. `accountNumber`: The account number of the bank account.
+2. `balance`: The current balance of the bank account.
 
+- Implement custom getter and setter methods for the `balance` property. The setter should ensure that the balance is always non-negative. If a negative value is attempted to be set, it should be adjusted to 0.
 
 **B)**
+
+- Create a class named `Student` to represent student information. 
+- Include properties such as `name`, `birthdate`, and `grade`. 
+- Implement a custom setter for the `grade` property to ensure that the grade is within a valid range (e.g., 0 to 100).
+- Additionally, implement a custom getter for the `age` property to calculate the student's age based on their birthdate, which is passed as a parameter during object construction.
+
+
+
+**C)** **(Advanced Optional)**
 
 - Create a class Person
 - A person has a cpr number and name
@@ -102,7 +61,3 @@ Print  the sale prices of all instances.
 - A person has a field: age.
   - The field is public and uses the private function to return a result.
   - The setter is private, as no one from outside should be able to use the function
-
-
-
-**B)**

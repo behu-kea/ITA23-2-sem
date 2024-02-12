@@ -49,20 +49,35 @@
 
 
 
+### Gruppe 6
+
+- Silar Bøgebjerg
+- Victor-Gabriel
+
+
+
+### Gruppe 7
+
+- Frederik Damsgaard
+- Jonathan Lind
+
+
+
+### Gruppe 8
+
+- Andreas Christoffer Møllegaard
+- Emil Dupont
+- Nikolaus
+
+ 
+
 <!--
 
 ### Mangler
 
 - Abel
 - Adam fordsmand
-- Andreas Christoffer
-- Emil
-- Frederik
-- Jonathan
 - Mathias
 - Marc
-- Nikolaus
-- Silas
-- Victor-Gabriel
 
 -->

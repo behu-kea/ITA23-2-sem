@@ -84,7 +84,7 @@ class User(override var name: String, override var email: String) : UserInterfac
 
 
 
-### Question 2
+### Question 2 - 2 minutter
 
 What happens when `camilla.getAge();` is called?
 
@@ -237,33 +237,33 @@ Create two `Mobile` and two `RaspberriPi` objects
 
 
 
-### Streaming service - Level 2
+### Instagram like service
 
-We need to create the functionality for a Music Library.
+We need to create functionality for an Instagram-like Service.
 
 
 
-#### Song
+#### Post
 
-A song has to obey by the rules that they have to have methods for returning a title, artist and duration. it should also have a method for getting how many plays it has
+A post has a caption, uploader (the user who posted it), and the timestamp of when it was posted. It should also have a method for getting the number of likes it has received.
 
 *Tip: think interfaces*
 
 
 
-#### Music Library
+#### Photo Gallery
 
-A Music Library contains songs. With a Music library we should be able to add a song, we should be able to search for a song using either title, artist or with a specific minimum duration. It should also be able to get the most popular songs
+A Photo Gallery contains posts. With a Photo Gallery, we should be able to add a post, search for a post using either the caption or the uploader. It should also be able to get the most liked posts.
 
 
 
 #### Main method
 
-Now create some songs and add them to the Music Library. 
+Now create some posts and add them to the Photo Gallery.
 
-Search for some artists using title, artist and duration
+Search for posts using caption, uploader, and timeframe.
 
-Get the most popular 5 songs in the music library
+Get the top 5 most liked posts in the photo gallery.
 
 
 

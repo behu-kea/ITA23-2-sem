@@ -17,7 +17,7 @@
 
 ### Gruppe 2
 
-- Christine Bjerre Thellefsen
+- Helena Christine Holm Toft
 - Rasmus Planteig
 - Anders Keller
 - Lucas Fredrik Jacobsen
@@ -26,7 +26,7 @@
 
 ### Gruppe 3
 
-- Victor
+- Victor Mekis Bach
 - Sofie Amalie Roer Thorlund
 - Natazja Rosenkjær Dahl
 - Birk Gade Engholm Lauritzen
@@ -35,7 +35,7 @@
 
 ### Gruppe 4
 
-- Christian Bjerre
+- Christian Bjerre Thellefsen
 - Marcus Rappenborg
 - Nikolaj Kirusis
 
@@ -67,7 +67,7 @@
 
 - Andreas Christoffer Møllegaard
 - Emil Dupont
-- Nikolaus
+- Nikolaus Julius
 
  
 

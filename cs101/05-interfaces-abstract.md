@@ -272,7 +272,7 @@ A Content Management System (CMS) should be designed to manage the different typ
 
 
 
-### 📝 Exercise 5 - teachers and students - after the break at 10:15
+### 📝 Exercise 5 - study groups - teachers and students - after the break at 10:15
 
 Duration: 20 min
 
@@ -282,6 +282,10 @@ In groups of two people prepare a small 5 minute lecture. The lecture should exp
 
 - As teachers present the 5 minute lecture
 - As students ask good interesting questions
+
+
+
+After you have created the presentation it should be presented for each other
 
 
 

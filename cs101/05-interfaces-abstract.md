@@ -20,29 +20,26 @@ Optional
 - Snak om konteksten for hvorfor vi skal lære om interfaces og abstract
 - Go through some examples and discuss if we should use inheritance, abstract, contract, just classes
 
-```
-Streamingtjeneste Systemkrav
+
+
+### Streamingtjeneste Systemkrav
 
 Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer. Systemet skal:
 
-    Indholdshåndtering
-        Administrer forskellige typer medieindhold såsom film, serier og dokumentarer. Overvej brug af abstrakte klasser eller interfaces til at definere fælles egenskaber og metoder for medieindhold.
-        Tillad, at medieindhold kan have flere sæsoner (for serier), hver med flere episoder. Brug nedarvning til at differentiere mellem forskellige typer af indhold.
 
-    Abonnementstyper
-        Håndter forskellige abonnementstyper (fx basis, standard, premium) med varierende adgangsniveauer og funktioner, såsom antal skærme, HD/UHD-adgang. Overvej at bruge interfaces eller abstrakte klasser til at definere fælles funktioner og lade nedarvede klasser specificere detaljerne.
 
-    Brugerprofiler
-        Tillad oprettelse af flere brugerprofiler under ét abonnement, hvor hver profil har egne anbefalinger og seerhistorik. Overvej brugen af en klasse til at håndtere profildetaljer og en anden til at administrere profilens interaktion med indhold.
+#### Indholdshåndtering
+Administrer forskellige typer medieindhold såsom film, serie og dokumentar
 
-    Indholdsbibliotek
-        Skab et system, der effektivt kan søge og filtrere indhold baseret på genre, udgivelsesår, popularitet osv. Brug abstrakte klasser eller interfaces til at definere en standard for, hvordan indhold kan filtreres og præsenteres.
 
-    Licenshåndtering
-        Håndter licensaftaler for hvert stykke medieindhold, herunder varighed og geografiske begrænsninger. Dette kan implementeres gennem klasser, der repræsenterer licensaftaler, og som forbinder til medieindholdet.
 
-Systemet skal være fleksibelt for at tillade fremtidige udvidelser, såsom nye typer indhold eller abonnementstyper. Fokusér på at designe et robust system med klare relationer og ansvarsområder mellem klasser, og brug af nedarvning, interfaces, og abstrakte klasser til at fremme genanvendelse af kode og reducere kompleksitet.
-```
+#### Abonnementstyper
+Håndter forskellige abonnementstyper (fx basis, standard, premium) med varierende adgangsniveauer og funktioner, såsom antal skærme, HD/UHD-adgang. 
+
+
+
+#### Indholdsbibliotek
+Skab et system, der effektivt kan søge og filtrere indhold baseret på genre, udgivelsesår, popularitet osv. 
 
 
 
@@ -78,10 +75,10 @@ class User(override var name: String, override var email: String) : UserInterfac
 }
 ```
 
-1.  `updateEmail` incorrectly returns a value
-2. Wrong assignment in `updateEmail`
-3. displayUserInfo` prints incorrect information` 
-4. `User` does not override `displayUserInfo` properly
+1.  Wrong assignment in `updateEmail`
+2.  `updateEmail` incorrectly returns a value
+3.  `displayUserInfo` prints incorrect information 
+4.  `User` does not override `displayUserInfo` properly
 
 
 
@@ -106,7 +103,6 @@ class Person(override var name: String, override val age: Int) : PersonInterface
 
 fun main() {
     val camilla = Person("Camilla", 6)
-    println("Age: ${camilla.age}")
     camilla.sayHi()
 }
 

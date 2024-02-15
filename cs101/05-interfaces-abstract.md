@@ -15,6 +15,17 @@ Optional
 
 
 
+<!--
+
+## After class considerations
+
+- Bedre forbered Streamingtjeneste. Det var lidt messy.
+- Det er svært at kende forskel
+
+-->
+
+
+
 ## Overview
 
 - https://aicolors.co/
@@ -23,7 +34,7 @@ Optional
 
 
 
-### Streamingtjeneste Systemkrav
+### Streamingtjeneste
 
 Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer
 
@@ -263,8 +274,8 @@ A Content Management System (CMS) should be designed to manage the different typ
 
 #### Implementation Requirements:
 1. Define an interface or abstract class to represent the common structure and behavior of all post types. This should include methods for liking/disliking a post and retrieving the like count.
-2. Implement concrete classes for each specific type of post (Text Post, Photo Post, Video Post) that extend the abstract class or implement the interface, adding any specific properties or methods needed.
-3. Design the CMS to work with the abstract post types, ensuring it can manage any post type that conforms to the interface or abstract class contract.
+2. Implement concrete classes for each specific type of post (Text Post, Photo Post, Video Post) that implement the interface, adding any specific properties or methods needed.
+3. Design the CMS to work with the abstract post types, ensuring it can manage any post type that conforms to the interface.
 4. In a main method, demonstrate the creation of various types of posts, adding them to the CMS, performing searches, and retrieving the top N most liked posts.
 
 

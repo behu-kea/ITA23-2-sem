@@ -96,7 +96,7 @@ class User(override var name: String, override var email: String) : UserInterfac
 
 ### Question 2 - 2 minutter
 
-What happens when `camilla.getAge();` is called?
+What happens when `camilla.sayHi();` is called?
 
 ```java
 package interfaces
@@ -107,7 +107,7 @@ interface PersonInterface {
     val name: String;
 }
 
-class Person(override var name: String, override val age: Int) : PersonInterface {
+class Person(override val name: String, override val age: Int) : PersonInterface {
     override fun sayHi() {
         println("Hi, I'm $name!")
     }
@@ -237,8 +237,8 @@ Create two classes `Mobile` and `RaspberriPi` that implements this interface:
 public interface Computer {
     val name: String;
     val price: Int;
-  	val location: Map<String, Double>;
-  	fun printLocation();
+  
+  	fun printNameAndPrice();
 }
 ```
 

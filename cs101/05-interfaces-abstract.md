@@ -17,6 +17,7 @@ Optional
 
 ## Overview
 
+- https://aicolors.co/
 - Snak om konteksten for hvorfor vi skal lære om interfaces og abstract
 - Go through some examples and discuss if we should use inheritance, abstract, contract, just classes
 

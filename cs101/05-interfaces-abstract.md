@@ -231,7 +231,7 @@ fun main() {
 
 ### Computer
 
-Create two classes `Mobile` and `RaspberriPi` that implements this interface:
+Create two classes `Mobile` and `RaspberryPi` that implements this interface:
 
 ```java
 public interface Computer {
@@ -242,7 +242,7 @@ public interface Computer {
 }
 ```
 
-Create two `Mobile` and two `RaspberriPi` objects
+Create two `Mobile` and two `RaspberryPi` objects
 
 
 
@@ -269,14 +269,6 @@ A Content Management System (CMS) should be designed to manage the different typ
 - Adding new posts to the collection.
 - Searching for posts using criteria such as caption, uploader, or post type.
 - Retrieving the top N most liked posts across all types.
-
-
-
-#### Implementation Requirements:
-1. Define an interface or abstract class to represent the common structure and behavior of all post types. This should include methods for liking/disliking a post and retrieving the like count.
-2. Implement concrete classes for each specific type of post (Text Post, Photo Post, Video Post) that implement the interface, adding any specific properties or methods needed.
-3. Design the CMS to work with the abstract post types, ensuring it can manage any post type that conforms to the interface.
-4. In a main method, demonstrate the creation of various types of posts, adding them to the CMS, performing searches, and retrieving the top N most liked posts.
 
 
 

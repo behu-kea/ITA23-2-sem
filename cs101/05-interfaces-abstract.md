@@ -25,7 +25,7 @@ Optional
 
 ### Streamingtjeneste Systemkrav
 
-Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer. Systemet skal:
+Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer
 
 
 

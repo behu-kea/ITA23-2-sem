@@ -9,9 +9,9 @@
   * [04 - Inheritance & access modification](cs101/04-inheritance-access-modification.md) 
 
   - [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
-  - [06 - Collections](CS101/06-collections-enum.md) 
-  - [07 - Searching & Time Complexity.md](CS101/07-searching&timecomplexity.md) 
-  - [08 - Sorting & Big-O notation.md](CS101/08-sorting&bigO.md) 
+  - [06 - Collections](CS101/06-collections-enum.md)
+  - [07 - Searching and Time Complexity](CS101/07-searchingtimecomplexity.md) 
+  - [08 - Sorting and big-O notation](CS101/08-sortingbigO.md) 
 * Applikationsudvikling
 
   - [02 - Basic layout](applikationsudvikling/02-basic-layout.md)

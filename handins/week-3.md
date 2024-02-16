@@ -35,9 +35,9 @@ Create a class that implements the following interface. Now create two objects u
 
 ```java
 interface Vehicle {
-    void changeGear(int a);
-    void speedUp(int a);
-    void applyBrakes(int a);
+    changeGear(int a);
+    speedUp(int a);
+    applyBrakes(int a);
 }
 ```
 

@@ -15,10 +15,43 @@ Optional
 
 
 
+<!--
+
+## After class considerations
+
+- Bedre forbered Streamingtjeneste. Det var lidt messy.
+- Det er svært at kende forskel
+
+-->
+
+
+
 ## Overview
 
+- https://aicolors.co/
+- Snak om konteksten for hvorfor vi skal lære om interfaces og abstract
 - Go through some examples and discuss if we should use inheritance, abstract, contract, just classes
-  - Gå igennem den her [https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf](https://github.com/behu-kea/first-semester-java/blob/9d5b9fc185978dad0bfdbc0b83fdc7937326db4d/assets/Bookingsystem%20(DK).pdf)
+
+
+
+### Streamingtjeneste
+
+Design et system for en streamingtjeneste, lignende Netflix, der håndterer medieindhold og brugerabonnementer
+
+
+
+#### Indholdshåndtering
+Administrer forskellige typer medieindhold såsom film, serie og dokumentar
+
+
+
+#### Abonnementstyper
+Håndter forskellige abonnementstyper (fx basis, standard, premium) med varierende adgangsniveauer og funktioner, såsom antal skærme, HD/UHD-adgang. 
+
+
+
+#### Indholdsbibliotek
+Skab et system, der effektivt kan søge og filtrere indhold baseret på genre, udgivelsesår, popularitet osv. 
 
 
 
@@ -54,16 +87,16 @@ class User(override var name: String, override var email: String) : UserInterfac
 }
 ```
 
-1.  `updateEmail` incorrectly returns a value
-2. Wrong assignment in `updateEmail`
-3. displayUserInfo` prints incorrect information` 
-4. `User` does not override `displayUserInfo` properly
+1.  Wrong assignment in `updateEmail`
+2.  `updateEmail` incorrectly returns a value
+3.  `displayUserInfo` prints incorrect information 
+4.  `User` does not override `displayUserInfo` properly
 
 
 
-### Question 2
+### Question 2 - 2 minutter
 
-What happens when `camilla.getAge();` is called?
+What happens when `camilla.sayHi();` is called?
 
 ```java
 package interfaces
@@ -74,7 +107,7 @@ interface PersonInterface {
     val name: String;
 }
 
-class Person(override var name: String, override val age: Int) : PersonInterface {
+class Person(override val name: String, override val age: Int) : PersonInterface {
     override fun sayHi() {
         println("Hi, I'm $name!")
     }
@@ -82,7 +115,6 @@ class Person(override var name: String, override val age: Int) : PersonInterface
 
 fun main() {
     val camilla = Person("Camilla", 6)
-    println("Age: ${camilla.age}")
     camilla.sayHi()
 }
 
@@ -199,22 +231,48 @@ fun main() {
 
 ### Computer
 
-Create two classes `Mobile` and `RaspberriPi` that implements this interface:
+Create two classes `Mobile` and `RaspberryPi` that implements this interface:
 
 ```java
 public interface Computer {
     val name: String;
     val price: Int;
-  	val location: Map<String, Double>;
-  	fun printLocation();
+  
+  	fun printNameAndPrice();
 }
 ```
 
-Create two `Mobile` and two `RaspberriPi` objects
+Create two `Mobile` and two `RaspberryPi` objects
 
 
 
-### 📝 Exercise 5 - teachers and students
+### Instagram like service
+
+We need to create functionality for an Instagram-like Service.
+
+
+
+#### Social Media Content
+
+Design a system to manage social media content for a platform that supports different types of posts, such as text posts, photo posts, and video posts. Each type of post shares common properties like a caption, uploader (the user who posted it), and the timestamp of when it was posted. Additionally, each post type can have unique properties and behaviors:
+
+- **Common Post Features**: Every post, irrespective of its type, should allow operations to get the number of likes it has received and support like/dislike actions.
+
+- **Text Post**: A simple post containing text content.
+- **Photo Post**: A post that includes a photo along with the common features. It may have additional properties like photo resolution, filters applied, etc.
+- **Video Post**: Similar to a photo post but contains a video. It could have properties like video length, resolution, etc.
+
+
+
+#### Content Management System (CMS)
+A Content Management System (CMS) should be designed to manage the different types of posts. The CMS should allow:
+- Adding new posts to the collection.
+- Searching for posts using criteria such as caption, uploader, or post type.
+- Retrieving the top N most liked posts across all types.
+
+
+
+### 📝 Exercise 5 - study groups - teachers and students - after the break at 10:15
 
 Duration: 20 min
 
@@ -227,9 +285,29 @@ In groups of two people prepare a small 5 minute lecture. The lecture should exp
 
 
 
+After you have created the presentation it should be presented for each other
+
+
+
+### I må gerne arbejde på næste aflevering
+
+
+
 ### Internet profile - Level 1
 
 https://developer.android.com/codelabs/basic-android-kotlin-compose-kotlin-fundamentals-practice-problems#5
+
+
+
+### Last 8 - Level 2
+
+https://www.learncs.online/practice/kotlin/last-8/challen@illinois.edu?returnTo=encapsulation
+
+
+
+### Inheritance
+
+https://www.learncs.online/practice/kotlin/simple-person-inheritance/challen@illinois.edu
 
 
 
@@ -292,44 +370,3 @@ Create a Kotlin interface named `HipHopPlaylist` that includes the following met
 
 This exercise will help students understand the concept of interfaces in Kotlin and how they can be used to design a system, while also engaging their interest in hip-hop music.
 
-
-
-### Streaming service - Level 3
-
-We need to create the functionality for a Music Library.
-
-
-
-#### Song
-
-A song has to obey by the rules that they have to have methods for returning a title, artist and duration. it should also have a method for getting how many plays it has
-
-*Tip: think interfaces*
-
-
-
-#### Music Library
-
-A Music Library contains songs. With a Music library we should be able to add a song, we should be able to search for a song using either title, artist or with a specific minimum duration. It should also be able to get the most popular songs
-
-
-
-#### Main method
-
-Now create some songs and add them to the Music Library. 
-
-Search for some artists using title, artist and duration
-
-Get the most popular 5 songs in the music library
-
-
-
-### Last 8 - Level 2
-
-https://www.learncs.online/practice/kotlin/last-8/challen@illinois.edu?returnTo=encapsulation
-
-
-
-### Inheritance
-
-https://www.learncs.online/practice/kotlin/simple-person-inheritance/challen@illinois.edu

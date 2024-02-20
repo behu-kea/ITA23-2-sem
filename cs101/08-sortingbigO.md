@@ -2,6 +2,10 @@
 
 ### Exercises: Code comprehension & Big-O
 
+**Preface: **These exercises are solved easily by large language models such as ChatGPT. It is highly advised **against usage** of LLM's for the purpose of **generating code** to solve these exercises and would count as **fraud**. It would furthermore defeat the purpose as the following exercises are made to sharpen logical thinking & shape algorithmic understanding.
+
+
+
 Read the following code bits and determine their run-time:
 
 <img src="assets/image-20240212142516856.png" alt="image-20240212142516856" style="zoom:30%;" />

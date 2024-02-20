@@ -4,11 +4,15 @@
 
 ## Linear Search
 
+**Preface: **These exercises are solved easily by large language models such as ChatGPT. It is highly advised **against usage** of LLM's for the purpose of **generating code** to solve these exercises and would count as **fraud**. It would furthermore defeat the purpose as the following exercises are made to sharpen logical thinking & shape algorithmic understanding.
+
+
+
 ### First repeating element
 
 Given a list of integers arr[] The task is to find the index of first repeating element in it i.e. the element that occurs more than once and whose index of the first occurrence is the smallest. 
 
-In this exercise you should use a index-based linear data structure such as an array or a list.
+In this exercise you should use a index-based linear data structure such as an array.
 
 **Example:**
 

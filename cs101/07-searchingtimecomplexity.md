@@ -56,6 +56,29 @@ Output: [0,1]
 
 
 
+### Minimum distance
+
+Given an array of integers, find the minimum distance between two repeating elements. In other words, find the minimum difference between the indices of any two elements that are equal to each other. If there are no repeating elements in the array, return -1.
+
+**Example 1**
+
+```
+Input: [3, 6, 8, 2, 4, 3, 9, 1, 7, 5, 4] Output: 1
+
+Explanation: In this array, the repeating elements are 3 and 4, and their minimum distance is |5 - 10| = 5.
+```
+
+**Example 2**
+
+```
+Input: [2, 7, 1, 4, 9, 5] Output: -1
+
+Explanation: There are no repeating elements in this array, so the output is -1.
+
+```
+
+
+
 ### Advanced (Optional)
 
 You are an IT company's manager. Based on their performance over the last N working days, you must rate your employee. You are given an array of N integers called workload, where workload[i] represents the number of hours an employee worked on an ith day. The employee must be evaluated using the following criteria:
@@ -86,6 +109,8 @@ Therefore return *5*.
 ## Binary Search
 
 Implement **Binary Search**
+
+Visualisation: https://youtu.be/E6IOrZUpvSE?si=QV0w8CYACc3yG820
 
 ![image-20240212115050390](assets/image-20240212115050390.png)''
 

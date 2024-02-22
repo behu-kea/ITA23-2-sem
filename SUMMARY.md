@@ -9,9 +9,12 @@
   * [04 - Inheritance & access modification](cs101/04-inheritance-access-modification.md) 
 
   - [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
-  - [06 - Collections](CS101/06-collections-enum.md)
-  - [07 - Searching and Time Complexity](CS101/07-searchingtimecomplexity.md) 
-  - [08 - Sorting and big-O notation](CS101/08-sortingbigO.md) 
+* [06 - Collections](CS101/06-collections-enum.md)
+
+* [07 - Searching and Time Complexity](CS101/07-searchingtimecomplexity.md) 
+
+* [08 - Sorting and big-O notation](CS101/08-sortingbigO.md) 
+
 * Applikationsudvikling
 
   - [02 - Basic layout](applikationsudvikling/02-basic-layout.md)
@@ -21,11 +24,11 @@
   - [04 - UI state 2](applikationsudvikling/04-ui-state-lists.md)
 
   - [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
-  
+
   - [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
-  
+
   - [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
-  
+
   - [15 - Working with sensors](applikationsudvikling/15-sensors.md)
 * Brugerinddragelse
   * [Project 1](brugerinddragelse/project-1.md)

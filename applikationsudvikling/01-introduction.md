@@ -43,14 +43,26 @@ Using:
 - Make a new activity
 - Make the new activity the launch activity
 
+- Make the new activity the launch activity
+
+<img src="assets/image-20240229150854323.png" alt="image-20240229150854323" style="zoom:67%;" />
+
+- Make an application like this using composables:
+
+![image-20240301090246321](assets/image-20240301090246321.png)
+
+
+
+**B)**
+
+- Make a new activity
+- Make the new activity the launch activity
+
 ![image-20240229152934618](assets/image-20240229152934618.png)
 
 **C)**
 
 - Make a new activity
-- Make the new activity the launch activity
-
-<img src="assets/image-20240229150854323.png" alt="image-20240229150854323" style="zoom:67%;" />
 
 - Make your own digital business card layout such as this: 
 

@@ -199,7 +199,7 @@ Brug `Button` til alle de andre knapper
 
 ### 2 - Oprettelse af state variabler
 
-Vi skal til at tænke over hvilket state vi har i appen. Som jeg ser det er der minimum to state variabler
+Vi skal til at tænke over hvilken state vi har i appen. Som jeg ser det er der minimum to state variabler
 
 - Teksten med det som skal vises i toppen af lommeregneren
 - Om appen er i secret mode eller ikke. Sæt den til default at være `false`

@@ -1,6 +1,6 @@
 # ITA 2. Semester
 
-Test TEEEST
+
 
 ## Studiegrupper
 

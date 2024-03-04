@@ -169,6 +169,8 @@ A composable that uses `remember` to store an object creates internal state, mak
 
 
 
+<!--
+
 ## Magisk lommeregner
 
 Vi skal lave en magisk lommeregner der kan hjælpe med et trylle trick der virkelig kan imponere
@@ -199,7 +201,7 @@ Brug `Button` til alle de andre knapper
 
 ### 2 - Oprettelse af state variabler
 
-Vi skal til at tænke over hvilket state vi har i appen. Som jeg ser det er der minimum to state variabler
+Vi skal til at tænke over hvilken state vi har i appen. Som jeg ser det er der minimum to state variabler
 
 - Teksten med det som skal vises i toppen af lommeregneren
 - Om appen er i secret mode eller ikke. Sæt den til default at være `false`
@@ -314,7 +316,7 @@ Hvordan får brugeren indtastet telefonnummeret? Igen brainstorm og vælg den ne
 
 Kan du få lommeregneren til at ligne en rigtig lommeregner?
 
-
+-->
 
 <!--
 

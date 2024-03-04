@@ -75,7 +75,6 @@
 
 ### Mangler
 
-- Abel
 - Adam fordsmand
 - Mathias
 - Marc

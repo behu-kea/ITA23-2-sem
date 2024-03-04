@@ -2,7 +2,6 @@
 
 * [Front Page](README.md)
 
-* [08-sortingbigO.md](CS101/08-sortingbigO.md) 
 * CS101
   
   * [01 - Kotlin intro](cs101/01-kotlin-intro.md)
@@ -14,6 +13,7 @@
   - [06 - Collections](CS101/06-collections-enum.md)
   - [07 - Searching and Time Complexity](CS101/07-searchingtimecomplexity.md) 
   - [08-sortingbigO.md](CS101/08-sortingbigO.md) 
+  
 * Applikationsudvikling
 
   * [01 - Introduction](applikationsudvikling/01-introduction.md) 
@@ -38,10 +38,12 @@
   * [Exploring the problem space discover/emphasize](brugerinddragelse/week-6.md)
   * [Surveys and desk research and user journey mapping](brugerinddragelse/week-7.md)
   * [Personas, key recommendation](brugerinddragelse/week-8.md)
+  
 * [Handins](handins/README.md)
   * [1](handins/week-1.md)
   * [2](handins/week-2.md)
   * [3](handins/week-3.md)
+  
 * Tværfaglige projekter 
 
 

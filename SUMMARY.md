@@ -2,16 +2,18 @@
 
 * [Front Page](README.md)
 
+* [08-sortingbigO.md](CS101/08-sortingbigO.md) 
 * CS101
+  
   * [01 - Kotlin intro](cs101/01-kotlin-intro.md)
   * [02 - Control flow & lambda functions](cs101/02-control-flow-lambda.md)
   * [03 - Classes and objects](cs101/03-classes-and-objects.md)
   * [04 - Inheritance & access modification](cs101/04-inheritance-access-modification.md) 
-
+  
   - [05 - Interfaces & abstract](cs101/05-interfaces-abstract.md)
   - [06 - Collections](CS101/06-collections-enum.md)
   - [07 - Searching and Time Complexity](CS101/07-searchingtimecomplexity.md) 
-  - [08 - Sorting and big-O notation](CS101/08-sortingbigO.md) 
+  - [08-sortingbigO.md](CS101/08-sortingbigO.md) 
 * Applikationsudvikling
 
   * [01 - Introduction](applikationsudvikling/01-introduction.md) 

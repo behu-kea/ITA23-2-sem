@@ -32,7 +32,10 @@
   
   * [15 - Working with sensors](applikationsudvikling/15-sensors.md)
   
+* [Web Scraping](digital-kultur/webscraping.md) 
+  
 * Brugerinddragelse
+  
   * [Project 1](brugerinddragelse/project-1.md)
   * [What is UI/UX](brugerinddragelse/week-5.md)
   * [Exploring the problem space discover/emphasize](brugerinddragelse/week-6.md)

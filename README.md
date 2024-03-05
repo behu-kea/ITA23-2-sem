@@ -1,6 +1,6 @@
 # ITA 2. Semester
 
-Test TEEEST
+
 
 ## Studiegrupper
 
@@ -75,7 +75,6 @@ Test TEEEST
 
 ### Mangler
 
-- Abel
 - Adam fordsmand
 - Mathias
 - Marc

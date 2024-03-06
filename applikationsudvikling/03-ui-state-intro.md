@@ -15,7 +15,7 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 
 - Me coding a Currency converter
 
-![shapes at 24-01-17 12.20.37](assets/shapes at 24-01-17 12.20.37.png)
+![CleanShot-2024-03-06-at-12.40.36](assets/CleanShot-2024-03-06-at-12.40.36.png)
 
 
 

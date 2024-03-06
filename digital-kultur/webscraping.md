@@ -73,9 +73,8 @@ data class HackernewsPost(val title: String, val numberOfComments: Int): Compara
 
 **C)** **Advanced**
 
-Write the results to an excel file using the apache POI library
-
-Add the following dependencies:
+- Write the results to an excel file using the apache POI library
+  - Add the following dependencies:
 
 ```kotlin
     //Excel gradle dependency
@@ -101,3 +100,16 @@ fun main(){
     xlWb.close()
 }
 ```
+
+
+
+**D) Advanced**
+
+- Scrape every comment on the first 30 news on hackernews
+
+```kotlin
+//Hint: driver.get() takes a String litteral as argument
+//It can be replaced with other strings e.g. in a loop
+driver.get("https://www.hackernews.com");
+```
+

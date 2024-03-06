@@ -7,7 +7,9 @@
 - Peer instruction
 - Component based UI
 
-- Benjamin recreates a layout found online or through Dalle3
+- Kom på fredag. Det er en vildt vigtig gang!
+
+- Benjamin recreates a layout from a Shape application
   - Component based thinking
 
 
@@ -77,6 +79,10 @@ Text(
 
 )
 ```
+
+
+
+
 
 
 

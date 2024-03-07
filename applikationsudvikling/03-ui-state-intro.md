@@ -14,6 +14,19 @@ Compose is a declarative UI framework, meaning that you *declare* how the UI sho
 ## Overview
 
 - Me coding a Currency converter
+- [https://chat.openai.com/share/f89b4c49-03ba-4091-b503-11ce13a91207](https://chat.openai.com/share/f89b4c49-03ba-4091-b503-11ce13a91207)
+- Presentation of project
+
+<!--
+
+- Hvor langt har du til arbejde?
+- Hvor mange linjer kode har du skrevet i dit seneste projekt?
+- Hvor mange billeder har du taget med dit kamera eller smartphone det sidste år?
+- Hvor mange kopper kaffe drikker du i gennemsnit om ugen?
+- Hvor mange mennesker kender du ca?
+- Vejnummer
+
+-->
 
 ![CleanShot-2024-03-06-at-12.40.36](assets/CleanShot-2024-03-06-at-12.40.36.png)
 

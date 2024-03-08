@@ -49,7 +49,7 @@ Selenium API documentation: https://www.selenium.dev/documentation/webdriver/
 
 **A)**
 
-- Make a list of Strings containing all titles of the first 30 Hackernews posts
+- Make a list of Strings containing the titles of the first 30 Hackernews posts
 
 
 
@@ -57,6 +57,7 @@ Selenium API documentation: https://www.selenium.dev/documentation/webdriver/
 
 - Make a data class called HackerNewsPost containing the properties: 
   - Title
+  - Link
   - Points
   - Number of comments
 - Make the class comparable such that the class can be sorted in a list by comments (Most comments first)
@@ -93,9 +94,17 @@ fun main(){
     val rowNumber = 0
     val columnNumber = 0
 
-    xlWs.createRow(rowNumber).createCell(columnNumber).setCellValue("TEST")
+    val list1 = arrayListOf<String>("1","2","3");
+    val list2 = arrayListOf<String>("et","to","tre");
 
-    val outputStream = FileOutputStream("/Users/dean/AndroidStudioProjects/scraping/app/src/main/java/com/example/scraping/text.xlsx")
+    for (i in list1.indices){
+        val row: Row = xlWs.createRow(i);
+        row.createCell(0).setCellValue(list1[i]);
+        row.createCell(1).setCellValue(list2[i]);
+    }
+
+
+    val outputStream = FileOutputStream("app/src/main/java/com/example/scraping/text.xlsx")
     xlWb.write(outputStream)
     xlWb.close()
 }

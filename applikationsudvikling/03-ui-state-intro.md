@@ -182,8 +182,6 @@ A composable that uses `remember` to store an object creates internal state, mak
 
 
 
-<!--
-
 ## Magisk lommeregner
 
 Vi skal lave en magisk lommeregner der kan hjælpe med et trylle trick der virkelig kan imponere
@@ -329,7 +327,7 @@ Hvordan får brugeren indtastet telefonnummeret? Igen brainstorm og vælg den ne
 
 Kan du få lommeregneren til at ligne en rigtig lommeregner?
 
--->
+
 
 <!--
 

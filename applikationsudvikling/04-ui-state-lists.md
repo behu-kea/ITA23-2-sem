@@ -7,7 +7,7 @@
 - Create a idea generator app
 - Work on app for today
 - Break at 10:00
-- 11:45 presenation of solution
+- 11:30 presenation of solution
 
 
 

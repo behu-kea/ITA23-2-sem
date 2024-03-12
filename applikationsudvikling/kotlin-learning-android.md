@@ -399,3 +399,113 @@ UDF Unidirectional data flow
 
 With data the ui can be updated
 
+
+
+## Coroutines/Flow/async code
+
+Flow is recommended by the Android team as the tool to send data between layers in an application
+
+
+
+`suspend` is like `async` in js. A suspending function is simply a function that can be paused and resumed at a later time. 
+
+You can only call a suspend function within another suspend function
+
+
+
+coroutines calls callbacks continuation
+
+
+
+Once you call `await()`, you suspend the function call, thus preventing the thread from being blocked. Note that you can only call `await()` in a `suspend` function:
+
+
+
+## Scopes
+
+We can create a new scope. We can also use the global scope: `GlobalScope.launch`. Maybe we are in a viewModel, then we can say `viewModelScope.Launch{...}`
+
+
+
+### `Launch`
+
+Creates a new coroutine
+
+Is meant to be fired then forgotten
+
+```kotlin
+// The scope handles exceptions, but also cancelation and resume of the async code. 
+var scope = CoroutineScope(Dispatchers.Main)
+fun callAsync() {
+    scope.launch {
+    		println("Before 1 second")
+        run()
+        println("Printed after 1 second")
+    }
+}
+
+suspend fun run() {
+    delay(1000)
+}
+```
+
+
+
+### `Async`
+
+Creates a new coroutine. Can return value
+
+
+
+```kotlin
+suspend fun getuser(userId: String): User = 
+	coroutineScope {
+		val deferred = async(Dispatchers.IO) {
+			userService.getUser(userId);
+		}
+		deferred.await()
+	}
+```
+
+
+
+### Dispatchers
+
+- Main - Optimized for UI code or non-blocking code that executes fast
+- IO - optimized for network and disk operations
+- Default - Optimized for CPU-intensive tasks and some bigger computations
+
+
+
+### Exceptions
+
+`Launch`
+
+```kotlin
+scope.launch(Dispatchers.Default) {
+	try {
+		loggingService.upload(logs);
+	} catch(e: Exception) {
+		// handle exception
+	}
+}
+```
+
+
+
+`async`
+
+```kotlin
+suspend fun getuser(userId: String): User = 
+	coroutineScope {
+		val deferred = async(Dispatchers.IO) {
+			userService.getUser(userId);
+		}
+		try {
+			deferred.await()
+		} catch(e: Exception) {
+			// handle exception
+		}
+	}
+```
+

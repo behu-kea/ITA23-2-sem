@@ -27,3 +27,8 @@ Your task is to build a simple but useful tool for judges in of a basketball mat
   - All game state should be controlled by a ViewModel class
 
 ![image-20240311122450605](assets/image-20240311122450605.png)
+
+**Advanced (Optional)**
+
+- Instead of guessing a single number, the computer generates a list of numbers between 1-10.
+- The user guesses one number at a time and at the end gets displayed how many was guessed correctly

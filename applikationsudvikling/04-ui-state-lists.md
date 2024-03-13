@@ -2,6 +2,18 @@
 
 
 
+## Overview
+
+- Create a idea generator app
+  - Show the primary color theme!
+  - logd
+  - Mind mig om at uploade kode jeg skriver i klassen, jeg er dårlig til at huske det!
+- Work on app for today
+- Break at 10:00
+- 11:30 presenation of solution
+
+
+
 ## Preparation
 
 - [Add a scrollable list](https://developer.android.com/codelabs/basic-android-kotlin-compose-training-add-scrollable-list?continue=https%3A%2F%2Fdeveloper.android.com%2Fcourses%2Fpathways%2Fandroid-basics-compose-unit-3-pathway-2%23codelab-https%3A%2F%2Fdeveloper.android.com%2Fcodelabs%2Fbasic-android-kotlin-compose-training-add-scrollable-list#1)
@@ -58,19 +70,6 @@ fun renderUsers(users: List<String>) {
 In Jetpack Compose, `mutableStateOf` is designed to trigger  recompositions when the state object itself changes (i.e., when a new object is assigned to it). However, mutating the contents of an object  (like adding an item to a `MutableList`) does not count as a state change in this context.
 
 To make a list that works with Compose's reactive system, use `mutableStateListOf` instead. This function is observable and will trigger recompositions when items are added, removed, or updated
-
-
-
-### Using the key in the list
-
-
-
-/**
-             * Use key param to define unique keys representing the items in a mutable list,
-                          * instead of using the default key (list position). This prevents unnecessary
-                          * recompositions.
-                                       */
-                        ​            key = { task -> task.id }
 
 
 

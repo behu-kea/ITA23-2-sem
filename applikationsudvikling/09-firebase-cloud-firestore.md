@@ -88,8 +88,11 @@ Let's create a `Car` data class that matches the fields in the Firestore databas
 data class Car(
     val color: String = "", // Make properties public
     val numberOfWheels: Int = 0 // Provide default values
+  	@DocumentId var documentId: String? = null
 ) {}
 ```
+
+The important is the `documentId` annotation! It ensures that the documentId from Firestore is put into the object when fetching and creating! That is because Firestore creates the id not us! At least by default
 
 
 
@@ -98,7 +101,7 @@ data class Car(
 We now have all we need. Create a new object and add it to the database using the following code and the `.add` function
 
 ```kotlin
-// Create a new user with a first and last name
+// Create a new user with a first and last name. Here Firestore will create a DocumentId but we dont need to add it when creating an object
 val greenCar = Car("green", 5);
 
 // Add a new document with a generated ID
@@ -170,7 +173,25 @@ It is also possible to delete and edit
 
 
 
+### Notes app
 
+Create an app that can add, get, delete and update notes that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. Focus on the syntax of getting Firestor to work!
+
+
+
+
+
+
+
+
+
+
+
+Måske skal jeg starte med det helt simple. Lade dem lave en lille app der tilføjer, sletter, ændrer og henter
+
+
+
+Derefter gå ind i appen jeg har lavet, hvor de skal tilføje nogle ting. Her bliver der fokus på arkitekturen bag
 
 
 

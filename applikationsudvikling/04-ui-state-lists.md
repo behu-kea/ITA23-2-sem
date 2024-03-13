@@ -4,6 +4,7 @@
 
 ## Overview
 
+- Struktur
 - Create a idea generator app
   - Show the primary color theme!
   - logd

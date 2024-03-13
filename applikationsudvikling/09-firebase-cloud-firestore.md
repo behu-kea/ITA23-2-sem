@@ -171,29 +171,55 @@ It is also possible to delete and edit
 
 ## Exercise
 
+Der er to slags opgaver idag. Den første er fokuseret på at i skal have forbindelse til Firestore og lave nogle simple ting med det. 
+
+Den anden del fokuserer på hvordan man ville bruge Firestore i et mere "professionelt" setup
+
 
 
 ### Notes app
 
-Create an app that can add, get, delete and update notes that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. Focus on the syntax of getting Firestor to work!
+Create an app that can add, get, delete and update notes that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. 
 
 
 
+Focus on the syntax of getting Firestore to work!
 
 
 
+### Professional notes app
+
+Jeg har lavet et lidt mere professionelt setup hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
 
 
 
+#### Bug fix 1
+
+Der er en bug i programmet, men hvor den er og hvordan man fikser den skal i finde ud af
 
 
-Måske skal jeg starte med det helt simple. Lade dem lave en lille app der tilføjer, sletter, ændrer og henter
+
+#### Bug fix 2
+
+Der er en ting med navigeringen der ikke er optimal, men hvad? Det skal i finde ud af og fikse
 
 
 
-Derefter gå ind i appen jeg har lavet, hvor de skal tilføje nogle ting. Her bliver der fokus på arkitekturen bag
+#### Feature 1
+
+I skal lave en side hvor man kan skrive id'et på en note og se notens titel og tekst
 
 
+
+#### Feature 2
+
+Man skal kunne slette en note på en eller anden måde
+
+
+
+#### FEATURE 3
+
+Søgning i noter. Når man søger efter en note, skal kun de relevante noter vises!
 
 
 

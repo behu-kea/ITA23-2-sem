@@ -509,3 +509,10 @@ suspend fun getuser(userId: String): User =
 	}
 ```
 
+
+
+## Missing internet connection in emulator
+
+https://www.youtube.com/watch?v=D7cG0QZ1w8g
+
+On mac create a new dns server with 8.8.8.8 and then wipe and restart emulator

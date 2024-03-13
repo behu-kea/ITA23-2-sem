@@ -88,8 +88,11 @@ Let's create a `Car` data class that matches the fields in the Firestore databas
 data class Car(
     val color: String = "", // Make properties public
     val numberOfWheels: Int = 0 // Provide default values
+  	@DocumentId var documentId: String? = null
 ) {}
 ```
+
+The important is the `documentId` annotation! It ensures that the documentId from Firestore is put into the object when fetching and creating! That is because Firestore creates the id not us! At least by default
 
 
 
@@ -98,7 +101,7 @@ data class Car(
 We now have all we need. Create a new object and add it to the database using the following code and the `.add` function
 
 ```kotlin
-// Create a new user with a first and last name
+// Create a new user with a first and last name. Here Firestore will create a DocumentId but we dont need to add it when creating an object
 val greenCar = Car("green", 5);
 
 // Add a new document with a generated ID
@@ -168,11 +171,55 @@ It is also possible to delete and edit
 
 ## Exercise
 
+Der er to slags opgaver idag. Den første er fokuseret på at i skal have forbindelse til Firestore og lave nogle simple ting med det. 
+
+Den anden del fokuserer på hvordan man ville bruge Firestore i et mere "professionelt" setup
 
 
 
+### Notes app
+
+Create an app that can add, get, delete and update notes that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. 
 
 
+
+Focus on the syntax of getting Firestore to work!
+
+
+
+### Professional notes app
+
+Jeg har lavet et lidt mere professionelt setup hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
+
+
+
+#### Bug fix 1
+
+Der er en bug i programmet, men hvor den er og hvordan man fikser den skal i finde ud af
+
+
+
+#### Bug fix 2
+
+Der er en ting med navigeringen der ikke er optimal, men hvad? Det skal i finde ud af og fikse
+
+
+
+#### Feature 1
+
+I skal lave en side hvor man kan skrive id'et på en note og se notens titel og tekst
+
+
+
+#### Feature 2
+
+Man skal kunne slette en note på en eller anden måde
+
+
+
+#### FEATURE 3
+
+Søgning i noter. Når man søger efter en note, skal kun de relevante noter vises!
 
 
 

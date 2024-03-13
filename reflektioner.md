@@ -13,3 +13,7 @@ Handin 2 med car og getSalesPrice. Det ville man ikke lave en seperate funktion 
 GetPerimetere, getArea i Shape
 
 printProductCategory
+
+
+
+#### Måske en rettevejledning eller noget til de der opgaver - hvad man skal kigge efter, der så over tid også kan blive til mere gennemsigthed for de studerende

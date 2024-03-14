@@ -11,6 +11,10 @@
 
 
 
+![Meditation benefits](assets/CleanShot-2024-03-14-at-07.27.03.png)
+
+
+
 ## Learning goals
 
 - Compose navigation

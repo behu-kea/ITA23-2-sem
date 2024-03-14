@@ -279,7 +279,7 @@ First create a `Composable` that shows the dashboard. Dont focus on design, but 
 
 From the Dashboard clicking on `Downloads` should take you to this view. Again dont spend too much time on design, but more on creating a `Donwloads` `Composable` that is activated when clicking on `Downloads`
 
-![Screenshot_20240122-133101 (1)](assets/Screenshot_20240122-133101 (1).png)
+![Downloads](assets/downloads.png)
 
 ### 3 - Explore - Level 2
 
@@ -297,7 +297,9 @@ Clicking on one of the Meditations from above will take you to one of these view
 
 **Level 2** - Here you navigate to a `Composable`  fx. called `BodyScan`. You can then make individual composables for each item in the list above (or as many as see fit)
 
-**Level 3** - Make a `Composable` that is more general that can receive the clicked item. Maybe you call it `MeditationOverview`. That composable needs a title, image, description and list of meditations. You need to figure out how to send these attributes to the Composable using navigation. 
+**Level 3** - Make a `Composable` that is more general that can receive the clicked item. Maybe you call it `MeditationOverview`. That composable needs a title, image, description and list of meditations. Now to send these attributes as an object is not best practice, neither is sending an image: [https://stackoverflow.com/questions/67121433/how-to-pass-object-in-navigation-in-jetpack-compose](https://stackoverflow.com/questions/67121433/how-to-pass-object-in-navigation-in-jetpack-compose) More official details [here](https://stackoverflow.com/a/69060224/2263329). 
+
+Therefore instead when you click on a topic above, you only send the id of the topic. Then you have another `List` or `Map` that keeps track of the topics list `List<Topics>`
 
 ![Screenshot_20240122-133122](assets/Screenshot_20240122-133122.png)
 

@@ -6,7 +6,7 @@
 
 - Struktur
 - Create a idea generator app
-  - Show the primary color theme!
+  - Show the primary color theme! [https://m3.material.io/theme-builder#/custom](https://m3.material.io/theme-builder#/custom)
   - logd
   - Mind mig om at uploade kode jeg skriver i klassen, jeg er dårlig til at huske det!
 - Work on app for today

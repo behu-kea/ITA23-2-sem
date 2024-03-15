@@ -24,10 +24,12 @@
 
   * [04 - UI state 2](applikationsudvikling/04-ui-state-lists.md)
 
+  * [05 - Architecture & MVVM.md](applikationsudvikling/05-architecture-mvvm.md) 
+
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
 
   * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
-
+  
   * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
   
   * [15 - Working with sensors](applikationsudvikling/15-sensors.md)
@@ -48,6 +50,3 @@
   * [3](handins/week-3.md)
   
 * Tværfaglige projekter 
-
-
-

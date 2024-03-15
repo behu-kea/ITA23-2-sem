@@ -43,6 +43,12 @@ class GameViewModel : ViewModel() {
 
 ![image-20240311122450605](assets/image-20240311122450605.png)
 
+If you are stuck - you can get inspired from: https://github.com/nicklasdean/GuessMyNumber
+
+- This does not represent all solutions nor the best solution.
+
+
+
 **Advanced (Optional)**
 
 - Instead of guessing a single number, the computer generates a list of numbers between 1-10.

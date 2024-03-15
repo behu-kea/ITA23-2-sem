@@ -6,13 +6,23 @@
 
 - Struktur
 - Create a idea generator app
-  - Show the primary color theme!
+  - Show the primary color theme! [https://m3.material.io/theme-builder#/custom](https://m3.material.io/theme-builder#/custom)
   - logd
   - Mind mig om at uploade kode jeg skriver i klassen, jeg er dårlig til at huske det!
 - Work on app for today
 - Midtvejssamtaler
 - Break at 10:00
 - 11:30 presenation of my solution
+
+
+
+<!--
+
+## After class considerations
+
+- This could be made into creating a password manager and then talking about the benefits of such a password manager
+
+-->
 
 
 

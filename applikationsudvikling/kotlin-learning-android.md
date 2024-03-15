@@ -511,6 +511,52 @@ suspend fun getuser(userId: String): User =
 
 
 
+## Change color after 1 second
+
+```kotlin
+class MainActivity : ComponentActivity() {
+    // Declare the state at class level to make it accessible inside callAsync
+    private var isGreen by mutableStateOf(true)
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContent {
+            AsynclearningTheme {
+                // A surface container using the 'background' color from the theme
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ) {
+                    // Use isGreen state directly here
+                    if(isGreen) {
+                        Text(text = "Green", modifier = Modifier.background(Color.Green))
+                    } else {
+                        Text(text = "Red", modifier = Modifier.background(Color.Red))
+                    }
+                }
+            }
+        }
+        callAsync()
+    }
+
+    private val scope = CoroutineScope(Dispatchers.Main)
+
+    private fun callAsync() {
+        scope.launch {
+            run()
+        }
+    }
+
+    private suspend fun run() {
+        delay(1000)
+        // Toggle the isGreen state after delay
+        isGreen = !isGreen
+    }
+}
+```
+
+
+
 ## Missing internet connection in emulator
 
 https://www.youtube.com/watch?v=D7cG0QZ1w8g

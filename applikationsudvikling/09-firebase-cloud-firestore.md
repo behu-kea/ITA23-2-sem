@@ -189,7 +189,27 @@ Focus on the syntax of getting Firestore to work!
 
 ### Professional notes app
 
-Jeg har lavet et lidt mere professionelt setup hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
+Jeg har lavet et lidt mere professionelt repo hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
+
+Projektet kan findes her: [https://github.com/behu-kea/ita-23-2-sem-code/tree/main/noteapp](https://github.com/behu-kea/ita-23-2-sem-code/tree/main/noteapp)
+
+For at få det til at virke, skal i gøre det følgende:
+
+1. Tilføje en notes Collection i din Firestore database! 
+
+![Tilføj notes collection](assets/CleanShot-2024-03-18-at-10.19.41.png)
+
+
+
+
+
+2. Tilføje det nye projekt, så projektet kan tilgå jeres database. Her skal i skrive jeres package navn og så hente `google-services.json` filen ned og overskrive den der allerede ligger i projektet
+
+
+
+![Tilføj den nye app](assets/CleanShot-2024-03-18-at-10.19.08.png)
+
+
 
 
 

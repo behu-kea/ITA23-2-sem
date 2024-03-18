@@ -1,6 +1,18 @@
 # Testing
 
+
+
+## Preparation
+
+[https://www.youtube.com/watch?v=JyUJZvJ-OV8](https://www.youtube.com/watch?v=JyUJZvJ-OV8)
+
+
+
 [Testing in android playlist](https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq&index=1)
+
+
+
+
 
 
 
@@ -99,6 +111,8 @@ fun teardown() {
 
 ## Notes app
 
+For the notes app we were working on last time, lets write some tests for that app. The repo can be found [here](https://github.com/behu-kea/ita-23-2-sem-code/tree/for-testing-lecture/noteapp) with all features implemented
+
 
 
 ### Unit tests
@@ -107,7 +121,15 @@ fun teardown() {
 
 
 
-### UI testing
+### UI tests
+
+You have to write some ui tests that test the following:
+
+- When creating a new note that note will show up in the overview
+- When searching for a note the correct notes will be shown in the overview
+- Changing a note will change it in the overview
+
+
 
 
 

@@ -2,6 +2,12 @@
 
 
 
+## Overview
+
+- Snakke om repositories/arkitektur
+
+
+
 ## Create your Firestore in Firebase
 
 go to [https://console.firebase.google.com/?pli=1](https://console.firebase.google.com/?pli=1) -> add project, give it a name -> Add analytics if necessary -> click create

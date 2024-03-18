@@ -35,9 +35,59 @@ Three types of tests:
 
 `androidtest` vs `test` folder
 
+`androidtest` - Everything that runs on the emulator or need some android context
+
+`test` - Everything else. Fx testing a `getSum` function does not need android
+
 
 
 ## Dependencies
+
+The dependencies should be made for each `androidtest` vs `test` . Here it is called `testImplementation` and `androidTestimplementation`
+
+
+
+
+
+## Writing the test
+
+
+
+```kotlin
+@Test
+fun `empty username returns false`() {
+	val sum = getSum(listOf(1,2,3));
+	assertThat(sum).equals(6)
+}
+```
+
+
+
+### `@before` and `@after`
+
+If we want some code to run before each test is run
+
+```
+@Before
+fun setup() {
+	// do something here
+}
+```
+
+
+
+After is usually meant to destroy objects or close database connections
+
+```
+@After
+fun teardown() {
+	// do something here
+}
+```
+
+
+
+
 
 
 

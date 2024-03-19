@@ -4,7 +4,7 @@
 
 ## Preparation
 
-[https://www.youtube.com/watch?v=JyUJZvJ-OV8](https://www.youtube.com/watch?v=JyUJZvJ-OV8)
+[Write your first Compose UI test](https://www.youtube.com/watch?v=JyUJZvJ-OV8)
 
 
 

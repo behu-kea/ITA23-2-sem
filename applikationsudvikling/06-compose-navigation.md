@@ -263,10 +263,10 @@ fun SendArgumentsHere(name: String) {
 
 I din studiegruppe lav en præsentation på 5 min der kommer ind på disse emner:
 
-- `NavHost`
-- `NavController`
+- `NavHost` and `NavController`
 - Navigation between routes
 - Sending data from one route to another
+- `popBackStack`
 
 
 

@@ -101,7 +101,40 @@ fun teardown() {
 
 
 
+## UI tests
 
+
+
+```kotlin
+@get: Rule
+val rule = createComposeRule()
+```
+
+
+
+### Create a test
+
+```kotlin
+@Test
+fun addNote() {
+    rule.setContent { AppNavigation(notesViewModel); }
+
+    rule.onNodeWithText("Add new note")
+        .performClick()
+
+    rule.onNodeWithText("Title")
+        .performTextInput("olol")
+
+    rule.onNodeWithText("Content")
+        .performTextInput("olol1")
+
+    rule.onNodeWithText("Save note")
+        .performClick()
+
+    rule.onNodeWithText("olol")
+        .assertExists("The note with title 'olol' was not found in the list.")
+}
+```
 
 
 

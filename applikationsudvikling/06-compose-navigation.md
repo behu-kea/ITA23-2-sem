@@ -5,6 +5,7 @@
 ## Overview
 
 - Should video title be `val` or `var` [https://www.youtube.com/watch?v=d0d9nsTLaKo](https://www.youtube.com/watch?v=d0d9nsTLaKo)
+- Husk aflevering søndag!
 - Create presentation
 - Small guided meditation through Medito
   - Quick intro to benefits from meditating

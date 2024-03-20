@@ -103,7 +103,11 @@ fun teardown() {
 
 ## UI tests
 
+These are teste that test the ui more than the functionality. That means we write code that clicks buttons, writes text in input fields and check if the right elements are on the page
 
+
+
+To create a UI test we must first create a rule that we can 
 
 ```kotlin
 @get: Rule

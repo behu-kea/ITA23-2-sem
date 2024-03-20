@@ -2,15 +2,27 @@
 
 
 
+## Overview
+
+
+
+
+
 ## Preparation
 
-[Write your first Compose UI test](https://www.youtube.com/watch?v=JyUJZvJ-OV8)
+- [https://developer.android.com/jetpack/compose/testing](https://developer.android.com/jetpack/compose/testing) (se video læs om Semantics, Setup og Testing APIs)
+
+- [Testing in android playlist](https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq&index=1)
 
 
 
-[Testing in android playlist](https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq&index=1)
 
 
+Three types of tests:
+
+1. Unit tests - single units. Fx function `getSum` . 70% of our app
+2. Integration tests - How two components work together. Interaction betwen components. 20 %
+3. UI tests/end-to-end - Whole interaction. Log in, then click a button etc
 
 
 
@@ -29,11 +41,7 @@ What makes a good test:
 
 
 
-Three types of tests:
-
-1. Unit tests - single units. Fx function `getSum` . 70% of our app
-2. Integration tests - How two components work together. Interaction betwen components. 20 %
-3. UI tests/end-to-end - Whole interaction. Log in, then click a button etc
+3. 
 
 
 
@@ -107,16 +115,87 @@ These are teste that test the ui more than the functionality. That means we writ
 
 
 
-To create a UI test we must first create a rule that we can 
+To create a UI test we must first create a rule that we can use to interact with our app
 
 ```kotlin
 @get: Rule
 val rule = createComposeRule()
 ```
 
+you could say that `rule` is kind of like `document` in javascript. With the `document` we can get elements, click and set text in input fields. 
+
 
 
 ### Create a test
+
+To create a test write the `@Test` annotation before a function. This function will now be part of your tests. 
+
+First we have to specify what content we are testing. We can test the full application, but we can alos just test a `@Composable`. 
+
+```kotlin
+rule.setContent { AppNavigation(notesViewModel); }
+```
+
+`AppNavigation(notesViewModel)` is a `Composable`
+
+
+
+#### Getting a node
+
+When we have defined the content we need to start selecting some elements. In javascript we did this with `document.querySelector` . Using a `rule` we do that with `rule.onNodeWithText("Add new note")`. Here we get a node that has the text `Add new note`. 
+
+
+
+We can also select a node anothe way like this:
+
+```kotlin
+rule.onNode(
+	hasText("Add new note")
+	and
+	hasClickAction()
+)
+```
+
+We can also use tags. 
+
+
+
+#### Create some action
+
+When we have a node, we can create an action on that note, fx click it, write text in the node etc.
+
+Here we click a node
+
+```kotlin
+rule.onNodeWithText("Add new note")
+	.performClick()
+```
+
+
+
+Here we write some text in a node
+
+```kotlin
+rule.onNodeWithText("Title")
+	.performTextInput("olol")
+```
+
+
+
+#### Check stuff
+
+Now we can check if some node was created with our action:
+
+```kotlin
+rule.onNodeWithText("olol")
+	.assertExists()
+```
+
+
+
+#### Full example
+
+Here is an example of a test that tests that creating a new node works as expected
 
 ```kotlin
 @Test
@@ -136,9 +215,13 @@ fun addNote() {
         .performClick()
 
     rule.onNodeWithText("olol")
-        .assertExists("The note with title 'olol' was not found in the list.")
+        .assertExists()
 }
 ```
+
+
+
+Read more about UI testing in compose here: [https://developer.android.com/jetpack/compose/testing](https://developer.android.com/jetpack/compose/testing)
 
 
 

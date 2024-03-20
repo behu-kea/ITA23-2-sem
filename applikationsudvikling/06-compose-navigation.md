@@ -2,6 +2,19 @@
 
 
 
+<!--
+
+## After class considerations
+
+- Den var lidt for svær idag. Præsentationen var ikke specielt lærerig for dem
+- Jeg skulle have startet med at lave et lille eksempel. Måske er jeg ved at vænne dem til at jeg forklarer alt?
+- Kodeeksemplet var også alt for kompliceret
+- Eller meditation gik godt
+
+-->
+
+
+
 ## Overview
 
 - Should video title be `val` or `var` [https://www.youtube.com/watch?v=d0d9nsTLaKo](https://www.youtube.com/watch?v=d0d9nsTLaKo)

@@ -145,7 +145,24 @@ rule.onNode(
 )
 ```
 
-We can also use tags. 
+
+
+We can also use tags like this
+
+```kotlin
+Button(
+    onClick = { /* Do something */ },
+    modifier = Modifier.testTag("myButtonTag")
+) {
+    Text("Click Me")
+}
+```
+
+
+
+```kotlin
+val buttonTag = composeTestRule.onNodeWithTag("myButtonTag")
+```
 
 
 

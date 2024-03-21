@@ -264,3 +264,35 @@ Jeg kommer til at sidde klar til at give jer feedback på jeres MVP
 
 
 
+<!--
+
+```
+class UiTester {
+    @get: Rule
+    val rule = createComposeRule()
+
+    val notesViewModel: NotesViewModel = NotesViewModel()
+
+    @Test
+    fun addNote() {
+        rule.setContent { AppNavigation(notesViewModel); }
+
+        rule.onNodeWithText("Add new note")
+            .performClick()
+
+        rule.onNodeWithText("Title")
+            .performTextInput("olol")
+
+        rule.onNodeWithText("Content")
+            .performTextInput("olol1")
+
+        rule.onNodeWithText("Save note")
+            .performClick()
+
+        rule.onAllNodesWithText("olol")
+            .get(0).assertExists()
+    }
+}
+```
+
+-->

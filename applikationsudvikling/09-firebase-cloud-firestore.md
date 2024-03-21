@@ -2,6 +2,14 @@
 
 
 
+## Overview
+
+- Gå skemaet igennem for resten af semestret
+- Snakke om repositories/arkitektur
+- Create an app that uses firestore to save some entities (notes, videos, recipes, whatever)
+
+
+
 ## Create your Firestore in Firebase
 
 go to [https://console.firebase.google.com/?pli=1](https://console.firebase.google.com/?pli=1) -> add project, give it a name -> Add analytics if necessary -> click create
@@ -177,9 +185,9 @@ Den anden del fokuserer på hvordan man ville bruge Firestore i et mere "profess
 
 
 
-### Notes app
+### Firestor App
 
-Create an app that can add, get, delete and update notes that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. 
+Create an app that can add, get, delete and update some entities that are saved in a Firestore database. The UI does not really matter, and try not to focus too much on architecture or hoisting state and all that. 
 
 
 

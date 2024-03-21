@@ -2,14 +2,29 @@
 
 
 
+<!--
+
+## After class considerations
+
+- Den var lidt for svær idag. Præsentationen var ikke specielt lærerig for dem
+- Jeg skulle have startet med at lave et lille eksempel. Måske er jeg ved at vænne dem til at jeg forklarer alt?
+- Kodeeksemplet var også alt for kompliceret
+- Ellers meditation gik godt
+- Forberedelse var ikke super godt
+
+-->
+
+
+
 ## Overview
 
 - Should video title be `val` or `var` [https://www.youtube.com/watch?v=d0d9nsTLaKo](https://www.youtube.com/watch?v=d0d9nsTLaKo)
+- Husk aflevering søndag!
+- Create presentation
 - Small guided meditation through Medito
   - Quick intro to benefits from meditating
   - [https://meditofoundation.org/meditations/beginner-meditation-course](https://meditofoundation.org/meditations/beginner-meditation-course)
-- I will create a small demo app
-- Work on case. Recreate the Medito App
+- Work on case. Recreate the navigation of the Medito App
 
 
 
@@ -259,7 +274,18 @@ fun SendArgumentsHere(name: String) {
 
 
 
-## Case - Recreate the Medito app
+## 📝 Navigations præsentation - 30 min
+
+I din studiegruppe lav en præsentation på 5 min der kommer ind på disse emner:
+
+- `NavHost` and `NavController`
+- Navigation between routes
+- Sending data from one route to another
+- `popBackStack`
+
+
+
+## 📝 Case - Recreate the Medito app
 
 In this case you will recreate the navigation of the Medito App. Todays focus should be on the navigation part and not the design of the app. The design can be very crude and that is fine
 

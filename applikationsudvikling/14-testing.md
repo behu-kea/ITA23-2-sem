@@ -1,10 +1,14 @@
-# Testing
+# Testing & Feedforward
 
 
 
 ## Overview
 
+- Talk about testing
+  - Unit tests
+  - Ui tests
 
+- Write a small test for the notest app
 
 
 
@@ -12,19 +16,13 @@
 
 - [https://developer.android.com/jetpack/compose/testing](https://developer.android.com/jetpack/compose/testing) (se video læs om Semantics, Setup og Testing APIs)
 
-- [Testing in android playlist](https://www.youtube.com/watch?v=EkfVL5vCDmo&list=PLQkwcJG4YTCSYJ13G4kVIJ10X5zisB2Lq&index=1)
-
-
-
 
 
 Three types of tests:
 
-1. Unit tests - single units. Fx function `getSum` . 70% of our app
-2. Integration tests - How two components work together. Interaction betwen components. 20 %
+1. Unit tests - single units. Fx function `getSum` 
+2. Integration tests - How two components work together. Interaction betwen components
 3. UI tests/end-to-end - Whole interaction. Log in, then click a button etc
-
-
 
 
 
@@ -32,26 +30,7 @@ TDD - Test driven development. Write tests first. Then start developing code. Co
 
 
 
-What makes a good test:
-
-- Scope - How much coverage 
-- Speed - The faster then more you will use it
-- Fidelity- How close to real scenario
-- Not a flaky test
-
-
-
-3. 
-
-
-
-## Test strategy
-
-- **Success path:** The success path tests - also known as happy path tests, focus on testing the functionality for a positive flow.
-- **Error path:** The error path tests focus on testing the  functionality for a negative flow–that is, to check how the app responds to error conditions or invalid user input.
-- **Boundary case:** A boundary case focuses on testing boundary conditions in the app. 
-
-
+### Testing folders
 
 `androidtest` vs `test` folder
 
@@ -61,33 +40,42 @@ What makes a good test:
 
 
 
-## Dependencies
+## Unit test
 
-The dependencies should be made for each `androidtest` vs `test` . Here it is called `testImplementation` and `androidTestimplementation`
+In a unit test we test that sum function works as expected. In the following example we have two tests: 
 
-
-
-
-
-## Writing the test
-
-
+1. One where we check that an addition works
+2. One where we check a sum function we have created
 
 ```kotlin
-@Test
-fun `empty username returns false`() {
-	val sum = getSum(listOf(1,2,3));
-	assertThat(sum).equals(6)
+fun getSum(list: List<Int>): Int {
+    return list.sum()
+}
+
+class ExampleUnitTest {
+    @Test
+    fun `Addition works`() {
+        assertEquals(4, 2 + 2);
+    }
+
+    @Test
+    fun `Sum function works`() {
+        val list = listOf(1, 2, 3);
+        val sum = getSum(list);
+        assertEquals(6, sum);
+    }
 }
 ```
 
+For each test we add the `@Test` annotation followed by a function with the thing we want to test. To test something we use the `assertEquals` function. The first argument is what we expected, the next is the actual result. With this line: `assertEquals(6, sum);` we say that we expect the value of the `sum` variable to be 6
 
 
-### `@before` and `@after`
+
+### `@Before` and `@After`
 
 If we want some code to run before each test is run
 
-```
+```kotlin
 @Before
 fun setup() {
 	// do something here
@@ -98,14 +86,12 @@ fun setup() {
 
 After is usually meant to destroy objects or close database connections
 
-```
+```kotlin
 @After
 fun teardown() {
 	// do something here
 }
 ```
-
-
 
 
 
@@ -231,13 +217,7 @@ Read more about UI testing in compose here: [https://developer.android.com/jetpa
 
 ## Notes app
 
-For the notes app we were working on last time, lets write some tests for that app. The repo can be found [here](https://github.com/behu-kea/ita-23-2-sem-code/tree/for-testing-lecture/noteapp) with all features implemented
-
-
-
-### Unit tests
-
-
+For the notes app we were working on last time, lets write some tests for that app. The repo can be found [here](https://github.com/behu-kea/ita-23-2-sem-code/tree/for-testing-lecture/noteapp) with all features implemented. We will be focusing on UI tests
 
 
 
@@ -245,19 +225,16 @@ For the notes app we were working on last time, lets write some tests for that a
 
 You have to write some ui tests that test the following:
 
+- Clicking on a note in the overview will take you to the right note
 - When creating a new note that note will show up in the overview
 - When searching for a note the correct notes will be shown in the overview
-- Changing a note will change it in the overview
-
-
-
-
+- Deleting a node will delete it from the overview
 
 
 
 ## Tværfagligt projekt
 
-Lav nogle unit tests og nogle UI tests for jeres app
+Lav nogle UI tests for jeres app
 
 
 

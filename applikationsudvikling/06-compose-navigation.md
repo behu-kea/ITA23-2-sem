@@ -9,7 +9,8 @@
 - Den var lidt for svær idag. Præsentationen var ikke specielt lærerig for dem
 - Jeg skulle have startet med at lave et lille eksempel. Måske er jeg ved at vænne dem til at jeg forklarer alt?
 - Kodeeksemplet var også alt for kompliceret
-- Eller meditation gik godt
+- Ellers meditation gik godt
+- Forberedelse var ikke super godt
 
 -->
 

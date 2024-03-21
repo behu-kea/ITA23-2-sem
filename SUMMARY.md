@@ -28,6 +28,8 @@
 
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
 
+  * [07 - Firebase Authentication.md](applikationsudvikling/07 Firebase Authentication.md) 
+  
   * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
   
   * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)

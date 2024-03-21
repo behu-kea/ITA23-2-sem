@@ -199,7 +199,7 @@ Focus on the syntax of getting Firestore to work!
 
 Jeg har lavet et lidt mere professionelt repo hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
 
-Projektet kan findes her: [https://github.com/behu-kea/note-app.git](https://github.com/behu-kea/note-app.git)
+Projektet kan findes her: [https://github.com/behu-kea/note-app](https://github.com/behu-kea/note-app)
 
 For at få det til at virke, skal i gøre det følgende:
 

@@ -17,6 +17,7 @@
 ## Preparation
 
 - [https://developer.android.com/jetpack/compose/testing](https://developer.android.com/jetpack/compose/testing) (se video læs om Semantics, Setup og Testing APIs)
+- [Writing Our First Unit Tests - Testing on Android - Part 3](https://youtu.be/W0ag98EDhGc?si=3lCv9r2_EFXq3tAL)
 
 
 
@@ -234,9 +235,9 @@ You have to write some ui tests that test the following:
 
 
 
-## UI teste for jeres tværfaglige projekt
+## UI tests for jeres tværfaglige projekt
 
-Lav nogle UI tests for jeres app
+Lav nogle UI tests for jeres app, der tester de vigtigste dele af jeres app
 
 
 

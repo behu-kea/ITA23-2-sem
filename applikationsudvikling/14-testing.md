@@ -8,7 +8,9 @@
   - Unit tests
   - Ui tests
 
-- Write a small test for the notest app
+- Lav nogle UI tests for notes appen
+- Lav nogle UI tests for jeres MVP
+- Jeg giver feedforward på jeres MVP
 
 
 
@@ -228,13 +230,19 @@ You have to write some ui tests that test the following:
 - Clicking on a note in the overview will take you to the right note
 - When creating a new note that note will show up in the overview
 - When searching for a note the correct notes will be shown in the overview
-- Deleting a node will delete it from the overview
+- Deleting a note will delete it from the overview
 
 
 
-## Tværfagligt projekt
+## UI teste for jeres tværfaglige projekt
 
 Lav nogle UI tests for jeres app
+
+
+
+## Fastforward til jeres MVP
+
+Jeg kommer til at sidde klar til at give jer feedback på jeres MVP
 
 
 

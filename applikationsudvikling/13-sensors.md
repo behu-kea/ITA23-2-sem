@@ -50,6 +50,14 @@ Here are the topics:
 
 ### Camera
 
+https://www.youtube.com/watch?v=GRHQcl496P4
+
+https://github.com/behu-kea/ita-23-2-sem-code/tree/for-testing-lecture/workingwithsensors/app/src/main/java/com/example/working_with_sensors
+
+Tjek her. Især husk gradle!
+
+
+
 **Kotlin compose ui**
 
 Add this to the `AndroidManifest.xml` file.
@@ -63,6 +71,10 @@ This gives access to the camera
 
 <uses-permission android:name="android.permission.CAMERA" />
 ```
+
+
+
+
 
 
 
@@ -294,11 +306,7 @@ private fun getCurrentLocation(context: Context, callback: (Double, Double) -> U
 
 
 
-### Kamera
 
-https://github.com/behu-kea/ita-23-2-sem-code/tree/for-testing-lecture/workingwithsensors/app/src/main/java/com/example/working_with_sensors
-
-Tjek her. Især husk gradle!
 
 
 

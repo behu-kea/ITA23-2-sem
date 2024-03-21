@@ -34,7 +34,9 @@
   
   * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
   
-  * [15 - Working with sensors](applikationsudvikling/15-sensors.md)
+  * [13 - Working with sensors](applikationsudvikling/13-sensors.md)
+  
+  * [14 - Testing](applikationsudvikling/14-testing.md)
   
 * [Web Scraping](digital-kultur/webscraping.md) 
   

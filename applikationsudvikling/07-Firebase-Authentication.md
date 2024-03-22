@@ -1,5 +1,9 @@
 # Firebase Authentication
 
+https://github.com/nicklasdean/compose-firebase-auth
+
+
+
 ### Pre-requisites:
 
 #### Follow step 1-4: Add Firebase: using the Firebase console

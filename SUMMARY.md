@@ -27,28 +27,33 @@
   * [05 - Architecture & MVVM.md](applikationsudvikling/05-architecture-mvvm.md) 
 
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
+  
+    * [07 - Firebase Authentication.md](applikationsudvikling/07 Firebase Authentication.md)
+  
+    * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
+    
+  
+    * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
+    
+  
+  * [13 - Working with sensors](applikationsudvikling/13-sensors.md)
+  
+  
+  * [14 - Testing](applikationsudvikling/14-testing.md)
+  
+  * [Web Scraping](digital-kultur/webscraping.md) 
 
-  * [07 - Firebase-Authentication](applikationsudvikling/07-Firebase-Authentication.md) 
-  
-  * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
-  
-  * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
-  
-  * [15 - Working with sensors](applikationsudvikling/15-sensors.md)
-  
-* [Web Scraping](digital-kultur/webscraping.md) 
-  
 * Brugerinddragelse
-  
+
   * [Project 1](brugerinddragelse/project-1.md)
   * [What is UI/UX](brugerinddragelse/week-5.md)
   * [Exploring the problem space discover/emphasize](brugerinddragelse/week-6.md)
   * [Surveys and desk research and user journey mapping](brugerinddragelse/week-7.md)
   * [Personas, key recommendation](brugerinddragelse/week-8.md)
-  
+
 * [Handins](handins/README.md)
   * [1](handins/week-1.md)
   * [2](handins/week-2.md)
   * [3](handins/week-3.md)
-  
+
 * Tværfaglige projekter 

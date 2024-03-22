@@ -199,7 +199,7 @@ Focus on the syntax of getting Firestore to work!
 
 Jeg har lavet et lidt mere professionelt repo hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
 
-Projektet kan findes her: [https://github.com/behu-kea/ita-23-2-sem-code/tree/main/noteapp](https://github.com/behu-kea/ita-23-2-sem-code/tree/main/noteapp)
+Projektet kan findes her: [https://github.com/behu-kea/note-app](https://github.com/behu-kea/note-app)
 
 For at få det til at virke, skal i gøre det følgende:
 
@@ -233,9 +233,9 @@ Der er en ting med navigeringen der ikke er optimal, men hvad? Det skal i finde 
 
 
 
-#### Feature 1
+#### FEATURE 1
 
-I skal lave en side hvor man kan skrive id'et på en note og se notens titel og tekst
+Søgning i noter. Når man søger efter en note, skal kun de relevante noter vises!
 
 
 
@@ -245,9 +245,11 @@ Man skal kunne slette en note på en eller anden måde
 
 
 
-#### FEATURE 3
+#### Feature 3
 
-Søgning i noter. Når man søger efter en note, skal kun de relevante noter vises!
+I skal lave en side hvor man kan skrive id'et på en note og se notens titel og tekst
+
+
 
 
 

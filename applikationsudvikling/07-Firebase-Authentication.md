@@ -16,7 +16,7 @@ https://firebase.google.com/docs/android/setup
 
 Understand <u>HOW</u> user registration works in the sample application.
 
-- Trace the onSuccess function from the Navigation composable to where it is executed in the 
+- Trace the onSuccess function from the Navigation composable to where it is executed.
 
 
 
@@ -24,13 +24,22 @@ Write a short summary of how user registration works in the codebase works (60. 
 
 - How does navigation happen between the Welcome and the Login composable?
 - How does the ViewModel interact with the Login composable?
+  - Why are mutablestates necessary?
+
 - When a registration of a user is successful - how does Compose handle the navigation?
+
+
+
+You can formulate answers like this:
+
+- When the composable registers an ... event ...
+  - Where does the data come from exactly?
+  - How does functions get passed through the stack?
+  - What classes / composable does data / functions get passed by?
 
 You should **not** explain it code line-by-line but write a prose summary answering the questions.
 
 - This is an oppertunity to gain insight and overview - please ask for help if stuck.
-
-
 
 
 

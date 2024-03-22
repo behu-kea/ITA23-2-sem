@@ -20,7 +20,7 @@ https://firebase.google.com/docs/android/setup
 
 Understand <u>HOW</u> user registration works in the sample application.
 
-- Trace the onSuccess function from the Navigation composable to where it is executed.
+- Trace the success function from the Navigation composable to where it is executed.
 
 
 

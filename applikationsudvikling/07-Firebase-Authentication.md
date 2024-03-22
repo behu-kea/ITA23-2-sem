@@ -43,6 +43,10 @@ You should **not** explain it code line-by-line but write a prose summary answer
 
 
 
+Aflever: https://kea-fronter.itslearning.com/ContentArea/ContentArea.aspx?LocationID=6478&LocationType=1
+
+
+
 ### Exercise 2
 
 - Extend the feature of the app such that if a user tries to register *unsuccessfully*, the app will navigate to a "failure" page such as this:

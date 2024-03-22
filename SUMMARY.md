@@ -22,7 +22,7 @@
   * [04 - UI state 2](applikationsudvikling/04-ui-state-lists.md)
   * [05 - Architecture & MVVM.md](applikationsudvikling/05-architecture-mvvm.md) 
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
-  * [07 - Firebase Authentication.md](applikationsudvikling/07 Firebase Authentication.md)
+  * [07 - Firebase authentication.md](applikationsudvikling/07-Firebase-Authentication.md) 
   * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
   * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
   * [13 - Working with sensors](applikationsudvikling/13-sensors.md)

@@ -200,7 +200,7 @@ Focus on the syntax of getting Firestore to work!
 
 ### Professional notes app
 
-Jeg har lavet et lidt mere professionelt repo hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i lige lære det (ChatGPT kan være en stor hjælp her!)
+Jeg har lavet et lidt mere professionelt repo hvor der er taget et aktivt valg ift arkitekturen af applikationen. I skal finde ud af hvordan appen virker og hvordan arkitekturen fungerer. Der er ting vi ikke har snakket om endnu i applikationen, men se om i enten kan ignorere det. Ellers må i sætte jeg nok ind i det til at i kan arbejde med det.
 
 Projektet kan findes her: [https://github.com/behu-kea/note-app](https://github.com/behu-kea/note-app)
 

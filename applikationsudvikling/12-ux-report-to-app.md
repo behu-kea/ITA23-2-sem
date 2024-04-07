@@ -2,7 +2,17 @@
 
 
 
+## Overblik
+
+- Snakke om korrekt brug af ChatGPT. Brug det ikke til løsning! Brug det til at forstå det i er i tvivl om.
+  - Jeg ser at i knokler lidt rundt i ChatGPT. Den giver jer lidt forkerte svar. I knokler videre rundt i det
+  - Prøv i stedet at finde svar/eksempler online eller lade den forklare jer de ting i ikke er sikre på
+
+
+
 I dag skal i gå fra UX rapport til app på bare 3.5 timer
+
+
 
 
 

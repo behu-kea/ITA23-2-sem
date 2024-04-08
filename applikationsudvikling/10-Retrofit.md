@@ -82,7 +82,7 @@ Reference: https://github.com/nicklasdean/retrofit-basic/tree/main/app/src/main/
 
 ## Make it right: Repository pattern
 
-Refactor the code such that:
+**Refactor** the code such that:
 
 - Registration & Login are both contained in a repository class that exposes 2 functions:
   - Create User

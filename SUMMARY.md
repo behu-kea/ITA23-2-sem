@@ -22,7 +22,7 @@
   * [04 - UI state 2](applikationsudvikling/04-ui-state-lists.md)
   * [05 - Architecture & MVVM.md](applikationsudvikling/05-architecture-mvvm.md) 
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
-  * [07 - Firebase authentication.md](applikationsudvikling/07-Firebase-Authentication.md) 
+  * [07 - Firebase authentication](applikationsudvikling/07-Firebase-Authentication.md) 
   * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
   * [10 - Retrofit.md](applikationsudvikling/10-Retrofit.md) 
   * [11 - Concurrency & Retrofit in Android](applikationsudvikling/11-concurrency-retrofit-android.md) 

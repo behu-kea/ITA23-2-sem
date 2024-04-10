@@ -24,7 +24,7 @@
   * [06 - Compose navigation](applikationsudvikling/06-compose-navigation.md)
   * [07 - Firebase authentication](applikationsudvikling/07-Firebase-Authentication.md) 
   * [09 - Firebase Cloud Firestore](applikationsudvikling/09-firebase-cloud-firestore.md)
-  * [10 - Retrofit.md](applikationsudvikling/10-Retrofit.md) 
+  * [10 - Retrofit](applikationsudvikling/10-Retrofit.md) 
   * [11 - Concurrency & Retrofit in Android](applikationsudvikling/11-concurrency-retrofit-android.md) 
   * [12 - UX report to app](applikationsudvikling/12-ux-report-to-app.md)
   * [13 - Working with sensors](applikationsudvikling/13-sensors.md)

@@ -44,24 +44,14 @@ Without using the android framework (empty project - as seen in the reference pr
 - The program takes a specified accessibility in an inclusively constrained range of price (min / max price)
   - The user inputs the parameters by standard input: readLine()
 
-- Implement with a call instead of returning the Activity object
-  - If the response is successful print the activity
-  - If the response if not successful print "failure"
-
 
 
 ## Make it work: POST request
 
 - Read the documentation to the following API POST CREATE request: https://reqres.in/
 
-  - Register - Successful
-  - Register - Unsuccessful
   - Login - Successful
   - Login - Unsuccessful
-  
-  ![image-20240407110259710](assets/image-20240407110259710.png)
-
-![image-20240407110433754](assets/image-20240407110433754.png)
 
 ![image-20240407110345839](assets/image-20240407110345839.png)
 

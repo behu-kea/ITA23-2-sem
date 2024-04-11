@@ -52,7 +52,7 @@ Without using the android framework (empty project - as seen in the reference pr
 
 ## Make it work: POST request
 
-- Read the documentation to the following API POST CREATE request: 
+- Read the documentation to the following API POST CREATE request: https://reqres.in/
 
   - Register - Successful
   - Register - Unsuccessful

@@ -40,7 +40,8 @@ Here are the topics:
 
 1. Accelerometer
 2. Position (latitude and longitude)
-3. Camera
+3. Notification
+4. Camera - Level 3
 
 
 

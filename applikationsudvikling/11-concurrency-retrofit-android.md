@@ -2,6 +2,33 @@
 
 Reference: https://github.com/nicklasdean/catfacts-app
 
+**Important**
+
+- Insert the following into your AndroidManifest.xml
+  - Found in the manifests folder
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+- Insert before the <application tag
+
+```xml
+// Like this
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"                             
+...
+```
+
+
+
 ### Exercise A.1
 
 Add functionality to the above application such that:

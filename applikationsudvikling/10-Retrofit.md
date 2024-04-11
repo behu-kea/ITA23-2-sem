@@ -18,9 +18,11 @@ Without using the android framework (empty project - as seen in the reference pr
 - Create an API interface, Model / DTO and retrofit instance such that: 
   - You can fetch a single random event and print its properties to the console
 
-
-
 #### Exercise B
+
+Parameters: (@Query not @Path)
+
+![image-20240411093741953](assets/image-20240411093741953.png)
 
 Without using the android framework (empty project - as seen in the reference project)
 
@@ -82,7 +84,7 @@ Reference: https://github.com/nicklasdean/retrofit-basic/tree/main/app/src/main/
 
 ## Make it right: Repository pattern
 
-Refactor the code such that:
+**Refactor** the code such that:
 
 - Registration & Login are both contained in a repository class that exposes 2 functions:
   - Create User

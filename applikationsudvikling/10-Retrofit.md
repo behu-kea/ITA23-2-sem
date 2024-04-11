@@ -20,9 +20,15 @@ Without using the android framework (empty project - as seen in the reference pr
 
 #### Exercise B
 
-Parameters: (@Query not @Path)
+Parameters example: 
 
-![image-20240411093741953](assets/image-20240411093741953.png)
+```kotlin
+@GET("offices")
+fun getOffices(@Query("uid") uid: String,
+               @Query("lat") latitude: Double,
+               @Query("lon") longitude: Double
+): Call<List<Office>>
+```
 
 Without using the android framework (empty project - as seen in the reference project)
 

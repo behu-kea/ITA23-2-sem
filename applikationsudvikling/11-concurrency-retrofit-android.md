@@ -29,7 +29,18 @@ Reference: https://github.com/nicklasdean/catfacts-app
 
 
 
-### Exercise A.1
+### Execise A.1
+
+Add functionality to the above application such that:
+
+- A user is initially greeted with a welcome screen.
+- When the user presses the button - they are navigated to the screen that fetches the catfact.
+
+<img src="assets/image-20240412112937819.png" alt="image-20240412112937819" style="zoom:50%;" />
+
+
+
+### Exercise A.2
 
 Add functionality to the above application such that:
 
@@ -39,7 +50,7 @@ Add functionality to the above application such that:
 
 <img src="assets/image-20240408153426073.png" alt="image-20240408153426073" style="zoom:50%;" />
 
-### Exercise A.2
+### Exercise A.3
 
 Add functionality to the application such that
 

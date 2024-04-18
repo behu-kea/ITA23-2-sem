@@ -2,7 +2,45 @@
 
 Reference: https://github.com/nicklasdean/catfacts-app
 
-### Exercise A.1
+**Important**
+
+- Insert the following into your AndroidManifest.xml
+  - Found in the manifests folder
+
+```xml
+<uses-permission android:name="android.permission.INTERNET" />
+```
+
+- Insert before the <application tag
+
+```xml
+// Like this
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"                             
+...
+```
+
+
+
+### Execise A.1
+
+Add functionality to the above application such that:
+
+- A user is initially greeted with a welcome screen.
+- When the user presses the button - they are navigated to the screen that fetches the catfact.
+
+<img src="assets/image-20240412112937819.png" alt="image-20240412112937819" style="zoom:50%;" />
+
+
+
+### Exercise A.2
 
 Add functionality to the above application such that:
 
@@ -12,7 +50,7 @@ Add functionality to the above application such that:
 
 <img src="assets/image-20240408153426073.png" alt="image-20240408153426073" style="zoom:50%;" />
 
-### Exercise A.2
+### Exercise A.3
 
 Add functionality to the application such that
 

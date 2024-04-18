@@ -6,6 +6,40 @@ Idag skal i selv researche et emne. Det er for at gøre jeg klar til at blive ri
 
 
 
+## Sådan researcher jeg
+
+1. Big picture gerne med noget youtube eller ChatGPT
+   1. Får overblikket
+   2. Hvad kan teknologien?
+   3. Hvilke forskellige dele findes der?
+   4. Måske tidlig kig på lidt syntax
+   5. ChatGPT explain like i am five. Explain in a pedagogical easy to understand way. Use metaphors i already
+2. Dykker nærmere ned i teknologien
+   1. Hvordan virker de forskellige dele
+   2. Bruger den viden jeg allerede har. Kan jeg relatere det til noget jeg ved nu? Minder det om noget jeg har lært før? Fx via ChatGPT. Er `Spacer` komponenten ligesom `<br>` i html?
+   3. Forskellige vinkler. Se 3 forskellige youtube videoer, læse en medium artikel, spørge ChatGPT. Nærmer den viden sig hinanden? Er de enige om det hele?
+3. Koge det jeg skal lære ned til det mindste kode jeg kan skrive og få det på GitHub. Dokumenter den kode. 
+4. Tag noter mens jeg researcher (de noter kan i se i de fleste af mine gange)
+
+
+
+## Forbinde android telefon til Android Studio
+
+1. Gå til settings
+2. Tryk 7 gange på der hvor der står `Build number`
+3. Go to developer settings by pressing `System -> Developer options -> Enable USD debugging`
+4. Press `Allow`
+
+Now in Android Studio Select the phone and press play. That's it! 
+
+
+
+
+
+
+
+
+
 ## Class overview
 
 08:30 - 10:00 - Investigate your topic

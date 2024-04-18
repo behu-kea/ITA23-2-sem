@@ -11,6 +11,10 @@
 
 
 
+Tutor prompt: [https://nicklasdean.gitbook.io/ita2023-1.-semester/web-technology/07-1-generative-ai#tutor](https://nicklasdean.gitbook.io/ita2023-1.-semester/web-technology/07-1-generative-ai#tutor)
+
+
+
 I dag skal i gå fra UX rapport til app på bare 3.5 timer
 
 

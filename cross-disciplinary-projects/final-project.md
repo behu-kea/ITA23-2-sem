@@ -16,11 +16,11 @@ Rapporten skal indehole
 
   - Husk den røde tråd og refleksion her. Hvordan kom i fra at have forstået problemet over i løsningsdomænet. 
 
-    - Hvordan hjalp user research delen jeg i den process? 
-    - Hvordan har i struktureret jeres agile process? 
-    - Hvordan kvalitetssikrere i jeres app? 
-    - Hvordan har i kodemæssigt struktureret jeres app? 
-    - Hvilke teknikker/bibliotekter/metoder har i brugt? 
+    - Hvordan hjalp user research delen jeg i den process?
+    - Hvordan har i struktureret jeres agile process?
+    - Hvordan kvalitetssikrere i jeres app?
+    - Hvordan har i kodemæssigt struktureret jeres app?
+    - Hvilke teknikker/bibliotekter/metoder har i brugt?
 
     Husk refleksionen her! Kunne i bruge de metoder i har valgt til noget? Hvad ville i ændre hvis i skulle gøre det igen? Hvad var svært? Hvad var nemt?
 

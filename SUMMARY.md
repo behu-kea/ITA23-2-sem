@@ -39,10 +39,10 @@
   * [Exploring the problem space discover/emphasize](brugerinddragelse/week-6.md)
   * [Surveys and desk research and user journey mapping](brugerinddragelse/week-7.md)
   * [Personas, key recommendation](brugerinddragelse/week-8.md)
-
 * [Handins](handins/README.md)
   * [1](handins/week-1.md)
   * [2](handins/week-2.md)
   * [3](handins/week-3.md)
-
 * Tværfaglige projekter 
+
+  * [Sidste tværfaglige projekt](cross-disciplinary-projects/final-project.md)

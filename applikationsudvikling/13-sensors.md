@@ -53,7 +53,7 @@ Now in Android Studio Select the phone and press play. That's it!
 The first 1.5 hours you have to investigate one of the technologies below. Here are some of the things you have to consider:
 
 1. How does the technology work in a non technical way? What is it doing? Why is it smart? When should i use it?
-2. How do i implement the technology in Android Studio using java? Create a small prototype and push the code to GitHub
+2. How do i implement the technology in Android Studio using kotlin? Create a small prototype and push the code to GitHub
 3. Make a 5-10 minute presentation focusing on your topic
 4. Create a fun exercise that a group can spend about 45 minutes on
    1. Remember to make the first steps of the exercise super easy!
@@ -66,8 +66,6 @@ Here are the topics:
 2. Position (latitude and longitude)
 3. Notification
 4. Camera - Level 3
-
-
 
 
 

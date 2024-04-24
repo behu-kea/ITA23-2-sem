@@ -34,12 +34,6 @@ Now in Android Studio Select the phone and press play. That's it!
 
 
 
-
-
-
-
-
-
 ## Class overview
 
 08:30 - 10:00 - Investigate your topic
@@ -51,10 +45,6 @@ Now in Android Studio Select the phone and press play. That's it!
 10:45 - 11:30 - Exercises
 
 11:30 - 11:45 - Recap
-
-
-
-Random groups. Need minimum two groups per topic
 
 
 

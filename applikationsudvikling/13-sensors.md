@@ -25,7 +25,7 @@ Idag skal i selv researche et emne. Det er for at gøre jeg klar til at blive ri
 
 ## Forbinde android telefon til Android Studio
 
-1. Gå til settings
+1. Gå til `Settings` -> `About Phone`
 2. Tryk 7 gange på der hvor der står `Build number`
 3. Go to developer settings by pressing `System -> Developer options -> Enable USD debugging`
 4. Press `Allow`

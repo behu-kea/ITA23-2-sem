@@ -4,6 +4,8 @@
 
 ## Overview
 
+- MVP aflevering på søndag
+  
 - Learning from Shape visit
   
 - Mandag grimmeste app (Chindoku design filosofi)

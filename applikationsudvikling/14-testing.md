@@ -4,6 +4,10 @@
 
 ## Overview
 
+- Learning from Shape visit
+  
+- Mandag grimmeste app (Chindoku design filosofi)
+  
 - Talk about testing
   - Unit tests
   - Ui tests

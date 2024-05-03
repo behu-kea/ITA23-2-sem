@@ -46,6 +46,6 @@
 
 * Tværfaglige projekter
 
-  * [Eksamensbekskrivelse](Projects/eksamne-formelle-krav.md) 
+  * [Eksamensbeskrivelse](Projects/eksamne-formelle-krav.md) 
 
 

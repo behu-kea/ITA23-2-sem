@@ -45,4 +45,6 @@
   * [2](handins/week-2.md)
   * [3](handins/week-3.md)
 
-* Tværfaglige projekter 
+* Tværfaglige projekter
+
+  * [Eksamensbekskrivelse](Projects/eksamne-formelle-krav.md) 

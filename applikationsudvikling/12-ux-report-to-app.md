@@ -5,8 +5,13 @@
 ## Overblik
 
 - Snakke om korrekt brug af ChatGPT. Brug det ikke til løsning! Brug det til at forstå det i er i tvivl om.
-  - Jeg ser at i knokler lidt rundt i ChatGPT. Den giver jer lidt forkerte svar. I knokler videre rundt i det
+  - Jeg ser at ChatGPT giver jer svaret, men ikke kommer helt i mål med opgaven
   - Prøv i stedet at finde svar/eksempler online eller lade den forklare jer de ting i ikke er sikre på
+    - Brug den som en mentor istedet!
+
+
+
+Tutor prompt: [https://nicklasdean.gitbook.io/ita2023-1.-semester/web-technology/07-1-generative-ai#tutor](https://nicklasdean.gitbook.io/ita2023-1.-semester/web-technology/07-1-generative-ai#tutor)
 
 
 
@@ -19,10 +24,21 @@ I dag skal i gå fra UX rapport til app på bare 3.5 timer
 ## Plan
 
 - 08:30 - 09:00 - Forstå problem og idegenerering
-- 09:00 - 10:00 - Sketches og papir prototyper
+- 09:00 - 10:00 - Sketches og papir prototyper/figma
 - 10:00 - 10:15 - Pause
 - 10:15 - 11:30 - Udvikle app
-- 11:30- 11:45 - Præsentation af apps
+  - Interface udvikling
+  - Modellering
+
+- 11:15- 11:45 - Præsentation af apps. 5 minutter per gruppe. I behøves ikke lave slides
+
+
+
+Fokus:
+
+- **Den røde tråd!!**
+- At få skrevet noget kode, fint med ChatGPT hvis det hjælper jer
+- Undgå alt for meget fokus på korrekt kode og komponenter
 
 
 

@@ -6,6 +6,34 @@ Idag skal i selv researche et emne. Det er for at gøre jeg klar til at blive ri
 
 
 
+## Sådan researcher jeg
+
+1. Big picture gerne med noget youtube eller ChatGPT
+   1. Får overblikket
+   2. Hvad kan teknologien?
+   3. Hvilke forskellige dele findes der?
+   4. Måske tidlig kig på lidt syntax
+   5. ChatGPT explain like i am five. Explain in a pedagogical easy to understand way. Use metaphors i already
+2. Dykker nærmere ned i teknologien
+   1. Hvordan virker de forskellige dele
+   2. Bruger den viden jeg allerede har. Kan jeg relatere det til noget jeg ved nu? Minder det om noget jeg har lært før? Fx via ChatGPT. Er `Spacer` komponenten ligesom `<br>` i html?
+   3. Forskellige vinkler. Se 3 forskellige youtube videoer, læse en medium artikel, spørge ChatGPT. Nærmer den viden sig hinanden? Er de enige om det hele?
+3. Koge det jeg skal lære ned til det mindste kode jeg kan skrive og få det på GitHub. Dokumenter den kode. 
+4. Tag noter mens jeg researcher (de noter kan i se i de fleste af mine gange)
+
+
+
+## Forbinde android telefon til Android Studio
+
+1. Gå til `Settings` -> `About Phone`
+2. Tryk 7 gange på der hvor der står `Build number`
+3. Go to developer settings by pressing `System -> Developer options -> Enable USD debugging`
+4. Press `Allow`
+
+Now in Android Studio Select the phone and press play. That's it! 
+
+
+
 ## Class overview
 
 08:30 - 10:00 - Investigate your topic
@@ -20,17 +48,13 @@ Idag skal i selv researche et emne. Det er for at gøre jeg klar til at blive ri
 
 
 
-Random groups. Need minimum two groups per topic
-
-
-
 ### Investigate your topic
 
 The first 1.5 hours you have to investigate one of the technologies below. Here are some of the things you have to consider:
 
 1. How does the technology work in a non technical way? What is it doing? Why is it smart? When should i use it?
-2. How do i implement the technology in Android Studio using java? Create a small prototype and push the code to GitHub
-3. Make a 10 minute presentation focusing on your topic
+2. How do i implement the technology in Android Studio using kotlin? Create a small prototype and push the code to GitHub
+3. Make a 5-10 minute presentation focusing on your topic
 4. Create a fun exercise that a group can spend about 45 minutes on
    1. Remember to make the first steps of the exercise super easy!
 
@@ -42,8 +66,6 @@ Here are the topics:
 2. Position (latitude and longitude)
 3. Notification
 4. Camera - Level 3
-
-
 
 
 

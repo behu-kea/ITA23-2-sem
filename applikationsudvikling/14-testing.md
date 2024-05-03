@@ -4,6 +4,12 @@
 
 ## Overview
 
+- MVP aflevering på søndag
+  
+- Learning from Shape visit
+  
+- Mandag grimmeste app (Chindoku design filosofi)
+  
 - Talk about testing
   - Unit tests
   - Ui tests

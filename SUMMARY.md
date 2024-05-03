@@ -39,7 +39,6 @@
   * [Exploring the problem space discover/emphasize](brugerinddragelse/week-6.md)
   * [Surveys and desk research and user journey mapping](brugerinddragelse/week-7.md)
   * [Personas, key recommendation](brugerinddragelse/week-8.md)
-
 * [Handins](handins/README.md)
   * [1](handins/week-1.md)
   * [2](handins/week-2.md)
@@ -48,3 +47,5 @@
 * Tværfaglige projekter
 
   * [Eksamensbekskrivelse](Projects/eksamne-formelle-krav.md) 
+
+

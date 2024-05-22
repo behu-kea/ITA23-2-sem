@@ -78,7 +78,7 @@ I kan inde i Fronter planer se hvem der er tilgængelig på hvilke dage i projek
 
 ## Aflevering
 
-**Afleveringsfrist**: 29. maj 2024 12:00
+🚨**Afleveringsfrist**: 29. maj 2024 12:00🚨
 
 I skal aflevere i Wiseflow da det er en eksamensaflevering
 

@@ -84,8 +84,6 @@ I skal aflevere i Wiseflow da det er en eksamensaflevering
 
 - Link til jeres github repository
 - Rapport på max 30 sider
-- 10 min Præsentation til den sidste dag
-  - I kan vælge enten at lave det som en video eller som en klassisk powerpoint præsentation
 
 
 

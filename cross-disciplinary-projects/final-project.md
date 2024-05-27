@@ -78,14 +78,12 @@ I kan inde i Fronter planer se hvem der er tilgængelig på hvilke dage i projek
 
 ## Aflevering
 
-🚨**Afleveringsfrist**: 29. maj 2024 12:00🚨
+🚨 **Afleveringsfrist**: 29. maj 2024 12:00 🚨
 
 I skal aflevere i Wiseflow da det er en eksamensaflevering
 
 - Link til jeres github repository
 - Rapport på max 30 sider
-
-
 
 I kan læse mere om afleveringen her: [https://katalog.kea.dk/course/4111202/2022-2023](https://katalog.kea.dk/course/4111202/2022-2023) under Prøve
 
